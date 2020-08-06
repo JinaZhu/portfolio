@@ -1,7 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar";
 
-import { HomepageContainer, IntroContainter, Name } from "./styled";
+import {
+  HomepageContainer,
+  IntroContainter,
+  Name,
+  AboutMeButton,
+} from "./styled";
 
 const Homepage = () => {
   return (
@@ -14,7 +19,7 @@ const Homepage = () => {
           I'm a software engineer based in San Francisco, CA specializing in
           writing clean, elegant, and efficent code.{" "}
         </p>
-        <button>About Me</button>
+        <AboutMeButton>About Me</AboutMeButton>
       </IntroContainter>
     </HomepageContainer>
   );

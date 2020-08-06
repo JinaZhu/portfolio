@@ -1,21 +1,22 @@
-import React from "./node_modules/react";
+import React from "react";
+import { Nav, NavList, NavLi, NavLink, ContactButton } from "./styled";
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="./Home">Home</a>
-        </li>
-        <li>
-          <a href="./Project">Project</a>
-        </li>
-        <li>
-          <a href="./AboutMe">About Me</a>
-        </li>
-        <button>Contact</button>
-      </ul>
-    </nav>
+    <Nav>
+      <NavList>
+        <NavLi>
+          <NavLink href="./Home">Home</NavLink>
+        </NavLi>
+        <NavLi>
+          <NavLink href="./Project">Project</NavLink>
+        </NavLi>
+        <NavLi>
+          <NavLink href="./AboutMe">About Me</NavLink>
+        </NavLi>
+        <ContactButton>Contact</ContactButton>
+      </NavList>
+    </Nav>
   );
 };
 

@@ -23,7 +23,11 @@ export const NavLi = styled.li`
 export const NavLink = styled.a`
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 15px;
+  }
 `;
 
 export const ContactButton = styled.button`
@@ -32,4 +36,13 @@ export const ContactButton = styled.button`
   color: white;
   outline: none;
   padding: 7px 10px;
+  font-size: 20px;
+
+  &:hover {
+    background-color: white;
+    color: #9b7778;
+  }
+  @media screen and (max-width: 1100px) {
+    font-size: 15px;
+  }
 `;

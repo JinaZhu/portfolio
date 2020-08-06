@@ -13,9 +13,10 @@ export const IntroContainter = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 35%;
   font-size: 20px;
-  margin: 10% 25%;
+  margin: auto;
+  margin-top: 7%;
 `;
 
 export const Name = styled.h1`
@@ -29,7 +30,7 @@ export const Name = styled.h1`
 export const AboutMeButton = styled.button`
   background-color: transparent;
   font-size: 20px;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: white;
   border: 1px solid white;
   margin: 2rem;

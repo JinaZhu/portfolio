@@ -47,7 +47,7 @@ from {
   transform: rotateZ(225deg);
 }
 to {
-  transform: rotateZ(215deg);
+  transform:rotateZ(215deg);
 }
 `;
 

@@ -34,9 +34,25 @@ export const AboutMeButton = styled.button`
   color: white;
   border: 1px solid white;
   margin: 2rem;
+  cursor: pointer;
 
   &:hover {
     background-color: white;
     color: #9b7778;
+  }
+`;
+
+export const TopBranch = styled.img`
+  position: absolute;
+  top: -100px;
+  left: -20px;
+  transform: rotate(210deg);
+  opacity: 0.5;
+  width: 470px;
+
+  @media screen and (max-width: 1200px) {
+    width: 300px;
+    top: -70px;
+    left: -15px;
   }
 `;

@@ -8,6 +8,7 @@ import {
   Name,
   AboutMeButton,
   TopBranch,
+  RightBranch,
 } from "./styled";
 
 const Homepage = () => {
@@ -15,6 +16,7 @@ const Homepage = () => {
     <HomepageContainer>
       <Navbar />
       <TopBranch src={leaf_branch} alt="leaf branch" />
+      <RightBranch src={leaf_branch} alt="leaf branch" />
       <IntroContainter>
         <p>Hi, my name is</p>
         <Name>JINA ZHU</Name>

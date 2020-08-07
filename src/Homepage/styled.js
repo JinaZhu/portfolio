@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const HomepageContainer = styled.div`
   background-color: #9b7778;
@@ -42,17 +42,49 @@ export const AboutMeButton = styled.button`
   }
 `;
 
+const plantShakeTop = keyframes`
+from {
+  transform: rotateZ(225deg);
+}
+to {
+  transform: rotateZ(215deg);
+}
+`;
+
 export const TopBranch = styled.img`
   position: absolute;
-  top: -100px;
-  left: -20px;
-  transform: rotate(210deg);
+  top: -15%;
+  left: 0%;
+  transform: rotate(215deg);
   opacity: 0.5;
   width: 470px;
+  animation: ${plantShakeTop} 5s infinite ease alternate-reverse 2s;
 
   @media screen and (max-width: 1200px) {
     width: 300px;
-    top: -70px;
-    left: -15px;
+    top: -8%;
+  }
+`;
+
+const plantShakeRight = keyframes`
+from {
+  transform: rotateZ(7deg);
+}
+to {
+  transform: rotateZ(0deg);
+}
+`;
+
+export const RightBranch = styled.img`
+  position: absolute;
+  top: 36%;
+  right: -1%;
+  opacity: 0.5;
+  width: 470px;
+  animation: ${plantShakeRight} 5s infinite ease alternate-reverse 2s;
+
+  @media screen and (max-width: 1200px) {
+    width: 300px;
+    top: 60%;
   }
 `;

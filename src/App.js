@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/project" component={Project} />
-          <Route path="/aboutme" component={AboutMe} />
+          <Route exact path="/portfolio/" component={Homepage} />
+          <Route path="/portfolio/project" component={Project} />
+          <Route path="/portfolio/aboutme" component={AboutMe} />
         </Switch>
       </Router>
     </div>

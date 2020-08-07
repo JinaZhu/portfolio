@@ -1,17 +1,27 @@
 import React from "react";
 import Navbar from "../Navbar";
+import leaf_branch from "../images/leaf-branch.png";
 
 import {
   HomepageContainer,
   IntroContainter,
   Name,
   AboutMeButton,
+  TopBranch,
+  RightBranch,
 } from "./styled";
 
 const Homepage = () => {
   return (
     <HomepageContainer>
       <Navbar />
+      <TopBranch
+        src={leaf_branch}
+        alt="leaf branch"
+        rotateFrom={"225"}
+        rotateTo={"215"}
+      />
+      <RightBranch src={leaf_branch} alt="leaf branch" />
       <IntroContainter>
         <p>Hi, my name is</p>
         <Name>JINA ZHU</Name>

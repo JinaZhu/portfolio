@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   display: flex;
@@ -20,7 +21,7 @@ export const NavLi = styled.li`
   list-style: none;
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-size: 20px;

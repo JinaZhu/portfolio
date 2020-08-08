@@ -1,5 +1,8 @@
 import React from "react";
-import { ContactPage } from "./styled";
+import { ContactPage, NavLi, NavList } from "./styled";
+import instagramLogo from "../images/Icons/instagram.svg";
+import githubLogo from "../images/Icons/github.svg";
+import linkedInLogo from "../images/Icons/linkedin.svg";
 
 const Contact = () => {
   return (
@@ -10,20 +13,40 @@ const Contact = () => {
         Simply shoot me a message below or connect with me and I will get back
         to you soon!
       </p>
-      <ul class="nav-links">
-        <li>Twitter</li>
-        <li>Youtube</li>
-        <li>Instagram</li>
-      </ul>
-      <div class="contract">
-        <h2>Stay in touch.</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-          recusandae maxime rerum beatae nobis minus! Ab nemo pariatur delectus,
-          praesentium, animi vero, enim laborum veritatis odit vitae repellat
-          non sunt!
-        </p>
-      </div>
+      <NavList>
+        <NavLi>
+          <a
+            href="https://www.instagram.com/jinazhu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={instagramLogo} alt="instagram logo" width="50" />
+          </a>
+        </NavLi>
+        <NavLi>
+          <a
+            href="https://github.com/JinaZhu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubLogo} alt="github logo" width="50" />
+          </a>
+        </NavLi>
+        <NavLi>
+          <a
+            href="https://www.linkedin.com/in/jina-zhu-459899ba/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedInLogo} alt="LinkedIn logo" width="50" />
+          </a>
+        </NavLi>
+      </NavList>
+      <form>
+        <input type="text" />
+        <input type="email" />
+        <textarea />
+      </form>
     </ContactPage>
   );
 };

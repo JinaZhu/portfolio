@@ -56,8 +56,9 @@ export const ContactPage = styled.div`
   height: 100%;
   background: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   z-index: 1;
   opacity: 1;
   color: #c98a6d;

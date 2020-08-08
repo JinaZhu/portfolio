@@ -7,6 +7,7 @@ import {
   ContactButton,
   ContactPage,
 } from "./styled";
+import Contact from "./Contact";
 
 const Navbar = () => {
   return (
@@ -25,22 +26,7 @@ const Navbar = () => {
           <ContactButton>Contact</ContactButton>
         </NavList>
       </Nav>
-      <ContactPage>
-        <ul class="nav-links">
-          <h3>Twitter</h3>
-          <h3>Youtube</h3>
-          <h3>Instagram</h3>
-        </ul>
-        <div class="contract">
-          <h2>Stay in touch.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            recusandae maxime rerum beatae nobis minus! Ab nemo pariatur
-            delectus, praesentium, animi vero, enim laborum veritatis odit vitae
-            repellat non sunt!
-          </p>
-        </div>
-      </ContactPage>
+      <Contact />
     </div>
   );
 };

@@ -47,3 +47,18 @@ export const ContactButton = styled.button`
     font-size: 15px;
   }
 `;
+
+export const ContactPage = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  color: #c98a6d;
+`;

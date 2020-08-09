@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import leaf_branch from "../images/leaf-branch.png";
 
+import { Button } from "../globalStyles";
 import {
   HomepageContainer,
   IntroContainter,
@@ -29,7 +30,7 @@ const Homepage = () => {
           I'm a software engineer based in San Francisco, CA specializing in
           writing clean, elegant, and efficent code.{" "}
         </p>
-        <AboutMeButton>About Me</AboutMeButton>
+        <Button padding={"1rem 2rem"}>About Me</Button>
       </IntroContainter>
     </HomepageContainer>
   );

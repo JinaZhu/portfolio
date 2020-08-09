@@ -63,3 +63,18 @@ export const ContactPage = styled.div`
   opacity: 1;
   color: #c98a6d;
 `;
+
+export const ContactContainer = styled.div`
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const MessageForm = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;

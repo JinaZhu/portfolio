@@ -16,17 +16,6 @@ function App() {
       </div>
     </HashRouter>
   );
-  // return (
-  //   <div className="App">
-  //     <Router>
-  //       <Switch>
-  //         <Route exact path="/" component={Homepage} />
-  //         <Route path="/project" component={Project} />
-  //         <Route path="/aboutme" component={AboutMe} />
-  //       </Switch>
-  //     </Router>
-  //   </div>
-  // );
 }
 
 export default App;

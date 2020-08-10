@@ -2,11 +2,11 @@ import React from "react";
 import Navbar from "../Navbar";
 import leaf_branch from "../images/leaf-branch.png";
 
+import { Button } from "../globalStyles";
 import {
   HomepageContainer,
   IntroContainter,
   Name,
-  AboutMeButton,
   TopBranch,
   RightBranch,
 } from "./styled";
@@ -29,7 +29,9 @@ const Homepage = () => {
           I'm a software engineer based in San Francisco, CA specializing in
           writing clean, elegant, and efficent code.{" "}
         </p>
-        <AboutMeButton>About Me</AboutMeButton>
+        <Button paddings={"1rem 2rem"} hoverColor={"#9b7778"}>
+          About Me
+        </Button>
       </IntroContainter>
     </HomepageContainer>
   );

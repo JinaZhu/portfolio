@@ -58,7 +58,6 @@ export const ContactPage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   z-index: 1;
   opacity: 1;
   color: #c98a6d;
@@ -70,6 +69,8 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid #c98a6d;
+  padding: 2rem;
 `;
 
 export const MessageForm = styled.div`
@@ -77,4 +78,24 @@ export const MessageForm = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 70%;
+  position: relative;
+`;
+
+export const FormInput = styled.input`
+  border: none;
+  border-bottom: 1px solid #c98a6d;
+  outline: none;
+  padding: 5px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #c98a6d;
+`;
+
+export const FormTextarea = styled.textarea`
+  border: 1px solid #c98a6d;
+  outline: none;
+  font-size: 16px;
+  color: #c98a6d;
+  padding: 5px;
 `;

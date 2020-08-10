@@ -5,7 +5,10 @@ import {
   NavList,
   ContactContainer,
   MessageForm,
+  FormInput,
+  FormTextarea,
 } from "./styled";
+import { Button } from "../globalStyles";
 import instagramLogo from "../images/Icons/instagram.svg";
 import githubLogo from "../images/Icons/github.svg";
 import linkedInLogo from "../images/Icons/linkedin.svg";
@@ -50,10 +53,26 @@ const Contact = () => {
           </NavLi>
         </NavList>
         <MessageForm>
-          <input type="text" />
-          <input type="email" />
-          <textarea />
-          <button>Submit</button>
+          <label htmlFor="name">
+            <span>Name</span>
+          </label>
+          <FormInput type="text" name="name" required autoComplete="off" />
+          <label htmlFor="email">
+            <span>Email</span>
+          </label>
+          <FormInput type="email" name="email" required autoComplete="off" />
+          <label htmlFor="email">
+            <span>Message</span>
+          </label>
+          <FormTextarea cols="30" rows="5" />
+          <Button
+            border={"1px solid #c98a6d"}
+            paddings={"0.5rem"}
+            color={"#c98a6d"}
+            hoverBackgroundColor={"#c98a6d"}
+          >
+            Submit
+          </Button>
         </MessageForm>
       </ContactContainer>
     </ContactPage>

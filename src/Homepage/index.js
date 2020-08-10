@@ -7,7 +7,6 @@ import {
   HomepageContainer,
   IntroContainter,
   Name,
-  AboutMeButton,
   TopBranch,
   RightBranch,
 } from "./styled";
@@ -30,7 +29,9 @@ const Homepage = () => {
           I'm a software engineer based in San Francisco, CA specializing in
           writing clean, elegant, and efficent code.{" "}
         </p>
-        <Button padding={"1rem 2rem"}>About Me</Button>
+        <Button paddings={"1rem 2rem"} hoverColor={"#9b7778"}>
+          About Me
+        </Button>
       </IntroContainter>
     </HomepageContainer>
   );

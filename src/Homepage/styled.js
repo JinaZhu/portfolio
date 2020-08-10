@@ -27,28 +27,13 @@ export const Name = styled.h1`
   margin: 0.5rem;
 `;
 
-export const AboutMeButton = styled.button`
-  background-color: transparent;
-  font-size: 20px;
-  padding: 1rem 2rem;
-  color: white;
-  border: 1px solid white;
-  margin: 2rem;
-  cursor: pointer;
-
-  &:hover {
-    background-color: white;
-    color: #9b7778;
-  }
-`;
-
 const plantShakeTop = keyframes`
-from {
-  transform: rotateZ(225deg);
-}
-to {
-  transform:rotateZ(215deg);
-}
+  from {
+    transform: rotateZ(225deg);
+  }
+  to {
+    transform:rotateZ(215deg);
+  }
 `;
 
 export const TopBranch = styled.img`

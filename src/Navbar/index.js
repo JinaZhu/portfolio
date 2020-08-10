@@ -26,7 +26,7 @@ const Navbar = () => {
           <ContactButton>Contact</ContactButton>
         </NavList>
       </Nav>
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 };

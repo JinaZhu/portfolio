@@ -15,7 +15,7 @@ import linkedInLogo from "../images/Icons/linkedin.svg";
 
 const Contact = () => {
   return (
-    <ContactPage>
+    <ContactPage className="contact-page">
       <ContactContainer>
         <h1>LET'S GET IN TOUCH</h1>
         <p>

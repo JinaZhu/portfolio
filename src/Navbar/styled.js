@@ -61,6 +61,8 @@ export const ContactPage = styled.div`
   z-index: 1;
   opacity: 1;
   color: #c98a6d;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
 `;
 
 export const ContactContainer = styled.div`

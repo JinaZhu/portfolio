@@ -5,6 +5,8 @@ export const HomepageContainer = styled.div`
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 `;
 
 export const IntroContainter = styled.div`

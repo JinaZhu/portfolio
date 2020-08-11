@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
@@ -38,7 +38,7 @@ export const ContactButton = styled.button`
   outline: none;
   padding: 7px 10px;
   font-size: 20px;
-
+  z-index: 2;
   &:hover {
     background-color: white;
     color: #9b7778;
@@ -46,6 +46,22 @@ export const ContactButton = styled.button`
   @media screen and (max-width: 1100px) {
     font-size: 15px;
   }
+
+  ${(props) => {
+    return (
+      props.isActive &&
+      css`
+        background-color: white;
+        color: #c98a6d;
+        border: 1px solid #c98a6d;
+        z-index: 2;
+        &:hover {
+          background-color: #c98a6d;
+          color: white;
+        }
+      `
+    );
+  }}
 `;
 
 export const ContactPage = styled.div`
@@ -61,6 +77,8 @@ export const ContactPage = styled.div`
   z-index: 1;
   opacity: 1;
   color: #c98a6d;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
 `;
 
 export const ContactContainer = styled.div`

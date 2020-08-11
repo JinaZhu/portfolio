@@ -1,27 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { gsap } from "gsap";
 
-import {
-  Nav,
-  NavList,
-  NavLi,
-  NavLink,
-  ContactButton,
-  ContactPage,
-} from "./styled";
+import { Nav, NavList, NavLi, NavLink, ContactButton } from "./styled";
 import Contact from "./Contact";
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+  const [buttonText, setButtonText] = useState("Contact");
   const contactToggle = (e) => {
-    if (!e.target.classList.contains("active")) {
-      e.target.classList.add("active");
+    console.log(e);
+    if (isActive === false) {
       e.preventDefault();
-      gsap.to(".contact-button", 0.5, { background: "black", zIndex: "2" });
+      setIsActive(true);
+      setButtonText("Close");
       gsap.to(".contact-page", 1, { clipPath: "circle(2500px at 100% -10%)" });
     } else {
-      e.target.classList.remove("active");
+      setIsActive(false);
       e.preventDefault();
-      gsap.to(".contact-button", 0.5, { background: "black", zIndex: "2" });
+      setButtonText("Contact");
       gsap.to(".contact-page", 1, { clipPath: "circle(50px at 100% -10%)" });
     }
   };
@@ -39,8 +35,8 @@ const Navbar = () => {
           <NavLi>
             <NavLink to="/about">About Me</NavLink>
           </NavLi>
-          <ContactButton className="contact-button" onClick={contactToggle}>
-            Contact
+          <ContactButton isActive={isActive} onClick={contactToggle}>
+            {buttonText}
           </ContactButton>
         </NavList>
       </Nav>

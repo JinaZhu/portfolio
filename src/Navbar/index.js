@@ -17,7 +17,9 @@ const Navbar = () => {
     } else {
       setIsActive(false);
       e.preventDefault();
-      setButtonText("Contact");
+      setTimeout(function () {
+        setButtonText("Contact");
+      }, 800);
       gsap.to(".contact-page", 1, { clipPath: "circle(50px at 100% -10%)" });
     }
   };

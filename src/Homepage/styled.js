@@ -7,6 +7,7 @@ export const HomepageContainer = styled.div`
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;
+  position: relative;
 `;
 
 export const IntroContainter = styled.div`
@@ -19,6 +20,7 @@ export const IntroContainter = styled.div`
   font-size: 20px;
   margin: auto;
   margin-top: 7%;
+  position: relative;
 `;
 
 export const Name = styled.h1`
@@ -74,4 +76,24 @@ export const RightBranch = styled.img`
     width: 300px;
     top: 60%;
   }
+`;
+
+export const LandingPageContainer = styled.div`
+  position: absolute;
+  background-color: #9b7778;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  opacity: 40%;
+  padding: 305px -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const NameLogo = styled.svg`
+  position: absolute;
+  top: 90px;
+  left: 128px;
+  z-index: 10;
 `;

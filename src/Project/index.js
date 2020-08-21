@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ProjectPage, TitleContainer, Title } from "./styled";
+import { SubTitle, ProjectPage, TitleContainer, Title } from "./styled";
 import Navbar from "../Navbar";
 
 const Project = () => {
@@ -10,6 +10,7 @@ const Project = () => {
       <TitleContainer>
         <Title>Things</Title>
         <Title>I've Built</Title>
+        <SubTitle>featured project</SubTitle>
       </TitleContainer>
     </ProjectPage>
   );

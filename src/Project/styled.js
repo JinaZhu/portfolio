@@ -18,3 +18,8 @@ export const Title = styled.h1`
   margin: 0;
   font-size: 50px;
 `;
+
+export const SubTitle = styled.p`
+  font-size: 20px;
+  margin-top: 3rem;
+`;

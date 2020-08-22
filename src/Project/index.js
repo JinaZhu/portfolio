@@ -2,6 +2,7 @@ import React from "react";
 
 import { SubTitle, ProjectPage, TitleContainer, Title } from "./styled";
 import Navbar from "../Navbar";
+import ProjectLayout from "./ProjectLayout";
 
 const Project = () => {
   return (
@@ -12,6 +13,7 @@ const Project = () => {
         <Title>I've Built</Title>
         <SubTitle>featured project</SubTitle>
       </TitleContainer>
+      <ProjectLayout />
     </ProjectPage>
   );
 };

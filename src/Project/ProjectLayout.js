@@ -1,21 +1,27 @@
 import React from "react";
 
 import githubLogo from "../images/Icons/github.svg";
-import { ProjectContainer, ProjectDescription, StackContainer } from "./styled";
+import {
+  ProjectContainer,
+  ProjectDescription,
+  StackContainer,
+  StackName,
+  ProjectTitle,
+} from "./styled";
 
 const ProjectLayout = () => {
   return (
     <ProjectContainer>
-      <h2>Adventure Await</h2>
+      <ProjectTitle>Adventure Await</ProjectTitle>
       <ProjectDescription>
         <p>
           Adventure Awaits is a full-stack web application that allows anyone to
           discover somewhere new by providing an insight into a country.
         </p>
         <StackContainer>
-          <p>React</p>
-          <p>Flask</p>
-          <p>Styled Components</p>
+          <StackName>React</StackName>
+          <StackName>Flask</StackName>
+          <StackName>Styled Components</StackName>
         </StackContainer>
         <a
           href="https://github.com/JinaZhu/World-Traveler"

@@ -26,6 +26,10 @@ export const SubTitle = styled.p`
 
 export const ProjectContainer = styled.div`
   display: flex;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 0 5rem;
+  position: relative;
 `;
 
 export const ProjectDescription = styled.div`
@@ -34,10 +38,25 @@ export const ProjectDescription = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   text-align: left;
+  margin-left: 5rem;
 `;
 
 export const StackContainer = styled.div`
   display: flex;
-  align-items: space-between;
-  justify-content: space-between;
+`;
+
+export const StackName = styled.p`
+  margin-right: 1rem;
+`;
+
+export const ProjectTitle = styled.h2`
+  transform: rotate(90deg);
+  font-size: 30px;
+  font-family: Oswald;
+  letter-spacing: 7px;
+  margin: 0;
+  white-space: nowrap;
+  position: absolute;
+  left: -140px;
+  transform-origin: bottom;
 `;

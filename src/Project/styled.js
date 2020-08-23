@@ -23,3 +23,21 @@ export const SubTitle = styled.p`
   font-size: 20px;
   margin-top: 3rem;
 `;
+
+export const ProjectContainer = styled.div`
+  display: flex;
+`;
+
+export const ProjectDescription = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+`;
+
+export const StackContainer = styled.div`
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+`;

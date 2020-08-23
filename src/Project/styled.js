@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ProjectPage = styled.div`
   background-color: #748173;
@@ -26,10 +26,27 @@ export const SubTitle = styled.p`
 
 export const ProjectContainer = styled.div`
   display: flex;
-  border-left: 1px solid white;
   border-bottom: 1px solid white;
   margin: 0 5rem;
   position: relative;
+
+  ${(props) => {
+    console.log(props.border);
+    return (
+      props.border === "left" &&
+      css`
+        border-left: 1px solid white;
+      `
+    );
+  }}
+  ${(props) => {
+    return (
+      props.border === "right" &&
+      css`
+        border-right: 1px solid white;
+      `
+    );
+  }}
 `;
 
 export const ProjectDescription = styled.div`
@@ -58,5 +75,6 @@ export const ProjectTitle = styled.h2`
   white-space: nowrap;
   position: absolute;
   left: -140px;
+  top: 50%;
   transform-origin: bottom;
 `;

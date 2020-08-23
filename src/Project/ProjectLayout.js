@@ -1,6 +1,7 @@
 import React from "react";
 
 import githubLogo from "../images/Icons/github.svg";
+import aaMap from "../images/projectScreenshots/aa-map.png";
 import {
   ProjectContainer,
   ProjectDescription,
@@ -9,9 +10,10 @@ import {
   ProjectTitle,
 } from "./styled";
 
-const ProjectLayout = () => {
+const ProjectLayout = ({ border }) => {
+  console.log(border);
   return (
-    <ProjectContainer>
+    <ProjectContainer border={border}>
       <ProjectTitle>Adventure Await</ProjectTitle>
       <ProjectDescription>
         <p>
@@ -30,6 +32,9 @@ const ProjectLayout = () => {
         >
           <img src={githubLogo} alt="github logo" width="50" />
         </a>
+        <div>
+          <img src={aaMap} alt="adventure awaits map" width="250" />
+        </div>
       </ProjectDescription>
     </ProjectContainer>
   );

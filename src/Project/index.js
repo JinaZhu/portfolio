@@ -13,7 +13,8 @@ const Project = () => {
         <Title>I've Built</Title>
         <SubTitle>featured project</SubTitle>
       </TitleContainer>
-      <ProjectLayout />
+      <ProjectLayout border="left" />
+      <ProjectLayout border="right" />
     </ProjectPage>
   );
 };

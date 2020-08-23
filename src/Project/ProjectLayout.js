@@ -30,10 +30,14 @@ const ProjectLayout = ({ border }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={githubLogo} alt="github logo" width="50" />
+          <img src="../images/project/{}" alt="github logo" width="50" />
         </a>
         <div>
-          <img src={aaMap} alt="adventure awaits map" width="250" />
+          <img
+            src={`../images/projectScreenshots/${images}`}
+            alt="adventure awaits map"
+            width="250"
+          />
         </div>
       </ProjectDescription>
     </ProjectContainer>

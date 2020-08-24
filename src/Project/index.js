@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { SubTitle, ProjectPage, TitleContainer, Title } from "./styled";
 import Navbar from "../Navbar";
 import ProjectLayout from "./ProjectLayout";
-import qrznCover from "../images/projectScreenshots/qrzn-cover.png";
 
 const applications = [
   {
@@ -18,7 +17,7 @@ const applications = [
   {
     name: "Adventure Awaits",
     description:
-      "Adventure Awaits is a full-stack web application that allows anyone to discover somewhere new by providing an insight into a country. Let it do the research for you before booking",
+      "Adventure Awaits is a full-stack web application that allows anyone to discover somewhere new by providing an insight into a country. Let it do the research for you before booking.",
     stack: ["React", "Flask", "PostgreSQL", "Chart.js"],
     github: "https://github.com/JinaZhu/World-Traveler",
     deployed: "",
@@ -31,11 +30,11 @@ const applications = [
   },
   {
     name: "Cake-Tac-Toe",
-    description: "A simple game of Tic-Tac-Toe with 🎂 and 😻",
+    description: "A simple game of Tic-Tac-Toe with 🎂 and 😻.",
     stack: ["React", "Styled Components"],
     github: "https://github.com/JinaZhu/Tic-Tac-Toe/tree/master/src",
     deployed: "https://caketactoe.herokuapp.com/",
-    images: ["cake-played.png", "cake-unplayed.png"],
+    images: ["cake-unplayed.png", "cake-played.png"],
   },
   {
     name: "Pet-A-Bunny",
@@ -44,7 +43,7 @@ const applications = [
     stack: ["Javascript", "HTML", "CSS"],
     github: "https://github.com/JinaZhu/Whack-a-Bunny",
     deployed: "",
-    images: ["bunny-played.png", "bunny-unplayed.png"],
+    images: ["bunny-unplayed.png", "bunny-played.png"],
   },
   {
     name: "Jinterest",
@@ -53,19 +52,19 @@ const applications = [
     stack: ["Pexels Web API", "Javascript"],
     github: "https://github.com/JinaZhu/jinterest",
     deployed: "",
-    images: ["jinterest-more.png", "jinterest.png"],
+    images: ["jinterest.png", "jinterest-more.png"],
   },
 ];
 
 const Project = () => {
-  const [borderDisplay, setBorderDisplay] = useState("left");
+  let borderDisplay = "right";
+  const displayProjectPage = applications.map((application, index) => {
+    if (borderDisplay === "left") {
+      borderDisplay = "right";
+    } else {
+      borderDisplay = "left";
+    }
 
-  const DisplayProjectPage = applications.map((application, index) => {
-    // if (borderDisplay === "left") {
-    //   setBorderDisplay("right");
-    // } else if (borderDisplay === "right") {
-    //   setBorderDisplay("left");
-    // }
     return (
       <ProjectLayout
         key={index}
@@ -88,7 +87,7 @@ const Project = () => {
         <Title>I've Built</Title>
         <SubTitle>featured project</SubTitle>
       </TitleContainer>
-      {DisplayProjectPage}
+      {displayProjectPage}
     </ProjectPage>
   );
 };

@@ -21,12 +21,9 @@ const ProjectLayout = ({
   images,
   border,
 }) => {
-  console.log(name);
-  console.log(images);
-
   return (
     <ProjectContainer border={border}>
-      <ProjectTitle>{name}</ProjectTitle>
+      <ProjectTitle border={border}>{name}</ProjectTitle>
       <ProjectDescription>
         <p>{description}</p>
         <StackContainer>
@@ -36,11 +33,11 @@ const ProjectLayout = ({
         </StackContainer>
         <div>
           <Links href={github} target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="github logo" width="40" />
+            <img src={githubLogo} alt="github logo" width="30" />
           </Links>
           {deployed && (
             <Links href={deployed} target="_blank" rel="noopener noreferrer">
-              <img src={linkLogo} alt="github logo" width="40" />
+              <img src={linkLogo} alt="github logo" width="30" />
             </Links>
           )}
         </div>

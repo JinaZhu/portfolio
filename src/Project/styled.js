@@ -84,6 +84,18 @@ export const ProjectTitle = styled.h2`
   left: 4%;
   bottom: 70%;
   transform-origin: top left;
+
+  ${(props) => {
+    return (
+      props.border === "right" &&
+      css`
+        left: initial;
+        right: 0%;
+        top: 70%;
+        transform-origin: top right;
+      `
+    );
+  }}
 `;
 
 export const Links = styled.a`
@@ -92,11 +104,16 @@ export const Links = styled.a`
 
 export const ProjectImage = styled.img`
   margin: 1rem 2rem 1rem 0rem;
-  opacity: 90%;
+  filter: grayscale(1);
   object-fit: cover;
   width: 250px;
   height: 250px;
   white-space: nowrap;
+
+  &:hover {
+    filter: grayscale(0);
+    transition: filter 3s;
+  }
 
   @media screen and (max-width: 1100px) {
     width: 100px,

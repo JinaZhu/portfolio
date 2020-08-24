@@ -1,43 +1,59 @@
 import React from "react";
 
-import githubLogo from "../images/Icons/github.svg";
-import aaMap from "../images/projectScreenshots/aa-map.png";
+import githubLogo from "../images/Icons/github-brands.svg";
+import linkLogo from "../images/Icons/link.svg";
 import {
   ProjectContainer,
   ProjectDescription,
   StackContainer,
   StackName,
   ProjectTitle,
+  Links,
+  ProjectImage,
 } from "./styled";
 
-const ProjectLayout = ({ border }) => {
-  console.log(border);
+const ProjectLayout = ({
+  name,
+  description,
+  stack,
+  github,
+  deployed,
+  images,
+  border,
+}) => {
+  console.log(name);
+  console.log(images);
+
   return (
     <ProjectContainer border={border}>
-      <ProjectTitle>Adventure Await</ProjectTitle>
+      <ProjectTitle>{name}</ProjectTitle>
       <ProjectDescription>
-        <p>
-          Adventure Awaits is a full-stack web application that allows anyone to
-          discover somewhere new by providing an insight into a country.
-        </p>
+        <p>{description}</p>
         <StackContainer>
-          <StackName>React</StackName>
-          <StackName>Flask</StackName>
-          <StackName>Styled Components</StackName>
+          {stack.map((tech, index) => {
+            return <StackName key={index}>{tech}</StackName>;
+          })}
         </StackContainer>
-        <a
-          href="https://github.com/JinaZhu/World-Traveler"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="../images/project/{}" alt="github logo" width="50" />
-        </a>
         <div>
-          <img
-            src={`../images/projectScreenshots/${images}`}
-            alt="adventure awaits map"
-            width="250"
-          />
+          <Links href={github} target="_blank" rel="noopener noreferrer">
+            <img src={githubLogo} alt="github logo" width="40" />
+          </Links>
+          {deployed && (
+            <Links href={deployed} target="_blank" rel="noopener noreferrer">
+              <img src={linkLogo} alt="github logo" width="40" />
+            </Links>
+          )}
+        </div>
+        <div>
+          {images.map((image, index) => {
+            return (
+              <ProjectImage
+                key={index}
+                src={require(`../images/projectScreenshots/${image}`)}
+                alt="adventure awaits map"
+              />
+            );
+          })}
         </div>
       </ProjectDescription>
     </ProjectContainer>

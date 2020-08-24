@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { SubTitle, ProjectPage, TitleContainer, Title } from "./styled";
 import Navbar from "../Navbar";
@@ -19,8 +19,9 @@ const applications = [
     name: "Adventure Awaits",
     description:
       "Adventure Awaits is a full-stack web application that allows anyone to discover somewhere new by providing an insight into a country. Let it do the research for you before booking",
-    stack: ["React", "Flask", "PostgreSQL", "Google Map API", "Chart.js"],
+    stack: ["React", "Flask", "PostgreSQL", "Chart.js"],
     github: "https://github.com/JinaZhu/World-Traveler",
+    deployed: "",
     images: [
       "aa-homepage.png",
       "aa-pictures.png",
@@ -42,19 +43,43 @@ const applications = [
       "An innocent game of Whack-a-mole with 🐰. Try your best to beat your own score every round. No bunnies were harmed during the making of this game.",
     stack: ["Javascript", "HTML", "CSS"],
     github: "https://github.com/JinaZhu/Whack-a-Bunny",
+    deployed: "",
     images: ["bunny-played.png", "bunny-unplayed.png"],
   },
   {
     name: "Jinterest",
-    desciption:
+    description:
       "A Pinterest Clone. Find the inspiration you're looking for with Jinterest image search.",
-    Stack: ["Pexels Web API", "Javascript"],
+    stack: ["Pexels Web API", "Javascript"],
     github: "https://github.com/JinaZhu/jinterest",
+    deployed: "",
     images: ["jinterest-more.png", "jinterest.png"],
   },
 ];
 
 const Project = () => {
+  const [borderDisplay, setBorderDisplay] = useState("left");
+
+  const DisplayProjectPage = applications.map((application, index) => {
+    // if (borderDisplay === "left") {
+    //   setBorderDisplay("right");
+    // } else if (borderDisplay === "right") {
+    //   setBorderDisplay("left");
+    // }
+    return (
+      <ProjectLayout
+        key={index}
+        name={application.name}
+        description={application.description}
+        stack={application.stack}
+        github={application.github}
+        deployed={application.deployed}
+        images={application.images}
+        border={borderDisplay}
+      />
+    );
+  });
+
   return (
     <ProjectPage>
       <Navbar />
@@ -63,8 +88,7 @@ const Project = () => {
         <Title>I've Built</Title>
         <SubTitle>featured project</SubTitle>
       </TitleContainer>
-      <ProjectLayout border="left" />
-      <ProjectLayout border="right" />
+      {DisplayProjectPage}
     </ProjectPage>
   );
 };

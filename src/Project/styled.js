@@ -29,6 +29,7 @@ export const ProjectContainer = styled.div`
   border-bottom: 1px solid white;
   margin: 0 5rem;
   position: relative;
+  height: 100%;
 
   ${(props) => {
     console.log(props.border);
@@ -56,10 +57,16 @@ export const ProjectDescription = styled.div`
   flex-direction: column;
   text-align: left;
   margin-left: 5rem;
+  margin-right: 2rem;
 `;
 
 export const StackContainer = styled.div`
   display: flex;
+`;
+
+export const ProjectTitleContainer = styled.div`
+  width: 100%;
+  height: 100%;
 `;
 
 export const StackName = styled.p`
@@ -74,7 +81,25 @@ export const ProjectTitle = styled.h2`
   margin: 0;
   white-space: nowrap;
   position: absolute;
-  left: -140px;
-  top: 50%;
-  transform-origin: bottom;
+  left: 4%;
+  bottom: 70%;
+  transform-origin: top left;
+`;
+
+export const Links = styled.a`
+  margin-right: 1rem;
+`;
+
+export const ProjectImage = styled.img`
+  margin: 1rem 2rem 1rem 0rem;
+  opacity: 90%;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  white-space: nowrap;
+
+  @media screen and (max-width: 1100px) {
+    width: 100px,
+    height: 100px
+  }
 `;

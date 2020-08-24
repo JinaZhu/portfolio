@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const AboutMePage = styled.div`
   background-color: #a2bab9;
@@ -27,12 +27,23 @@ export const InfoP = styled.p`
   text-align: left;
 `;
 
+const RotateOnHover = css`
+  transform: rotateY(180deg);
+`;
+const BackFace = css`
+  backface-visibility: hidden;
+`;
+const TransformBack = css`
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+`;
+
 export const CardContainer = styled.div`
   width: 200px;
   height: 200px;
 
   &:hover {
-    transform: rotateY(180deg);
+    ${RotateOnHover}
   }
 `;
 
@@ -42,38 +53,30 @@ export const Card = styled.div`
   position: relative;
   transition: transform 1s ease-in-out;
   transform-style: preserve-3d;
-  //   transform: rotateY(-180deg);
-  backface-visibility: hidden;
+  ${RotateOnHover}
+  ${BackFace}
+  ${TransformBack}
+`;
 
-  &:hover {
-    transform: rotateY(180deg);
-  }
+const Figures = css`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const Front = styled.figure`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin: 0;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  backface-visibility: hidden;
+  ${Figures}
+  ${BackFace}
 `;
 export const Back = styled.figure`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin: 0;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  transform: rotateY(-180deg);
-  backface-visibility: hidden;
+  ${Figures}
+  ${TransformBack}
 `;
 export const Photo = styled.img`
   width: 100%;

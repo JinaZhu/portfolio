@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   InfoContainer,
   InfoP,
@@ -11,6 +11,7 @@ import {
   CoverText,
 } from "./styled";
 import wanderer from "../images/Interests/wanderer.jpeg";
+import "./imageFlip.css";
 
 const PersonalInfo = () => {
   return (
@@ -22,6 +23,18 @@ const PersonalInfo = () => {
         obsession. Offscreen, I am...
       </InfoP>
       <CardContainer>
+        {/* <div class="card-container">
+          <div class="card">
+            <figure class="front">
+              <Cover>
+                <CoverText>Wanderer</CoverText>
+              </Cover>
+            </figure>
+            <figure class="back">
+              <img src={wanderer} alt="side spin" />
+            </figure>
+          </div>
+        </div> */}
         <Card>
           <Front>
             <Cover>

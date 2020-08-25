@@ -114,6 +114,32 @@ export const TechStackContainer = styled.div`
   margin: 0rem 5rem;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
+  position: relative;
+`;
+
+export const StackContainerTitle = styled.h2`
+  transform: rotate(90deg);
+  font-size: 30px;
+  font-family: Oswald;
+  letter-spacing: 7px;
+  margin: 0;
+  white-space: nowrap;
+  position: absolute;
+  left: 4%;
+  bottom: 50%;
+  transform-origin: top left;
+
+  ${(props) => {
+    return (
+      props.border === "right" &&
+      css`
+        left: initial;
+        right: 0%;
+        top: 50%;
+        transform-origin: top right;
+      `
+    );
+  }}
 `;
 
 export const StackType = styled.p`

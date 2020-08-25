@@ -5,6 +5,7 @@ import {
   StackNameTag,
   StackName,
   NameTagContainer,
+  StackContainerTitle,
 } from "./styled";
 
 const languages = ["JavaScript", "Python", "HTML", "CSS", "SQL"];
@@ -59,6 +60,9 @@ const TechStack = () => {
 
   return (
     <TechStackContainer>
+      <StackContainerTitle border={"right"}>
+        Technical Skills
+      </StackContainerTitle>
       <p>Here are a few technologies I've been working with:</p>
       <StackType>Languages:</StackType>
       <NameTagContainer>{displayLanguages}</NameTagContainer>

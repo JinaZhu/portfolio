@@ -14,7 +14,13 @@ const interests = [
 
 const PersonalInfo = () => {
   const displayInterests = interests.map((interest, index) => {
-    return <InterestCard interest={interest.name} image={interest.image} />;
+    return (
+      <InterestCard
+        key={index}
+        interest={interest.name}
+        image={interest.image}
+      />
+    );
   });
 
   return (

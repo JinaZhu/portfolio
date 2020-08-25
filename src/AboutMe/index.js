@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import { AboutMePage, PageTitle, TitleContainer } from "./styled";
 import PersonalInfo from "./PersonalInfo";
+import TechStack from "./TechStack";
 
 const AboutMe = () => {
   return (
@@ -13,6 +14,7 @@ const AboutMe = () => {
         <PageTitle>Me</PageTitle>
       </TitleContainer>
       <PersonalInfo />
+      <TechStack />
     </AboutMePage>
   );
 };

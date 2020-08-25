@@ -33,19 +33,6 @@ const RotateOnHover = css`
 const BackFace = css`
   backface-visibility: hidden;
 `;
-const TransformBack = css`
-  transform: rotateY(-180deg);
-  backface-visibility: hidden;
-`;
-
-export const CardContainer = styled.div`
-  width: 200px;
-  height: 200px;
-
-  &:hover {
-    ${RotateOnHover}
-  }
-`;
 
 export const Card = styled.div`
   width: 100%;
@@ -53,9 +40,16 @@ export const Card = styled.div`
   position: relative;
   transition: transform 1s ease-in-out;
   transform-style: preserve-3d;
-  ${RotateOnHover}
-  ${BackFace}
-  ${TransformBack}
+`;
+
+export const CardContainer = styled.div`
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+
+  &:hover ${Card} {
+    ${RotateOnHover};
+  }
 `;
 
 const Figures = css`
@@ -71,26 +65,40 @@ const Figures = css`
 `;
 
 export const Front = styled.figure`
-  ${Figures}
-  ${BackFace}
+  ${Figures};
+  ${BackFace};
 `;
+
 export const Back = styled.figure`
-  ${Figures}
-  ${TransformBack}
+  ${Figures};
+  ${RotateOnHover};
+  ${BackFace};
 `;
 export const Photo = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: cover;
 `;
 
 export const Cover = styled.div`
   background-color: white;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const CoverText = styled.p`
   color: #a2bab9;
   font-size: 30px;
   font-family: Oswald;
+`;
+
+export const InterestCardContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 5rem;
 `;

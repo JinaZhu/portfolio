@@ -18,7 +18,7 @@ export const PageTitle = styled.h1`
 export const InfoContainer = styled.div`
   border-left: 1px solid white;
   border-bottom: 1px solid white;
-  margin: 1rem 5rem;
+  margin: 1rem 5rem 0rem 5rem;
 `;
 
 export const InfoP = styled.p`
@@ -26,6 +26,8 @@ export const InfoP = styled.p`
   font-size: 20px;
   text-align: left;
 `;
+
+// card flip
 
 const RotateOnHover = css`
   transform: rotateY(180deg);
@@ -101,4 +103,39 @@ export const InterestCardContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 5rem;
+`;
+
+// tech stack section
+
+export const TechStackContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0rem 5rem;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+`;
+
+export const StackType = styled.p`
+  font-size: 20px;
+  font-weight: bold;
+`;
+
+export const NameTagContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const StackNameTag = styled.div`
+  height: 100%;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  margin: 0rem 1rem 1rem 0rem;
+`;
+export const StackName = styled.p`
+  font-size: 20px;
+  color: #a2bab9;
+  margin: 0;
+  letter-spacing: 2px;
+  white-space: nowrap;
 `;

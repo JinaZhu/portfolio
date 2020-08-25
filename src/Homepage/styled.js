@@ -19,6 +19,9 @@ export const IntroContainter = styled.div`
   font-size: 20px;
   margin: auto;
   margin-top: 7%;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  padding: 1rem 4rem;
 `;
 
 export const Name = styled.h1`
@@ -27,6 +30,7 @@ export const Name = styled.h1`
   letter-spacing: 10px;
   padding: 0;
   margin: 0.5rem;
+  // color: #9b7778;
 `;
 
 const plantShakeTop = keyframes`

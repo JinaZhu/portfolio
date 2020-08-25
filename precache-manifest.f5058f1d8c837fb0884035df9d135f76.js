@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2fa4ad017c064e468d28cef7541b8b0",
+    "revision": "69cde150ece0484fba3a8601f6d677f1",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "f847d3168a1caa275d71",
+    "revision": "6e275a5b79a2fe834ff2",
     "url": "/portfolio/static/css/main.d46866f6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.92202935.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f847d3168a1caa275d71",
-    "url": "/portfolio/static/js/main.cf72b238.chunk.js"
+    "revision": "6e275a5b79a2fe834ff2",
+    "url": "/portfolio/static/js/main.44e15b06.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -60,12 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/cake-unplayed.8da14c6c.png"
   },
   {
+    "revision": "82f6d76c13d01d7c7a7519c290872409",
+    "url": "/portfolio/static/media/eating.82f6d76c.jpeg"
+  },
+  {
     "revision": "06b7e22f6b4e888c0b24667ee3c244ff",
     "url": "/portfolio/static/media/github-brands.06b7e22f.svg"
   },
   {
     "revision": "6bd27253718c14ddff4c4a6977fa3adf",
     "url": "/portfolio/static/media/github.6bd27253.svg"
+  },
+  {
+    "revision": "173d7396bb8028dc75c89a396fc0ae50",
+    "url": "/portfolio/static/media/goats.173d7396.jpeg"
   },
   {
     "revision": "3c16460332701e02b5309690a27369c1",
@@ -102,5 +110,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9df31546019904e8ed00c9dcff1647eb",
     "url": "/portfolio/static/media/qzrn-awesome-graphic.9df31546.png"
+  },
+  {
+    "revision": "663dda7d31f1b12e881ccf545f59ef6b",
+    "url": "/portfolio/static/media/wanderer.663dda7d.jpeg"
   }
 ]);

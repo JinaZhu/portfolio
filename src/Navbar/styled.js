@@ -46,7 +46,7 @@ export const ContactButton = styled.button`
   z-index: 2;
   &:hover {
     background-color: white;
-    color: #9b7778;
+    color: ${(props) => props.color};
   }
   @media screen and (max-width: 1100px) {
     font-size: 15px;

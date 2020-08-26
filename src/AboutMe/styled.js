@@ -117,7 +117,7 @@ export const TechStackContainer = styled.div`
   position: relative;
 `;
 
-export const StackContainerTitle = styled.h2`
+export const TechTitle = styled.h2`
   transform: rotate(90deg);
   font-size: 30px;
   font-family: Oswald;
@@ -125,24 +125,12 @@ export const StackContainerTitle = styled.h2`
   margin: 0;
   white-space: nowrap;
   position: absolute;
-  left: 4%;
-  bottom: 50%;
-  transform-origin: top left;
-
-  ${(props) => {
-    return (
-      props.border === "right" &&
-      css`
-        left: initial;
-        right: 0%;
-        top: 50%;
-        transform-origin: top right;
-      `
-    );
-  }}
+  right: 0%;
+  top: 50%;
+  transform-origin: top right;
 `;
 
-export const StackType = styled.p`
+export const SectionTitle = styled.p`
   font-size: 20px;
   font-weight: bold;
 `;
@@ -164,4 +152,89 @@ export const StackName = styled.p`
   margin: 0;
   letter-spacing: 2px;
   white-space: nowrap;
+`;
+
+// work experience section styles
+
+export const ExperienceContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0rem 5rem;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  position: relative;
+`;
+
+export const CompanyContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CompanyNameButton = styled.button`
+  color: white;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin: 1rem;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: #a2bab9;
+  }
+
+  ${(props) => {
+    return (
+      props.isActive &&
+      css`
+        background-color: white;
+        color: #a2bab9;
+      `
+    );
+  }}
+`;
+
+export const JobContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 85%;
+`;
+
+export const DescriptionContainer = styled.div`
+  border: 1px solid white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 85%;
+`;
+
+export const DescriptionLi = styled.li`
+  list-style-type: "-     ";
+  text-align: left;
+  margin: 1rem;
+`;
+
+export const JobTitle = styled.p`
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0 3px 0;
+`;
+
+export const ExperienceTitle = styled.h2`
+  transform: rotate(90deg);
+  font-size: 30px;
+  font-family: Oswald;
+  letter-spacing: 7px;
+  margin: 0;
+  white-space: nowrap;
+  position: absolute;
+  left: 4%;
+  bottom: 80%;
+  transform-origin: top left;
 `;

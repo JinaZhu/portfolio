@@ -101,3 +101,7 @@ export const Credit = styled.a`
     transition: border 1s, padding 1s;
   }
 `;
+
+export const NameContainer = styled.div`
+  margin: 1rem;
+`;

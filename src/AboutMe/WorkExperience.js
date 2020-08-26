@@ -4,6 +4,7 @@ import {
   ExperienceContainer,
   CompanyContainer,
   CompanyNameButton,
+  ExperienceTitle,
 } from "./styled";
 import JobDescription from "./JobDescription";
 
@@ -60,6 +61,7 @@ const WorkExperience = () => {
 
   return (
     <ExperienceContainer>
+      <ExperienceTitle>Where I've Worked</ExperienceTitle>
       <CompanyContainer>
         <CompanyNameButton
           onClick={(e) => {

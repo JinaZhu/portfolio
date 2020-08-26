@@ -1,17 +1,23 @@
 import React from "react";
+import {
+  JobContainer,
+  JobTitle,
+  DescriptionContainer,
+  DescriptionLi,
+} from "./styled";
 
 const JobDescription = ({ company }) => {
   return (
-    <div>
-      <h3>{company.title}</h3>
-      <div>
+    <JobContainer>
+      <JobTitle>{company.title}</JobTitle>
+      <DescriptionContainer>
         <ul>
           {company.descriptions.map((description, index) => {
-            return <li key={index}>{description}</li>;
+            return <DescriptionLi key={index}>{description}</DescriptionLi>;
           })}
         </ul>
-      </div>
-    </div>
+      </DescriptionContainer>
+    </JobContainer>
   );
 };
 

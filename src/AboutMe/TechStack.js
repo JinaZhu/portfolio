@@ -1,11 +1,11 @@
 import React from "react";
 import {
   TechStackContainer,
-  StackType,
+  SectionTitle,
   StackNameTag,
   StackName,
   NameTagContainer,
-  StackContainerTitle,
+  TechTitle,
 } from "./styled";
 
 const languages = ["JavaScript", "Python", "HTML", "CSS", "SQL"];
@@ -60,17 +60,15 @@ const TechStack = () => {
 
   return (
     <TechStackContainer>
-      <StackContainerTitle border={"right"}>
-        Technical Skills
-      </StackContainerTitle>
+      <TechTitle border={"right"}>Technical Skills</TechTitle>
       <p>Here are a few technologies I've been working with:</p>
-      <StackType>Languages:</StackType>
+      <SectionTitle>Languages:</SectionTitle>
       <NameTagContainer>{displayLanguages}</NameTagContainer>
-      <StackType>Frameworks & Libraries:</StackType>
+      <SectionTitle>Frameworks & Libraries:</SectionTitle>
       <NameTagContainer>{displayFramework}</NameTagContainer>
-      <StackType>Database & Industry Tools:</StackType>
+      <SectionTitle>Database & Industry Tools:</SectionTitle>
       <NameTagContainer>{displayDatabase}</NameTagContainer>
-      <StackType>Tools/Software:</StackType>
+      <SectionTitle>Tools/Software:</SectionTitle>
       <NameTagContainer>{displaySoftwares}</NameTagContainer>
     </TechStackContainer>
   );

@@ -117,7 +117,7 @@ export const TechStackContainer = styled.div`
   position: relative;
 `;
 
-export const StackContainerTitle = styled.h2`
+export const TechTitle = styled.h2`
   transform: rotate(90deg);
   font-size: 30px;
   font-family: Oswald;
@@ -142,7 +142,7 @@ export const StackContainerTitle = styled.h2`
   }}
 `;
 
-export const StackType = styled.p`
+export const SectionTitle = styled.p`
   font-size: 20px;
   font-weight: bold;
 `;
@@ -200,4 +200,43 @@ export const CompanyNameButton = styled.button`
     background-color: white;
     color: #a2bab9;
   }
+`;
+
+export const JobContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 85%;
+`;
+
+export const DescriptionContainer = styled.div`
+  border: 1px solid white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 85%;
+`;
+
+export const DescriptionLi = styled.li`
+  list-style-type: "-     ";
+  text-align: left;
+  margin: 1rem;
+`;
+
+export const JobTitle = styled.p`
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0 3px 0;
+`;
+
+export const ExperienceTitle = styled.h2`
+  transform: rotate(90deg);
+  font-size: 30px;
+  font-family: Oswald;
+  letter-spacing: 7px;
+  margin: 0;
+  white-space: nowrap;
+  position: absolute;
+  left: 4%;
+  bottom: 80%;
+  transform-origin: top left;
 `;

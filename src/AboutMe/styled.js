@@ -165,3 +165,39 @@ export const StackName = styled.p`
   letter-spacing: 2px;
   white-space: nowrap;
 `;
+
+// work experience section styles
+
+export const ExperienceContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0rem 5rem;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  position: relative;
+`;
+
+export const CompanyContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CompanyNameButton = styled.button`
+  color: white;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin: 1rem;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: #a2bab9;
+  }
+`;

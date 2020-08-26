@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import { AboutMePage, PageTitle, TitleContainer } from "./styled";
 import PersonalInfo from "./PersonalInfo";
 import TechStack from "./TechStack";
+import WorkExperience from "./WorkExperience";
 
 const AboutMe = () => {
   return (
@@ -15,6 +16,7 @@ const AboutMe = () => {
       </TitleContainer>
       <PersonalInfo />
       <TechStack />
+      <WorkExperience />
     </AboutMePage>
   );
 };

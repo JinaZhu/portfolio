@@ -19,6 +19,9 @@ export const IntroContainter = styled.div`
   font-size: 20px;
   margin: auto;
   margin-top: 7%;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  padding: 1rem 4rem;
 `;
 
 export const Name = styled.h1`
@@ -27,6 +30,7 @@ export const Name = styled.h1`
   letter-spacing: 10px;
   padding: 0;
   margin: 0.5rem;
+  // color: #9b7778;
 `;
 
 const plantShakeTop = keyframes`
@@ -73,5 +77,27 @@ export const RightBranch = styled.img`
   @media screen and (max-width: 1200px) {
     width: 300px;
     top: 60%;
+  }
+`;
+
+export const AlignFooter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 70px 0 0 0;
+
+  @media screen and (max-width: 1200px) {
+    padding: 30px 0 0 0;
+  }
+`;
+
+export const Credit = styled.a`
+  text-decoration: underline;
+  color: white;
+
+  &:hover {
+    border: 1px solid white;
+    padding: 5px 0 5px 5px;
+    transition: border 1s, padding 1s;
   }
 `;

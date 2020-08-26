@@ -3,6 +3,7 @@ import Navbar from "../Navbar";
 import leaf_branch from "../images/leaf-branch.png";
 
 import { Button } from "../globalStyles";
+import Footer from "./Footer";
 import {
   HomepageContainer,
   IntroContainter,
@@ -33,6 +34,7 @@ const Homepage = () => {
           About Me
         </Button>
       </IntroContainter>
+      <Footer />
     </HomepageContainer>
   );
 };

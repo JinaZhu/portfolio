@@ -64,6 +64,7 @@ const WorkExperience = () => {
       <ExperienceTitle>Where I've Worked</ExperienceTitle>
       <CompanyContainer>
         <CompanyNameButton
+          isActive={isQrzn}
           onClick={(e) => {
             displayCompany("qrzn", e);
           }}
@@ -71,6 +72,7 @@ const WorkExperience = () => {
           Qrzn
         </CompanyNameButton>
         <CompanyNameButton
+          isActive={isTheRealReal}
           onClick={(e) => {
             displayCompany("real", e);
           }}
@@ -78,6 +80,7 @@ const WorkExperience = () => {
           The RealReal
         </CompanyNameButton>
         <CompanyNameButton
+          isActive={isBloomingdales}
           onClick={(e) => {
             displayCompany("bloomingdales", e);
           }}

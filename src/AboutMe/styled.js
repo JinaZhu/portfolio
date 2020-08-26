@@ -200,6 +200,16 @@ export const CompanyNameButton = styled.button`
     background-color: white;
     color: #a2bab9;
   }
+
+  ${(props) => {
+    return (
+      props.isActive &&
+      css`
+        background-color: white;
+        color: #a2bab9;
+      `
+    );
+  }}
 `;
 
 export const JobContainer = styled.div`

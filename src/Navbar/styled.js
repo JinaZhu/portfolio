@@ -25,10 +25,10 @@ export const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-size: 20px;
+  padding: 3px;
 
   &:hover {
     border: 1px solid white;
-    padding: 3px;
   }
 
   @media screen and (max-width: 1100px) {

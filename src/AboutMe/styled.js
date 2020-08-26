@@ -125,21 +125,9 @@ export const TechTitle = styled.h2`
   margin: 0;
   white-space: nowrap;
   position: absolute;
-  left: 4%;
-  bottom: 50%;
-  transform-origin: top left;
-
-  ${(props) => {
-    return (
-      props.border === "right" &&
-      css`
-        left: initial;
-        right: 0%;
-        top: 50%;
-        transform-origin: top right;
-      `
-    );
-  }}
+  right: 0%;
+  top: 50%;
+  transform-origin: top right;
 `;
 
 export const SectionTitle = styled.p`

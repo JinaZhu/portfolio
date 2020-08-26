@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { Nav, NavList, NavLi, NavLink, ContactButton } from "./styled";
 import Contact from "./Contact";
 
-const Navbar = () => {
+const Navbar = ({ pageColor }) => {
   const [isActive, setIsActive] = useState(false);
   const [buttonText, setButtonText] = useState("Contact");
   const contactToggle = (e) => {
@@ -35,7 +35,11 @@ const Navbar = () => {
           <NavLi>
             <NavLink to="/about">About Me</NavLink>
           </NavLi>
-          <ContactButton isActive={isActive} onClick={contactToggle}>
+          <ContactButton
+            isActive={isActive}
+            onClick={contactToggle}
+            color={pageColor}
+          >
             {buttonText}
           </ContactButton>
         </NavList>

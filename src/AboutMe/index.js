@@ -9,7 +9,7 @@ import WorkExperience from "./WorkExperience";
 const AboutMe = () => {
   return (
     <AboutMePage>
-      <Navbar />
+      <Navbar pageColor={"#a2bab9"} />
       <TitleContainer>
         <PageTitle>About</PageTitle>
         <PageTitle>Me</PageTitle>

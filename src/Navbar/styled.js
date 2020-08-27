@@ -15,6 +15,9 @@ export const NavList = styled.ul`
   @media screen and (max-width: 1000px) {
     width: 40%;
   }
+  @media screen and (max-width: 414px) {
+    width: 70%;
+  }
 `;
 
 export const NavLi = styled.li`
@@ -34,6 +37,9 @@ export const NavLink = styled(Link)`
   @media screen and (max-width: 1100px) {
     font-size: 15px;
   }
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+  }
 `;
 
 export const ContactButton = styled.button`
@@ -50,6 +56,11 @@ export const ContactButton = styled.button`
   }
   @media screen and (max-width: 1100px) {
     font-size: 15px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+    padding: 5px 7px;
   }
 
   ${(props) => {

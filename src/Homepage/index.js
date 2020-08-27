@@ -11,6 +11,7 @@ import {
   TopBranch,
   RightBranch,
   NameContainer,
+  P,
 } from "./styled";
 
 const letters = [130, 118, 271, 220, 185, 253, 236];
@@ -44,7 +45,7 @@ const Homepage = () => {
       />
       <RightBranch src={leaf_branch} alt="leaf branch" />
       <IntroContainter>
-        <p>Hi, my name is</p>
+        <P>Hi, my name is</P>
         <NameContainer>
           <animated.svg
             style={{ ...props }}
@@ -97,10 +98,10 @@ const Homepage = () => {
             />
           </animated.svg>
         </NameContainer>
-        <p>
+        <P>
           I'm a software engineer based in San Francisco, CA specializing in
           writing clean, elegant, and efficent code.{" "}
-        </p>
+        </P>
         <Button paddings={"1rem 2rem"} hoverColor={"#9b7778"}>
           About Me
         </Button>

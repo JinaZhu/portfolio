@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2de36cdb003451ed49016b84f916791f",
+    "revision": "0ae6143f1004d6521b33afd34f1250ae",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5d9895b5527c6cb40a8c",
-    "url": "/portfolio/static/css/main.d46866f6.chunk.css"
+    "revision": "a46a3a3eae3cad307fef",
+    "url": "/portfolio/static/css/main.85dbe747.chunk.css"
   },
   {
-    "revision": "e7520f800394ddebc9c7",
-    "url": "/portfolio/static/js/2.78bfdd55.chunk.js"
+    "revision": "fe24bb60e6df783e141f",
+    "url": "/portfolio/static/js/2.9f41baeb.chunk.js"
   },
   {
     "revision": "f5327a3e8204f21ff1b2e5af38bc59ba",
-    "url": "/portfolio/static/js/2.78bfdd55.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.9f41baeb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5d9895b5527c6cb40a8c",
-    "url": "/portfolio/static/js/main.3c40b435.chunk.js"
+    "revision": "a46a3a3eae3cad307fef",
+    "url": "/portfolio/static/js/main.e1b93c65.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -44,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/aa-travel-info.ad04f7b0.png"
   },
   {
+    "revision": "e05a7037a98e0998a121d7e446b1d746",
+    "url": "/portfolio/static/media/animalLover.e05a7037.jpeg"
+  },
+  {
     "revision": "8e270c31d4559a13ca57e0ed4a1347de",
     "url": "/portfolio/static/media/bunny-played.8e270c31.png"
   },
@@ -60,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/cake-unplayed.8da14c6c.png"
   },
   {
-    "revision": "82f6d76c13d01d7c7a7519c290872409",
-    "url": "/portfolio/static/media/eating.82f6d76c.jpeg"
+    "revision": "ea60b3e39d6b7be07671256bbf7c8300",
+    "url": "/portfolio/static/media/coming-soon.ea60b3e3.jpg"
   },
   {
     "revision": "06b7e22f6b4e888c0b24667ee3c244ff",
@@ -70,10 +74,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6bd27253718c14ddff4c4a6977fa3adf",
     "url": "/portfolio/static/media/github.6bd27253.svg"
-  },
-  {
-    "revision": "173d7396bb8028dc75c89a396fc0ae50",
-    "url": "/portfolio/static/media/goats.173d7396.jpeg"
   },
   {
     "revision": "3c16460332701e02b5309690a27369c1",
@@ -100,6 +100,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/linkedin.38c6146f.svg"
   },
   {
+    "revision": "1f06d7c5dc0be7932f0923a2376becde",
+    "url": "/portfolio/static/media/lovesFood.1f06d7c5.jpeg"
+  },
+  {
+    "revision": "f3f5b1cbf49b274df17982a0516dafc1",
+    "url": "/portfolio/static/media/photographer.f3f5b1cb.jpeg"
+  },
+  {
+    "revision": "1f7b4c477d101d47638092b69916cc58",
+    "url": "/portfolio/static/media/plantMom.1f7b4c47.jpeg"
+  },
+  {
     "revision": "ac2f3ee6be6aba74e7b2708903120f02",
     "url": "/portfolio/static/media/qrzn-archive.ac2f3ee6.png"
   },
@@ -110,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9df31546019904e8ed00c9dcff1647eb",
     "url": "/portfolio/static/media/qzrn-awesome-graphic.9df31546.png"
+  },
+  {
+    "revision": "47a3dee91f9c1e23d102dd7938f31146",
+    "url": "/portfolio/static/media/travel.47a3dee9.jpeg"
   },
   {
     "revision": "663dda7d31f1b12e881ccf545f59ef6b",

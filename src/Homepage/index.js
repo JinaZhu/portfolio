@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Navbar from "../Navbar";
 import leaf_branch from "../images/leaf-branch.png";
 import { useSprings, useSpring, animated } from "react-spring";
@@ -11,6 +12,7 @@ import {
   TopBranch,
   RightBranch,
   NameContainer,
+  P,
 } from "./styled";
 
 const letters = [130, 118, 271, 220, 185, 253, 236];
@@ -33,9 +35,15 @@ const Homepage = () => {
     delay: 1600,
   });
 
+  let history = useHistory();
+
+  const redirectToAbout = () => {
+    history.push("/about");
+  };
+
   return (
     <HomepageContainer>
-      <Navbar pageColor={"#9b7778"} />
+      <Navbar pageColor={"#bb9495"} />
       <TopBranch
         src={leaf_branch}
         alt="leaf branch"
@@ -44,7 +52,7 @@ const Homepage = () => {
       />
       <RightBranch src={leaf_branch} alt="leaf branch" />
       <IntroContainter>
-        <p>Hi, my name is</p>
+        <P>Hi, my name is</P>
         <NameContainer>
           <animated.svg
             style={{ ...props }}
@@ -97,11 +105,15 @@ const Homepage = () => {
             />
           </animated.svg>
         </NameContainer>
-        <p>
+        <P>
           I'm a software engineer based in San Francisco, CA specializing in
           writing clean, elegant, and efficent code.{" "}
-        </p>
-        <Button paddings={"1rem 2rem"} hoverColor={"#9b7778"}>
+        </P>
+        <Button
+          onClick={redirectToAbout}
+          paddings={"1rem 2rem"}
+          hoverColor={"#bb9495"}
+        >
           About Me
         </Button>
       </IntroContainter>

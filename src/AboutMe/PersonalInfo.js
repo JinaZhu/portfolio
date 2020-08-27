@@ -3,13 +3,13 @@ import { InfoContainer, InfoP, InterestCardContainer } from "./styled";
 import InterestCard from "./InterestCard";
 
 const interests = [
-  { name: "A Lover of food", image: "eating.jpeg" },
-  { name: "A Wanderer", image: "wanderer.jpeg" },
-  { name: "An Animal Lover", image: "goats.jpeg" },
-  { name: "A Plant Mom", image: "goats.jpeg" },
-  { name: "A Photographer", image: "goats.jpeg" },
-  { name: "A Rising Tennis Star", image: "goats.jpeg" },
-  { name: "Fashionista", image: "goats.jpeg" },
+  { name: "A Lover of food", image: "lovesFood.jpeg" },
+  { name: "A Wanderer", image: "travel.jpeg" },
+  { name: "An Animal Lover", image: "animalLover.jpeg" },
+  { name: "A Plant Mom", image: "plantMom.jpeg" },
+  { name: "A Photographer", image: "photographer.jpeg" },
+  { name: "A Rising Tennis Star", image: "coming-soon.jpg" },
+  { name: "Fashionista", image: "coming-soon.jpg" },
 ];
 
 const PersonalInfo = () => {

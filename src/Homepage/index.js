@@ -43,7 +43,7 @@ const Homepage = () => {
 
   return (
     <HomepageContainer>
-      <Navbar pageColor={"#9b7778"} />
+      <Navbar pageColor={"#bb9495"} />
       <TopBranch
         src={leaf_branch}
         alt="leaf branch"
@@ -112,7 +112,7 @@ const Homepage = () => {
         <Button
           onClick={redirectToAbout}
           paddings={"1rem 2rem"}
-          hoverColor={"#9b7778"}
+          hoverColor={"#bb9495"}
         >
           About Me
         </Button>

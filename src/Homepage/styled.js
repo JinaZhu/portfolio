@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 export const HomepageContainer = styled.div`
-  background-color: #9b7778;
+  background-color: #bb9495;
   padding: 0;
   margin: 0;
   min-height: 100vh;

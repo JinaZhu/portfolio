@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const ProjectPage = styled.div`
   background-color: #adc2b5;
   min-height: 100vh;
+  width: 100vw;
 `;
 
 export const TitleContainer = styled.div`
@@ -11,6 +12,10 @@ export const TitleContainer = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   margin: 1rem 5rem;
+
+  @media screen and (max-width: 800px) {
+    margin: 1rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -48,6 +53,9 @@ export const ProjectContainer = styled.div`
       `
     );
   }}
+  @media screen and (max-width: 800px) {
+    margin: 0 1rem;
+  }
 `;
 
 export const ProjectDescription = styled.div`
@@ -58,6 +66,11 @@ export const ProjectDescription = styled.div`
   text-align: left;
   margin-left: 5rem;
   margin-right: 2rem;
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+    margin-left: 3rem;
+  }
 `;
 
 export const StackContainer = styled.div`
@@ -71,6 +84,10 @@ export const ProjectTitleContainer = styled.div`
 
 export const StackName = styled.p`
   margin-right: 1rem;
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+  }
 `;
 
 export const ProjectTitle = styled.h2`
@@ -91,11 +108,29 @@ export const ProjectTitle = styled.h2`
       css`
         left: initial;
         right: 0%;
-        top: 70%;
+        top: 50%;
         transform-origin: top right;
+
+        @media screen and (max-width: 775px) {
+          top: 90%;
+        }
+
+        @media screen and (max-width: 425px) {
+          top: 75%;
+        }
       `
     );
   }}
+
+  @media screen and (max-width: 775px) {
+    left: 8%;
+    bottom: 80%;
+  }
+
+  @media screen and (max-width: 425px) {
+    left: 13%;
+    bottom: 80%;
+  }
 `;
 
 export const Links = styled.a`
@@ -103,7 +138,7 @@ export const Links = styled.a`
 `;
 
 export const ProjectImage = styled.img`
-  margin: 1rem 2rem 1rem 0rem;
+  margin: 0rem 2rem 1rem 0rem;
   filter: grayscale(1);
   object-fit: cover;
   width: 250px;
@@ -112,11 +147,40 @@ export const ProjectImage = styled.img`
 
   &:hover {
     filter: grayscale(0);
-    transition: filter 3s;
+    transition: filter 1s;
   }
 
   @media screen and (max-width: 1100px) {
     width: 100px,
     height: 100px
+  }
+`;
+
+export const ImageContainer = styled.div`
+  margin: 1rem 0;
+  @media screen and (max-width: 425px) {
+    height: auto;
+    width: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    will-change: transform;
+    position: relative;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+`;
+
+export const Scroll = styled.p`
+  display: none;
+  color: white;
+  margin: 5px 0 0 0;
+
+  @media screen and (max-width: 425px) {
+    display: block;
+    font-size: 12px;
   }
 `;

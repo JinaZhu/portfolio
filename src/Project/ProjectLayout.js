@@ -10,6 +10,8 @@ import {
   ProjectTitle,
   Links,
   ProjectImage,
+  ImageContainer,
+  Scroll,
 } from "./styled";
 
 const ProjectLayout = ({
@@ -24,7 +26,7 @@ const ProjectLayout = ({
   return (
     <ProjectContainer border={border}>
       <ProjectTitle border={border}>{name}</ProjectTitle>
-      <ProjectDescription>
+      <ProjectDescription align={"right"}>
         <p>{description}</p>
         <StackContainer>
           {stack.map((tech, index) => {
@@ -41,7 +43,8 @@ const ProjectLayout = ({
             </Links>
           )}
         </div>
-        <div>
+        <ImageContainer>
+          <Scroll>Scroll Please</Scroll>
           {images.map((image, index) => {
             return (
               <ProjectImage
@@ -51,7 +54,7 @@ const ProjectLayout = ({
               />
             );
           })}
-        </div>
+        </ImageContainer>
       </ProjectDescription>
     </ProjectContainer>
   );

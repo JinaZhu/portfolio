@@ -107,7 +107,7 @@ const Homepage = () => {
         </NameContainer>
         <P>
           I'm a software engineer based in San Francisco, CA specializing in
-          writing clean, elegant, and efficent code.{" "}
+          writing clean, elegant, and efficient code.{" "}
         </P>
         <Button
           onClick={redirectToAbout}

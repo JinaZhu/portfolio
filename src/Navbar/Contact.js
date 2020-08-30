@@ -4,16 +4,15 @@ import {
   NavLi,
   NavList,
   ContactContainer,
-  MessageForm,
-  FormInput,
-  FormTextarea,
+  EmailLink,
+  EmailButton,
 } from "./styled";
-import { Button } from "../globalStyles";
 import instagramLogo from "../images/Icons/instagram.svg";
 import githubLogo from "../images/Icons/github.svg";
 import linkedInLogo from "../images/Icons/linkedin.svg";
 
 const Contact = () => {
+  const email = "jinazhu87@gmail.com";
   return (
     <ContactPage className="contact-page">
       <ContactContainer>
@@ -52,28 +51,14 @@ const Contact = () => {
             </a>
           </NavLi>
         </NavList>
-        <MessageForm>
-          <label htmlFor="name">
-            <span>Name</span>
-          </label>
-          <FormInput type="text" name="name" required autoComplete="off" />
-          <label htmlFor="email">
-            <span>Email</span>
-          </label>
-          <FormInput type="email" name="email" required autoComplete="off" />
-          <label htmlFor="email">
-            <span>Message</span>
-          </label>
-          <FormTextarea cols="30" rows="5" />
-          <Button
-            border={"1px solid #c98a6d"}
-            paddings={"0.5rem"}
-            color={"#c98a6d"}
-            hoverBackgroundColor={"#c98a6d"}
-          >
-            Submit
-          </Button>
-        </MessageForm>
+        <EmailButton
+          border={"1px solid #c98a6d"}
+          paddings={"1rem 2rem"}
+          color={"#c98a6d"}
+          hoverBackgroundColor={"#c98a6d"}
+        >
+          <EmailLink href={`mailto:${email}`}>Say Hi</EmailLink>
+        </EmailButton>
       </ContactContainer>
     </ContactPage>
   );

@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const ProjectPage = styled.div`
-  background-color: #748173;
+  background-color: #adc2b5;
   min-height: 100vh;
 `;
 

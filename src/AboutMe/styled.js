@@ -2,10 +2,15 @@ import styled, { css } from "styled-components";
 
 export const AboutMePage = styled.div`
   background-color: #a2bab9;
+  min-width: 100vw;
 `;
 
 export const TitleContainer = styled.div`
   margin: 1rem 5rem;
+
+  @media screen and (max-width: 425px) {
+    margin: 1rem;
+  }
 `;
 
 export const PageTitle = styled.h1`
@@ -19,12 +24,21 @@ export const InfoContainer = styled.div`
   border-left: 1px solid white;
   border-bottom: 1px solid white;
   margin: 1rem 5rem 0rem 5rem;
+
+  @media screen and (max-width: 425px) {
+    margin: 1rem 1rem 0rem 1rem;
+  }
 `;
 
 export const InfoP = styled.p`
   margin-left: 5rem;
   font-size: 20px;
   text-align: left;
+
+  @media screen and (max-width: 425px) {
+    margin-left: 3rem;
+    font-size: 16px;
+  }
 `;
 
 // card flip
@@ -95,6 +109,10 @@ export const CoverText = styled.p`
   color: #a2bab9;
   font-size: 30px;
   font-family: Oswald;
+
+  @media screen and (max-width: 425px) {
+    font-size: 25px;
+  }
 `;
 
 export const InterestCardContainer = styled.div`
@@ -103,6 +121,10 @@ export const InterestCardContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 5rem;
+
+  @media screen and (max-width: 800px) {
+    margin: 0 3rem;
+  }
 `;
 
 // tech stack section
@@ -115,6 +137,10 @@ export const TechStackContainer = styled.div`
   border-right: 1px solid white;
   border-bottom: 1px solid white;
   position: relative;
+
+  @media screen and (max-width: 425px) {
+    margin: 0 1rem;
+  }
 `;
 
 export const TechTitle = styled.h2`
@@ -128,16 +154,28 @@ export const TechTitle = styled.h2`
   right: 0%;
   top: 50%;
   transform-origin: top right;
+
+  @media screen and (max-width: 800px) {
+    top: 60%;
+  }
 `;
 
 export const SectionTitle = styled.p`
   font-size: 20px;
   font-weight: bold;
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+  }
 `;
 
 export const NameTagContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 425px) {
+    margin-right: 1rem;
+  }
 `;
 
 export const StackNameTag = styled.div`
@@ -152,6 +190,18 @@ export const StackName = styled.p`
   margin: 0;
   letter-spacing: 2px;
   white-space: nowrap;
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+  }
+`;
+
+export const TechP = styled.p`
+  text-align: left;
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+  }
 `;
 
 // work experience section styles
@@ -164,6 +214,10 @@ export const ExperienceContainer = styled.div`
   border-left: 1px solid white;
   border-bottom: 1px solid white;
   position: relative;
+
+  @media screen and (max-width: 425px) {
+    margin: 0 1rem;
+  }
 `;
 
 export const CompanyContainer = styled.div`
@@ -198,6 +252,15 @@ export const CompanyNameButton = styled.button`
       `
     );
   }}
+  @media screen and (max-width: 425px) {
+    margin: 5px;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 320px) {
+    left: 15%;
+    bottom: 70%;
+    margin: 2px;
+  }
 `;
 
 export const JobContainer = styled.div`
@@ -205,6 +268,10 @@ export const JobContainer = styled.div`
   align-items: flex-start;
   flex-direction: column;
   width: 85%;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 4rem;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -212,6 +279,10 @@ export const DescriptionContainer = styled.div`
   padding: 1rem;
   margin-bottom: 2rem;
   width: 85%;
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+  }
 `;
 
 export const DescriptionLi = styled.li`
@@ -224,6 +295,10 @@ export const JobTitle = styled.p`
   font-size: 20px;
   font-weight: bold;
   margin: 5px 0 3px 0;
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+  }
 `;
 
 export const ExperienceTitle = styled.h2`
@@ -237,4 +312,19 @@ export const ExperienceTitle = styled.h2`
   left: 4%;
   bottom: 80%;
   transform-origin: top left;
+
+  @media screen and (max-width: 800px) {
+    left: 8%;
+    bottom: 80%;
+  }
+
+  @media screen and (max-width: 425px) {
+    left: 12%;
+    bottom: 70%;
+  }
+
+  @media screen and (max-width: 320px) {
+    left: 15%;
+    bottom: 70%;
+  }
 `;

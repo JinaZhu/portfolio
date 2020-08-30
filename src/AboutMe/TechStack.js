@@ -6,6 +6,7 @@ import {
   StackName,
   NameTagContainer,
   TechTitle,
+  TechP,
 } from "./styled";
 
 const languages = ["JavaScript", "Python", "HTML", "CSS", "SQL"];
@@ -23,7 +24,8 @@ const frameworks = [
 const databases = ["Git", "Github", "Command-Line", "PostgreSQL", "SQLAlchemy"];
 const softwares = [
   "Adobe Illustrator",
-  "Adobe Lightroom/Photoshop",
+  "Adobe Lightroom",
+  "Adobe Photoshop",
   "Adobe XD",
   "Figma",
 ];
@@ -61,7 +63,7 @@ const TechStack = () => {
   return (
     <TechStackContainer>
       <TechTitle border={"right"}>Technical Skills</TechTitle>
-      <p>Here are a few technologies I've been working with:</p>
+      <TechP>Here are a few technologies I've been working with:</TechP>
       <SectionTitle>Languages:</SectionTitle>
       <NameTagContainer>{displayLanguages}</NameTagContainer>
       <SectionTitle>Frameworks & Libraries:</SectionTitle>

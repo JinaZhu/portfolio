@@ -5,13 +5,15 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin: 0 1rem;
 `;
 
 export const NavList = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 30%;
+  padding: 0;
   @media screen and (max-width: 1000px) {
     width: 40%;
   }
@@ -68,11 +70,11 @@ export const ContactButton = styled.button`
       props.isActive &&
       css`
         background-color: white;
-        color: #c98a6d;
-        border: 1px solid #c98a6d;
+        color: #ebc1a7;
+        border: 1px solid #ebc1a7;
         z-index: 2;
         &:hover {
-          background-color: #c98a6d;
+          background-color: #ebc1a7;
           color: white;
         }
       `
@@ -92,7 +94,7 @@ export const ContactPage = styled.div`
   align-items: center;
   z-index: 1;
   opacity: 1;
-  color: #c98a6d;
+  color: #ebc1a7;
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
 `;
@@ -103,40 +105,29 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #c98a6d;
+  border: 1px solid #ebc1a7;
   padding: 2rem;
 `;
 
-export const MessageForm = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 70%;
-  position: relative;
-`;
-
-export const FormInput = styled.input`
-  border: none;
-  border-bottom: 1px solid #c98a6d;
+export const EmailButton = styled.button`
+  padding: 1rem 0;
+  background-color: white;
+  color: white;
+  border: 1px solid #ebc1a7;
+  font-size: 20px;
+  margin: 2rem;
+  cursor: pointer;
   outline: none;
-  padding: 5px;
-  margin-bottom: 1rem;
-  font-size: 16px;
-  color: #c98a6d;
-`;
 
-export const FormTextarea = styled.textarea`
-  border: 1px solid #c98a6d;
-  outline: none;
-  font-size: 16px;
-  color: #c98a6d;
-  padding: 5px;
+  &:hover {
+    background-color: #ebc1a7;
+  }
 `;
 
 export const EmailLink = styled.a`
   text-decoration: none;
-  color: #c98a6d;
+  color: #ebc1a7;
+  padding: 3rem;
 
   &:hover {
     color: white;

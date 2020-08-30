@@ -1,11 +1,11 @@
 import styled, { keyframes } from "styled-components";
 
 export const HomepageContainer = styled.div`
-  background-color: #bb9495;
+  background-color: #d0aaaa;
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   overflow: hidden;
 `;
 

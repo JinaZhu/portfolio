@@ -7,6 +7,7 @@ import {
   MessageForm,
   FormInput,
   FormTextarea,
+  EmailLink,
 } from "./styled";
 import { Button } from "../globalStyles";
 import instagramLogo from "../images/Icons/instagram.svg";
@@ -14,6 +15,7 @@ import githubLogo from "../images/Icons/github.svg";
 import linkedInLogo from "../images/Icons/linkedin.svg";
 
 const Contact = () => {
+  const email = "jinazhu87@gmail.com";
   return (
     <ContactPage className="contact-page">
       <ContactContainer>
@@ -52,7 +54,7 @@ const Contact = () => {
             </a>
           </NavLi>
         </NavList>
-        <MessageForm>
+        {/* <MessageForm>
           <label htmlFor="name">
             <span>Name</span>
           </label>
@@ -73,7 +75,15 @@ const Contact = () => {
           >
             Submit
           </Button>
-        </MessageForm>
+        </MessageForm> */}
+        <Button
+          border={"1px solid #c98a6d"}
+          paddings={"0.5rem"}
+          color={"#c98a6d"}
+          hoverBackgroundColor={"#c98a6d"}
+        >
+          <EmailLink href={`mailto:${email}`}>Say Hi</EmailLink>
+        </Button>
       </ContactContainer>
     </ContactPage>
   );

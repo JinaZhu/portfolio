@@ -133,3 +133,12 @@ export const FormTextarea = styled.textarea`
   color: #c98a6d;
   padding: 5px;
 `;
+
+export const EmailLink = styled.a`
+  text-decoration: none;
+  color: #c98a6d;
+
+  &:hover {
+    color: white;
+  }
+`;

@@ -6,15 +6,6 @@ import ProjectLayout from "./ProjectLayout";
 
 const applications = [
   {
-    name: "Qrzn",
-    description:
-      "qrzn.org is the brainchild of JG Debray, a designer based in New York. JG came up with the idea of an online magazine for him and other designers/artists/writers to provide commentary on the ongoing pandemic through different forms of media.",
-    stack: ["React", "Gatsby", "Netlify"],
-    github: "https://github.com/seanyboy49/quaranzine",
-    deployed: "https://qrzn.org/",
-    images: ["qrzn-cover.png", "qrzn-archive.png", "qzrn-awesome-graphic.png"],
-  },
-  {
     name: "Adventure Awaits",
     description:
       "Adventure Awaits is a full-stack web application that allows anyone to discover somewhere new by providing an insight into a country. Let it do the research for you before booking.",
@@ -27,6 +18,15 @@ const applications = [
       "aa-travel-info.png",
       "aa-places-been.png",
     ],
+  },
+  {
+    name: "Qrzn",
+    description:
+      "qrzn.org is the brainchild of JG Debray, a designer based in New York. JG came up with the idea of an online magazine for him and other designers/artists/writers to provide commentary on the ongoing pandemic through different forms of media.",
+    stack: ["React", "Gatsby", "Netlify"],
+    github: "https://github.com/seanyboy49/quaranzine",
+    deployed: "https://qrzn.org/",
+    images: ["qrzn-cover.png", "qrzn-archive.png", "qzrn-awesome-graphic.png"],
   },
   {
     name: "Cake-Tac-Toe",

@@ -11,7 +11,6 @@ import {
   Links,
   ProjectImage,
   ImageContainer,
-  Scroll,
 } from "./styled";
 
 const ProjectLayout = ({
@@ -44,7 +43,6 @@ const ProjectLayout = ({
           )}
         </div>
         <ImageContainer>
-          <Scroll>Scroll Please</Scroll>
           {images.map((image, index) => {
             return (
               <ProjectImage

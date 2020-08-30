@@ -111,12 +111,21 @@ export const ProjectTitle = styled.h2`
         top: 50%;
         transform-origin: top right;
 
+        @media screen and (max-width: 775px) {
+          top: 90%;
+        }
+
         @media screen and (max-width: 425px) {
           top: 75%;
         }
       `
     );
   }}
+
+  @media screen and (max-width: 775px) {
+    left: 8%;
+    bottom: 80%;
+  }
 
   @media screen and (max-width: 425px) {
     left: 13%;

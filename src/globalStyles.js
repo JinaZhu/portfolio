@@ -9,8 +9,13 @@ export const Button = styled.button`
   margin: 2rem;
   cursor: pointer;
   outline: none;
+  white-space: nowrap;
   &:hover {
     background-color: ${(props) => props.hoverBackgroundColor || "white"};
     color: ${(props) => props.hoverColor || "white"};
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 15px;
   }
 `;

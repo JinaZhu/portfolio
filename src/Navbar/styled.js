@@ -17,8 +17,8 @@ export const NavList = styled.ul`
   @media screen and (max-width: 1000px) {
     width: 40%;
   }
-  @media screen and (max-width: 414px) {
-    width: 70%;
+  @media screen and (max-width: 425px) {
+    width: 75%;
   }
 `;
 

@@ -30,7 +30,7 @@ const Navbar = ({ pageColor }) => {
             <NavLink to="/">Home</NavLink>
           </NavLi>
           <NavLi>
-            <NavLink to="/project">Project</NavLink>
+            <NavLink to="/project">Projects</NavLink>
           </NavLi>
           <NavLi>
             <NavLink to="/about">About Me</NavLink>

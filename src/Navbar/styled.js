@@ -18,7 +18,7 @@ export const NavList = styled.ul`
     width: 40%;
   }
   @media screen and (max-width: 425px) {
-    width: 75%;
+    width: 80%;
   }
 `;
 
@@ -113,6 +113,7 @@ export const ContactContainer = styled.div`
   @media screen and (max-width: 425px) {
     font-size: 16px;
     width: 60%;
+    margin-top: 1rem;
   }
   @media screen and (max-width: 320px) {
     padding: 0.3rem;

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a7e4e1bfe53eeb4045a1ccc6e54f1f4",
+    "revision": "458cc35d7e9ce7017dadf505629a9f53",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "e2a5406a943954591ace",
+    "revision": "e57eb4a39234029e7b76",
     "url": "/portfolio/static/css/main.85dbe747.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.9f41baeb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2a5406a943954591ace",
-    "url": "/portfolio/static/js/main.2ccd8205.chunk.js"
+    "revision": "e57eb4a39234029e7b76",
+    "url": "/portfolio/static/js/main.38ea6d1f.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/cake-unplayed.8da14c6c.png"
   },
   {
-    "revision": "ea60b3e39d6b7be07671256bbf7c8300",
-    "url": "/portfolio/static/media/coming-soon.ea60b3e3.jpg"
+    "revision": "ef0bd007fee391a370ebd57731a70f79",
+    "url": "/portfolio/static/media/closet.ef0bd007.jpeg"
   },
   {
     "revision": "06b7e22f6b4e888c0b24667ee3c244ff",
@@ -122,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9df31546019904e8ed00c9dcff1647eb",
     "url": "/portfolio/static/media/qzrn-awesome-graphic.9df31546.png"
+  },
+  {
+    "revision": "5bbc85a63256cc98eb5a7676ed018487",
+    "url": "/portfolio/static/media/tennising.5bbc85a6.jpeg"
   },
   {
     "revision": "47a3dee91f9c1e23d102dd7938f31146",

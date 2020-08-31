@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.85dbe747.chunk.css",
-    "main.js": "/portfolio/static/js/main.2ccd8205.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2ccd8205.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.38ea6d1f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.38ea6d1f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.9f41baeb.chunk.js": "/portfolio/static/js/2.9f41baeb.chunk.js",
     "static/js/2.9f41baeb.chunk.js.map": "/portfolio/static/js/2.9f41baeb.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.168c861b4ddde4b32ba1fa4ea1ed0ce7.js": "/portfolio/precache-manifest.168c861b4ddde4b32ba1fa4ea1ed0ce7.js",
+    "precache-manifest.c9e45429121957ae81ae95e07be20931.js": "/portfolio/precache-manifest.c9e45429121957ae81ae95e07be20931.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.85dbe747.chunk.css.map": "/portfolio/static/css/main.85dbe747.chunk.css.map",
     "static/js/2.9f41baeb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9f41baeb.chunk.js.LICENSE.txt",
@@ -22,7 +22,7 @@
     "static/media/bunny-unplayed.png": "/portfolio/static/media/bunny-unplayed.4693e2b3.png",
     "static/media/cake-played.png": "/portfolio/static/media/cake-played.4bfa2907.png",
     "static/media/cake-unplayed.png": "/portfolio/static/media/cake-unplayed.8da14c6c.png",
-    "static/media/coming-soon.jpg": "/portfolio/static/media/coming-soon.ea60b3e3.jpg",
+    "static/media/closet.jpeg": "/portfolio/static/media/closet.ef0bd007.jpeg",
     "static/media/github-brands.svg": "/portfolio/static/media/github-brands.06b7e22f.svg",
     "static/media/github.svg": "/portfolio/static/media/github.fb2f075a.svg",
     "static/media/instagram.svg": "/portfolio/static/media/instagram.978764d4.svg",
@@ -37,6 +37,7 @@
     "static/media/qrzn-archive.png": "/portfolio/static/media/qrzn-archive.ac2f3ee6.png",
     "static/media/qrzn-cover.png": "/portfolio/static/media/qrzn-cover.7702c73f.png",
     "static/media/qzrn-awesome-graphic.png": "/portfolio/static/media/qzrn-awesome-graphic.9df31546.png",
+    "static/media/tennising.jpeg": "/portfolio/static/media/tennising.5bbc85a6.jpeg",
     "static/media/travel.jpeg": "/portfolio/static/media/travel.47a3dee9.jpeg",
     "static/media/wanderer.jpeg": "/portfolio/static/media/wanderer.663dda7d.jpeg"
   },
@@ -44,6 +45,6 @@
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.9f41baeb.chunk.js",
     "static/css/main.85dbe747.chunk.css",
-    "static/js/main.2ccd8205.chunk.js"
+    "static/js/main.38ea6d1f.chunk.js"
   ]
 }

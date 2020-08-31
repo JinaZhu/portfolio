@@ -6,6 +6,7 @@ import {
   ContactContainer,
   EmailLink,
   EmailButton,
+  ContactTitle,
 } from "./styled";
 import instagramLogo from "../images/Icons/instagram.svg";
 import githubLogo from "../images/Icons/github.svg";
@@ -16,11 +17,11 @@ const Contact = () => {
   return (
     <ContactPage className="contact-page">
       <ContactContainer>
-        <h1>LET'S GET IN TOUCH</h1>
+        <ContactTitle>LET'S GET IN TOUCH</ContactTitle>
         <p>
-          Need anything built, want to work together or just want to say hi?
-          Simply shoot me a message below or connect with me and I will get back
-          to you soon!
+          Need anything built, want to work together, or just saying hi? Simply
+          shoot me a message below or connect with me and I will get back to you
+          soon!
         </p>
         <NavList>
           <NavLi>

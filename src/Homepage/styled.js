@@ -6,7 +6,8 @@ export const HomepageContainer = styled.div`
   margin: 0;
   min-height: 100vh;
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden !important;
+  overflow-y: hidden;
 `;
 
 export const IntroContainter = styled.div`
@@ -23,29 +24,30 @@ export const IntroContainter = styled.div`
   border-left: 1px solid white;
   padding: 1rem 4rem;
 
-  @media screen and (max-width: 768px) {
+  // @media screen and (max-width: 1024px) {
+  //   margin: 25% 20%;
+  // }
+
+  @media screen and (max-width: 800px) {
     margin: 30% 20%;
   }
 
-  @media screen and (max-width: 375px) {
-    margin: 30% 15%;
+  @media screen and (max-width: 425px) {
+    margin: 20% 10% 10% 10%;
+    padding: 1.5rem 5rem;
   }
-`;
 
-export const Name = styled.h1`
-  font-family: "Oswald";
-  font-size: 50px;
-  letter-spacing: 10px;
-  padding: 0;
-  margin: 0.5rem;
-  // color: #9b7778;
+  @media screen and (max-width: 320px) {
+    margin: 2% 5%;
+    padding: 1.5rem 5rem;
+  }
 `;
 
 export const P = styled.p`
   font-size: 20px;
 
-  @media screen and (max-width: 375px) {
-    font-size: 15px;
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
   }
 `;
 
@@ -67,8 +69,8 @@ export const TopBranch = styled.img`
   width: 470px;
   animation: ${plantShakeTop} 5s infinite ease alternate-reverse 2s;
 
-  @media screen and (max-width: 1200px) {
-    width: 300px;
+  @media screen and (max-width: 800px) {
+    width: 500px;
     top: -8%;
   }
 
@@ -94,15 +96,20 @@ to {
 export const RightBranch = styled.img`
   position: absolute;
   top: 36%;
-  right: -1%;
+  right: 0%;
   opacity: 0.5;
   width: 470px;
   animation: ${plantShakeRight} 5s infinite ease alternate-reverse 2s;
   pointer-events: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 775px) {
     width: 400px;
     top: 60%;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 400px;
+    top: 80%;
   }
 
   @media screen and (max-width: 414px) {
@@ -117,10 +124,10 @@ export const AlignFooter = styled.div`
   padding: 70px 0 0 0;
 
   @media screen and (max-width: 1200px) {
-    padding: 100px 0 0 0;
+    padding: 300px 0 0 0;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     display: none;
   }
 `;
@@ -136,7 +143,7 @@ export const Credit = styled.a`
     border-bottom: 1px solid #786b6e;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     display: none;
   }
 `;

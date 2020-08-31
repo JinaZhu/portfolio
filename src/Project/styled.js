@@ -171,6 +171,7 @@ export const ImageContainer = styled.div`
     border: none;
     padding: 0px;
     margin: 0px;
+    -webkit-overflow-scrolling: touch;
   }
 `;
 

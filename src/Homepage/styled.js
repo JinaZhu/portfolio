@@ -6,8 +6,7 @@ export const HomepageContainer = styled.div`
   margin: 0;
   min-height: 100vh;
   max-width: 100vw;
-  overflow-x: hidden !important;
-  overflow-y: hidden;
+  overflow: hidden;
 `;
 
 export const IntroContainter = styled.div`
@@ -23,10 +22,6 @@ export const IntroContainter = styled.div`
   border-top: 1px solid white;
   border-left: 1px solid white;
   padding: 1rem 4rem;
-
-  // @media screen and (max-width: 1024px) {
-  //   margin: 25% 20%;
-  // }
 
   @media screen and (max-width: 800px) {
     margin: 30% 20%;
@@ -69,8 +64,8 @@ export const TopBranch = styled.img`
   width: 470px;
   animation: ${plantShakeTop} 5s infinite ease alternate-reverse 2s;
 
-  @media screen and (max-width: 800px) {
-    width: 500px;
+  @media screen and (max-width: 1200px) {
+    width: 300px;
     top: -8%;
   }
 
@@ -79,7 +74,7 @@ export const TopBranch = styled.img`
     top: -8%;
   }
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 425px) {
     display: none;
   }
 `;
@@ -112,7 +107,7 @@ export const RightBranch = styled.img`
     top: 80%;
   }
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 425px) {
     display: none;
   }
 `;
@@ -127,7 +122,7 @@ export const AlignFooter = styled.div`
     padding: 300px 0 0 0;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -143,7 +138,7 @@ export const Credit = styled.a`
     border-bottom: 1px solid #786b6e;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;

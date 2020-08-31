@@ -8,8 +8,8 @@ const interests = [
   { name: "An Animal Lover", image: "animalLover.jpeg" },
   { name: "A Plant Mom", image: "plantMom.jpeg" },
   { name: "A Photographer", image: "photographer.jpeg" },
-  { name: "A Rising Tennis Star", image: "coming-soon.jpg" },
-  { name: "Fashionista", image: "coming-soon.jpg" },
+  { name: "A Rising Tennis Star", image: "tennising.jpeg" },
+  { name: "Fashionista", image: "closet.jpeg" },
 ];
 
 const PersonalInfo = () => {

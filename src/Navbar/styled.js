@@ -37,12 +37,14 @@ export const NavLink = styled(Link)`
   }
 
   @media screen and (max-width: 1100px) {
-    font-size: 15px;
+    font-size: 16px;
   }
   @media screen and (max-width: 375px) {
     font-size: 12px;
   }
 `;
+
+//contact page
 
 export const ContactButton = styled.button`
   background-color: transparent;
@@ -57,7 +59,7 @@ export const ContactButton = styled.button`
     color: ${(props) => props.color};
   }
   @media screen and (max-width: 1100px) {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 375px) {
@@ -88,7 +90,7 @@ export const ContactPage = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +109,15 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   border: 1px solid #ebc1a7;
   padding: 2rem;
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+    width: 60%;
+  }
+  @media screen and (max-width: 320px) {
+    padding: 0.3rem;
+    width: 70%;
+  }
 `;
 
 export const EmailButton = styled.button`
@@ -128,8 +139,24 @@ export const EmailLink = styled.a`
   text-decoration: none;
   color: #ebc1a7;
   padding: 3rem;
+  white-space: nowrap;
 
   &:hover {
     color: white;
   }
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+    padding: 2rem;
+  }
+`;
+
+export const ContactTitle = styled.h1`
+  font-size: 30px
+  font-family: Oswald; 
+
+  @media screen and (max-width: 425px) {
+    font-size: 25px;
+  }
+
 `;

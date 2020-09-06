@@ -23,10 +23,19 @@ const applications = [
     name: "Qrzn",
     description:
       "qrzn.org is the brainchild of JG Debray, a designer based in New York. JG came up with the idea of an online magazine for him and other designers/artists/writers to provide commentary on the ongoing pandemic through different forms of media.",
-    stack: ["React", "Gatsby", "Netlify"],
+    stack: ["React", "Gatsby", "GraphQL", "Netlify"],
     github: "https://github.com/seanyboy49/quaranzine",
     deployed: "https://qrzn.org/",
     images: ["qrzn-cover.png", "qrzn-archive.png", "qzrn-awesome-graphic.png"],
+  },
+  {
+    name: "Cocktail Hour",
+    description:
+      "In the mood for a cocktail, but too lazy to head to the store? Discover a cocktail to make with locally home available ingredients with Cocktail Hour. Find and save cocktails for later use.",
+    stack: ["React", "Flask", "SQLAlchemy"],
+    github: "https://github.com/JinaZhu/cocktail-frontend",
+    deployed: "",
+    images: ["cocktail-home.png", "cocktail-search.png", "cocktails.png"],
   },
   {
     name: "Cake-Tac-Toe",

@@ -8,15 +8,13 @@ const Navbar = ({ pageColor }) => {
   const [isActive, setIsActive] = useState(false);
   const [buttonText, setButtonText] = useState("Contact");
   const contactToggle = (e) => {
-    console.log(e);
+    e.preventDefault();
     if (isActive === false) {
-      e.preventDefault();
       setIsActive(true);
       setButtonText("Close");
       gsap.to(".contact-page", 1, { clipPath: "circle(2500px at 100% -10%)" });
     } else {
       setIsActive(false);
-      e.preventDefault();
       setButtonText("Contact");
       gsap.to(".contact-page", 1, { clipPath: "circle(50px at 100% -10%)" });
     }

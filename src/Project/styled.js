@@ -4,6 +4,7 @@ export const ProjectPage = styled.div`
   background-color: #adc2b5;
   min-height: 100vh;
   width: 100vw;
+  padding-bottom: 25px;
 `;
 
 export const TitleContainer = styled.div`
@@ -37,7 +38,6 @@ export const ProjectContainer = styled.div`
   height: 100%;
 
   ${(props) => {
-    console.log(props.border);
     return (
       props.border === "left" &&
       css`
@@ -50,6 +50,7 @@ export const ProjectContainer = styled.div`
       props.border === "right" &&
       css`
         border-right: 1px solid white;
+        margin: 0;
       `
     );
   }}
@@ -70,6 +71,27 @@ export const ProjectDescription = styled.div`
   @media screen and (max-width: 425px) {
     font-size: 16px;
     margin-left: 3rem;
+
+    ${(props) => {
+      return (
+        props.align === "right" &&
+        css`
+          margin-left: 1rem;
+        `
+      );
+    }}
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 12px;
+
+    ${(props) => {
+      return (
+        props.align === "right" &&
+        css`
+          margin-left: 0rem;
+        `
+      );
+    }}
   }
 `;
 
@@ -88,6 +110,9 @@ export const StackName = styled.p`
   @media screen and (max-width: 425px) {
     font-size: 16px;
   }
+  @media screen and (max-width: 320px) {
+    font-size: 12px;
+  }
 `;
 
 export const ProjectTitle = styled.h2`
@@ -99,7 +124,7 @@ export const ProjectTitle = styled.h2`
   white-space: nowrap;
   position: absolute;
   left: 4%;
-  bottom: 70%;
+  bottom: 75%;
   transform-origin: top left;
 
   ${(props) => {
@@ -131,6 +156,9 @@ export const ProjectTitle = styled.h2`
     left: 13%;
     bottom: 80%;
   }
+  @media screen and (max-width: 320px) {
+    font-size: 25px;
+  }
 `;
 
 export const Links = styled.a`
@@ -153,6 +181,10 @@ export const ProjectImage = styled.img`
   @media screen and (max-width: 1100px) {
     width: 100px,
     height: 100px
+  }
+  @media screen and (max-width: 320px) {
+    width: 50px,
+    height: 50px
   }
 `;
 

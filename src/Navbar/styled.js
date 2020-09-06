@@ -54,6 +54,7 @@ export const ContactButton = styled.button`
   padding: 7px 10px;
   font-size: 20px;
   z-index: 2;
+  cursor: pointer;
   &:hover {
     background-color: white;
     color: ${(props) => props.color};

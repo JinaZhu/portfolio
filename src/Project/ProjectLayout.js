@@ -25,7 +25,7 @@ const ProjectLayout = ({
   return (
     <ProjectContainer border={border}>
       <ProjectTitle border={border}>{name}</ProjectTitle>
-      <ProjectDescription align={"right"}>
+      <ProjectDescription align={border}>
         <p>{description}</p>
         <StackContainer>
           {stack.map((tech, index) => {

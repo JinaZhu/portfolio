@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const AboutMePage = styled.div`
   background-color: #a2bab9;
   min-width: 100vw;
+  padding-bottom: 20px;
 `;
 
 export const TitleContainer = styled.div`
@@ -56,6 +57,7 @@ export const Card = styled.div`
   position: relative;
   transition: transform 1s ease-in-out;
   transform-style: preserve-3d;
+  cursor: pointer;
 `;
 
 export const CardContainer = styled.div`
@@ -214,6 +216,7 @@ export const ExperienceContainer = styled.div`
   border-left: 1px solid white;
   border-bottom: 1px solid white;
   position: relative;
+  padding: 10px;
 
   @media screen and (max-width: 425px) {
     margin: 0 1rem;

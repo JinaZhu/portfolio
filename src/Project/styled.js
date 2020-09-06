@@ -37,7 +37,6 @@ export const ProjectContainer = styled.div`
   height: 100%;
 
   ${(props) => {
-    console.log(props.border);
     return (
       props.border === "left" &&
       css`

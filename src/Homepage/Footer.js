@@ -9,7 +9,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Design and built by Jina Zhu
+        Designed and built by Jina Zhu
       </Credit>
     </AlignFooter>
   );

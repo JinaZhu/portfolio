@@ -71,6 +71,15 @@ export const ProjectDescription = styled.div`
   @media screen and (max-width: 425px) {
     font-size: 16px;
     margin-left: 3rem;
+
+    ${(props) => {
+      return (
+        props.align === "right" &&
+        css`
+          margin-left: 1rem;
+        `
+      );
+    }}
   }
   @media screen and (max-width: 320px) {
     font-size: 12px;
@@ -115,7 +124,7 @@ export const ProjectTitle = styled.h2`
   white-space: nowrap;
   position: absolute;
   left: 4%;
-  bottom: 70%;
+  bottom: 75%;
   transform-origin: top left;
 
   ${(props) => {

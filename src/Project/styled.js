@@ -50,7 +50,6 @@ export const ProjectContainer = styled.div`
       props.border === "right" &&
       css`
         border-right: 1px solid white;
-        margin: 0;
       `
     );
   }}

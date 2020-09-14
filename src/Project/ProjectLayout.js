@@ -33,9 +33,18 @@ const ProjectLayout = ({
           })}
         </StackContainer>
         <div>
-          <Links href={github} target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="github logo" width="30" />
-          </Links>
+          {github.map((link, index) => {
+            return (
+              <Links
+                key={index}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={githubLogo} alt="github logo" width="30" />
+              </Links>
+            );
+          })}
           {deployed && (
             <Links href={deployed} target="_blank" rel="noopener noreferrer">
               <img src={linkLogo} alt="github logo" width="30" />

@@ -10,7 +10,7 @@ const applications = [
     description:
       "Adventure Awaits is a full-stack web application that allows anyone to discover somewhere new by providing an insight into a country. Let it do the research for you before booking.",
     stack: ["React", "Flask", "PostgreSQL", "Chart.js"],
-    github: "https://github.com/JinaZhu/World-Traveler",
+    github: ["https://github.com/JinaZhu/World-Traveler"],
     deployed: "",
     images: [
       "aa-homepage.png",
@@ -24,7 +24,7 @@ const applications = [
     description:
       "qrzn.org is the brainchild of JG Debray, a designer based in New York. JG came up with the idea of an online magazine for him and other designers/artists/writers to provide commentary on the ongoing pandemic through different forms of media.",
     stack: ["React", "Gatsby", "GraphQL", "Netlify"],
-    github: "https://github.com/seanyboy49/quaranzine",
+    github: ["https://github.com/seanyboy49/quaranzine"],
     deployed: "https://qrzn.org/",
     images: ["qrzn-cover.png", "qrzn-archive.png", "qzrn-awesome-graphic.png"],
   },
@@ -33,7 +33,10 @@ const applications = [
     description:
       "In the mood for a cocktail, but too lazy to head to the store? Discover a cocktail to make with locally home available ingredients with Cocktail Hour. Find and save cocktails for later use.",
     stack: ["React", "Flask", "SQLAlchemy"],
-    github: "https://github.com/JinaZhu/cocktail-frontend",
+    github: [
+      "https://github.com/JinaZhu/cocktail-frontend",
+      "https://github.com/JinaZhu/Cocktail-Backend",
+    ],
     deployed: "",
     images: ["cocktail-home.png", "cocktail-search.png", "cocktails.png"],
   },
@@ -41,7 +44,7 @@ const applications = [
     name: "Cake-Tac-Toe",
     description: "A simple game of Tic-Tac-Toe with 🎂 and 😻.",
     stack: ["React", "Styled Components"],
-    github: "https://github.com/JinaZhu/Tic-Tac-Toe/tree/master/src",
+    github: ["https://github.com/JinaZhu/Tic-Tac-Toe/tree/master/src"],
     deployed: "https://caketactoe.herokuapp.com/",
     images: ["cake-unplayed.png", "cake-played.png"],
   },
@@ -50,7 +53,7 @@ const applications = [
     description:
       "An innocent game of Whack-a-mole with 🐰. Try your best to beat your own score every round. No bunnies were harmed during the making of this game.",
     stack: ["Javascript", "HTML", "CSS"],
-    github: "https://github.com/JinaZhu/Whack-a-Bunny",
+    github: ["https://github.com/JinaZhu/Whack-a-Bunny"],
     deployed: "",
     images: ["bunny-unplayed.png", "bunny-played.png"],
   },
@@ -59,7 +62,7 @@ const applications = [
     description:
       "A Pinterest Clone. Find the inspiration you're looking for with Jinterest image search.",
     stack: ["Pexels Web API", "Javascript"],
-    github: "https://github.com/JinaZhu/jinterest",
+    github: ["https://github.com/JinaZhu/jinterest"],
     deployed: "",
     images: ["jinterest.png", "jinterest-more.png"],
   },

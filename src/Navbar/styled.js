@@ -17,6 +17,9 @@ export const NavList = styled.ul`
   @media screen and (max-width: 1000px) {
     width: 40%;
   }
+  @media screen and (max-width: 800px) {
+    width: 50%;
+  }
   @media screen and (max-width: 425px) {
     width: 80%;
   }
@@ -31,6 +34,7 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   font-size: 20px;
   padding: 3px;
+  white-space: nowrap;
 
   &:hover {
     border: 1px solid white;

@@ -43,7 +43,6 @@ const jobs = [qrzn, theRealReal, bloomingdales];
 const WorkExperience = () => {
   const [currentJob, setCurrentJob] = useState(qrzn);
 
-  console.log("currentJob", currentJob);
   return (
     <ExperienceContainer>
       <ExperienceTitle>Where I've Worked</ExperienceTitle>

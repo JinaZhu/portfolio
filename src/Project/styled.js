@@ -135,10 +135,6 @@ export const ProjectTitle = styled.h2`
         top: 50%;
         transform-origin: top right;
 
-        // @media screen and (max-width: 800px) {
-        //   top: 40%;
-        // }
-
         @media screen and (max-width: 775px) {
           top: 100%;
         }
@@ -149,11 +145,6 @@ export const ProjectTitle = styled.h2`
       `
     );
   }}
-
-  // @media screen and (max-width: 800px) {
-  //   left: 8%;
-  //   bottom: 80%;
-  // }
 
   @media screen and (max-width: 800px) {
     left: 8%;

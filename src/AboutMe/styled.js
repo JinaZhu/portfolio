@@ -240,6 +240,7 @@ export const CompanyNameButton = styled.button`
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+  border: 1px solid white;
 
   &:hover {
     background-color: white;
@@ -258,11 +259,14 @@ export const CompanyNameButton = styled.button`
   @media screen and (max-width: 425px) {
     margin: 5px;
     font-size: 16px;
+    padding: 7px;
   }
   @media screen and (max-width: 320px) {
     left: 15%;
     bottom: 70%;
     margin: 2px;
+    font-size: 12px;
+    padding: 9px;
   }
 `;
 

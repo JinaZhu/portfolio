@@ -240,6 +240,7 @@ export const CompanyNameButton = styled.button`
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+  border: 1px solid white;
 
   &:hover {
     background-color: white;

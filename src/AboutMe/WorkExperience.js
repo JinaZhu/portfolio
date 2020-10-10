@@ -43,6 +43,14 @@ const jobs = [qrzn, theRealReal, bloomingdales];
 const WorkExperience = () => {
   const [currentJob, setCurrentJob] = useState(qrzn);
 
+  function checkActive(job) {
+    if (job === currentJob) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   return (
     <ExperienceContainer>
       <ExperienceTitle>Where I've Worked</ExperienceTitle>
@@ -51,6 +59,7 @@ const WorkExperience = () => {
           return (
             <CompanyNameButton
               key={job.company}
+              isActive={checkActive(job)}
               onClick={() => setCurrentJob(job)}
             >
               {job.company}

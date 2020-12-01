@@ -93,7 +93,7 @@ const Project = () => {
 
   return (
     <ProjectPage>
-      <Navbar pageColor={"#748173"} />
+      <Navbar pageColor={"#748173"} currentPage={"project"} />
       <TitleContainer>
         <Title>Things</Title>
         <Title>I've Built</Title>

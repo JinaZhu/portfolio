@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.85dbe747.chunk.css",
-    "main.js": "/portfolio/static/js/main.55cdf287.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.55cdf287.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.0f057359.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0f057359.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.9f41baeb.chunk.js": "/portfolio/static/js/2.9f41baeb.chunk.js",
     "static/js/2.9f41baeb.chunk.js.map": "/portfolio/static/js/2.9f41baeb.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.35ddb6754ec25ffd3b9bd75bbe9cef05.js": "/portfolio/precache-manifest.35ddb6754ec25ffd3b9bd75bbe9cef05.js",
+    "precache-manifest.68dfb92aa99c4f2877d37e1eb3619d06.js": "/portfolio/precache-manifest.68dfb92aa99c4f2877d37e1eb3619d06.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.85dbe747.chunk.css.map": "/portfolio/static/css/main.85dbe747.chunk.css.map",
     "static/js/2.9f41baeb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9f41baeb.chunk.js.LICENSE.txt",
@@ -17,7 +17,7 @@
     "static/media/aa-pictures.png": "/portfolio/static/media/aa-pictures.eaa4e331.png",
     "static/media/aa-places-been.png": "/portfolio/static/media/aa-places-been.001dd7a0.png",
     "static/media/aa-travel-info.png": "/portfolio/static/media/aa-travel-info.ad04f7b0.png",
-    "static/media/animalLover.jpeg": "/portfolio/static/media/animalLover.e05a7037.jpeg",
+    "static/media/animal.JPG": "/portfolio/static/media/animal.b0ae0636.JPG",
     "static/media/bunny-played.png": "/portfolio/static/media/bunny-played.8e270c31.png",
     "static/media/bunny-unplayed.png": "/portfolio/static/media/bunny-unplayed.4693e2b3.png",
     "static/media/cake-played.png": "/portfolio/static/media/cake-played.4bfa2907.png",
@@ -26,11 +26,10 @@
     "static/media/cocktail-home.png": "/portfolio/static/media/cocktail-home.c64aa0e5.png",
     "static/media/cocktail-search.png": "/portfolio/static/media/cocktail-search.e1dde8dd.png",
     "static/media/cocktails.png": "/portfolio/static/media/cocktails.d99fe442.png",
+    "static/media/food.JPG": "/portfolio/static/media/food.48ed5582.JPG",
     "static/media/github-brands.svg": "/portfolio/static/media/github-brands.06b7e22f.svg",
     "static/media/github.svg": "/portfolio/static/media/github.fb2f075a.svg",
     "static/media/instagram.svg": "/portfolio/static/media/instagram.978764d4.svg",
-    "static/media/jinterest-more.png": "/portfolio/static/media/jinterest-more.c0587baf.png",
-    "static/media/jinterest.png": "/portfolio/static/media/jinterest.abbf8165.png",
     "static/media/leaf-branch.png": "/portfolio/static/media/leaf-branch.f171ad15.png",
     "static/media/link.svg": "/portfolio/static/media/link.81198e0a.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.42beca2c.svg",
@@ -42,12 +41,15 @@
     "static/media/qzrn-awesome-graphic.png": "/portfolio/static/media/qzrn-awesome-graphic.9df31546.png",
     "static/media/tennising.jpeg": "/portfolio/static/media/tennising.5bbc85a6.jpeg",
     "static/media/travel.jpeg": "/portfolio/static/media/travel.47a3dee9.jpeg",
+    "static/media/trivia-add.png": "/portfolio/static/media/trivia-add.77ed4e92.png",
+    "static/media/trivia-home.png": "/portfolio/static/media/trivia-home.bb351c14.png",
+    "static/media/trivia-play.png": "/portfolio/static/media/trivia-play.c5dde1cd.png",
     "static/media/wanderer.jpeg": "/portfolio/static/media/wanderer.663dda7d.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.9f41baeb.chunk.js",
     "static/css/main.85dbe747.chunk.css",
-    "static/js/main.55cdf287.chunk.js"
+    "static/js/main.0f057359.chunk.js"
   ]
 }

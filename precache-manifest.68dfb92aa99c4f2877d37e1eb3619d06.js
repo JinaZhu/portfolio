@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a9d0e0c7714beab9e9aabb7584d5c6e",
+    "revision": "0fa9731597ae38abacde32f65c750bd2",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "128605466bfd556c639c",
+    "revision": "d0686db08ea2a73917f2",
     "url": "/portfolio/static/css/main.85dbe747.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.9f41baeb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "128605466bfd556c639c",
-    "url": "/portfolio/static/js/main.55cdf287.chunk.js"
+    "revision": "d0686db08ea2a73917f2",
+    "url": "/portfolio/static/js/main.0f057359.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/aa-travel-info.ad04f7b0.png"
   },
   {
-    "revision": "e05a7037a98e0998a121d7e446b1d746",
-    "url": "/portfolio/static/media/animalLover.e05a7037.jpeg"
+    "revision": "b0ae063659c5fcb91fc28fdedf7adabc",
+    "url": "/portfolio/static/media/animal.b0ae0636.JPG"
   },
   {
     "revision": "8e270c31d4559a13ca57e0ed4a1347de",
@@ -80,6 +80,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/cocktails.d99fe442.png"
   },
   {
+    "revision": "48ed5582511880ba6daf78f6a57690fe",
+    "url": "/portfolio/static/media/food.48ed5582.JPG"
+  },
+  {
     "revision": "06b7e22f6b4e888c0b24667ee3c244ff",
     "url": "/portfolio/static/media/github-brands.06b7e22f.svg"
   },
@@ -90,14 +94,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "978764d43583bf01c76273fc4ba1ba27",
     "url": "/portfolio/static/media/instagram.978764d4.svg"
-  },
-  {
-    "revision": "c0587bafcc6e58ebee3bed793c25c2d6",
-    "url": "/portfolio/static/media/jinterest-more.c0587baf.png"
-  },
-  {
-    "revision": "abbf81654c974682ea170aa5f30ab2bd",
-    "url": "/portfolio/static/media/jinterest.abbf8165.png"
   },
   {
     "revision": "f171ad15f105ed42e0709e037bdd16b2",
@@ -142,6 +138,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "47a3dee91f9c1e23d102dd7938f31146",
     "url": "/portfolio/static/media/travel.47a3dee9.jpeg"
+  },
+  {
+    "revision": "77ed4e92a09f1680d89dc5cde3628c0f",
+    "url": "/portfolio/static/media/trivia-add.77ed4e92.png"
+  },
+  {
+    "revision": "bb351c1474f722f11e890fbdbab70a05",
+    "url": "/portfolio/static/media/trivia-home.bb351c14.png"
+  },
+  {
+    "revision": "c5dde1cd40f7483a331a637fb107072c",
+    "url": "/portfolio/static/media/trivia-play.c5dde1cd.png"
   },
   {
     "revision": "663dda7d31f1b12e881ccf545f59ef6b",

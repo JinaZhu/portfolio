@@ -19,6 +19,8 @@ export const PageTitle = styled.h1`
   font-size: 50px;
   margin: 0;
   text-align: left;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2,
+    0 0 40px #f2f2f2, 0 0 50px #f2f2f2;
 `;
 
 export const InfoContainer = styled.div`

@@ -23,6 +23,8 @@ export const Title = styled.h1`
   font-family: Oswald;
   margin: 0;
   font-size: 50px;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2,
+    0 0 40px #f2f2f2, 0 0 50px #f2f2f2;
 `;
 
 export const SubTitle = styled.p`

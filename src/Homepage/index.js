@@ -43,7 +43,7 @@ const Homepage = () => {
 
   return (
     <HomepageContainer>
-      <Navbar pageColor={"#bb9495"} />
+      <Navbar pageColor={"#bb9495"} currentPage={"home"} />
       <TopBranch
         src={leaf_branch}
         alt="leaf branch"

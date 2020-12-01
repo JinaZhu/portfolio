@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { gsap } from "gsap";
 
-import { Nav, NavList, NavLi, NavLink, ContactButton } from "./styled";
+import { Nav, NavList, NavLi, NavLink, ContactButton, NavP } from "./styled";
 import Contact from "./Contact";
 
-const Navbar = ({ pageColor }) => {
+const Navbar = ({ pageColor, currentPage }) => {
   const [isActive, setIsActive] = useState(false);
   const [buttonText, setButtonText] = useState("Contact");
   const contactToggle = (e) => {
@@ -20,18 +20,34 @@ const Navbar = ({ pageColor }) => {
     }
   };
 
+  function checkPage(navSection) {
+    if (currentPage === navSection) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  console.log(checkPage("home"));
+
   return (
     <div>
       <Nav>
         <NavList>
           <NavLi>
-            <NavLink to="/">Home</NavLink>
+            <NavP isActive={checkPage("home")}>
+              <NavLink to="/">Home</NavLink>
+            </NavP>
           </NavLi>
           <NavLi>
-            <NavLink to="/project">Projects</NavLink>
+            <NavP isActive={checkPage("project")}>
+              <NavLink to="/project">Projects</NavLink>
+            </NavP>
           </NavLi>
           <NavLi>
-            <NavLink to="/about">About Me</NavLink>
+            <NavP isActive={checkPage("about")}>
+              <NavLink to="/about">About Me</NavLink>
+            </NavP>
           </NavLi>
           <ContactButton
             isActive={isActive}

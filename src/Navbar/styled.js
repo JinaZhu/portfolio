@@ -29,16 +29,29 @@ export const NavLi = styled.li`
   list-style: none;
 `;
 
+export const NavP = styled.p`
+  &:hover {
+    text-shadow: 0 0 10px #f2f2f2, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2,
+      0 0 40px #f2f2f2, 0 0 50px #f2f2f2, 0 0 60px #f2f2f2, 0 0 70px #f2f2f2;
+  }
+
+  ${(props) => {
+    return (
+      props.isActive &&
+      css`
+        text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #f2f2f2,
+          0 0 30px #f2f2f2, 0 0 40px #f2f2f2, 0 0 50px #f2f2f2;
+      `
+    );
+  }}
+`;
+
 export const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-size: 20px;
   padding: 3px;
-  white-space: nowrap;
-
-  &:hover {
-    border: 1px solid white;
-  }
+  z-index: 10;
 
   @media screen and (max-width: 1100px) {
     font-size: 16px;

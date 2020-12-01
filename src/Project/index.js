@@ -41,6 +41,18 @@ const applications = [
     images: ["cocktail-home.png", "cocktail-search.png", "cocktails.png"],
   },
   {
+    name: "Trivia",
+    description:
+      "Test your knowledge and play a round of trivia! If you have an awesome trivia question, add it to the game bank.",
+    stack: ["React", "Flask", "SQLAlchemy"],
+    github: [
+      "https://github.com/JinaZhu/trivia-game",
+      "https://github.com/JinaZhu/trivia-backend",
+    ],
+    deployed: "https://triviaknowledge.herokuapp.com/",
+    images: ["trivia-home.png", "trivia-play.png", "trivia-add.png"],
+  },
+  {
     name: "Cake-Tac-Toe",
     description: "A simple game of Tic-Tac-Toe with 🎂 and 😻.",
     stack: ["React", "Styled Components"],
@@ -56,15 +68,6 @@ const applications = [
     github: ["https://github.com/JinaZhu/Whack-a-Bunny"],
     deployed: "",
     images: ["bunny-unplayed.png", "bunny-played.png"],
-  },
-  {
-    name: "Jinterest",
-    description:
-      "A Pinterest Clone. Find the inspiration you're looking for with Jinterest image search.",
-    stack: ["Pexels Web API", "Javascript"],
-    github: ["https://github.com/JinaZhu/jinterest"],
-    deployed: "",
-    images: ["jinterest.png", "jinterest-more.png"],
   },
 ];
 
@@ -93,7 +96,7 @@ const Project = () => {
 
   return (
     <ProjectPage>
-      <Navbar pageColor={"#748173"} />
+      <Navbar pageColor={"#748173"} currentPage={"project"} />
       <TitleContainer>
         <Title>Things</Title>
         <Title>I've Built</Title>

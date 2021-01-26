@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.85dbe747.chunk.css",
-    "main.js": "/portfolio/static/js/main.0f057359.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0f057359.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.c78e109c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c78e109c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.9f41baeb.chunk.js": "/portfolio/static/js/2.9f41baeb.chunk.js",
-    "static/js/2.9f41baeb.chunk.js.map": "/portfolio/static/js/2.9f41baeb.chunk.js.map",
+    "static/js/2.3c86fdd6.chunk.js": "/portfolio/static/js/2.3c86fdd6.chunk.js",
+    "static/js/2.3c86fdd6.chunk.js.map": "/portfolio/static/js/2.3c86fdd6.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.68dfb92aa99c4f2877d37e1eb3619d06.js": "/portfolio/precache-manifest.68dfb92aa99c4f2877d37e1eb3619d06.js",
+    "precache-manifest.75e9030a8c61f08e4d847796610e48f7.js": "/portfolio/precache-manifest.75e9030a8c61f08e4d847796610e48f7.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.85dbe747.chunk.css.map": "/portfolio/static/css/main.85dbe747.chunk.css.map",
-    "static/js/2.9f41baeb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9f41baeb.chunk.js.LICENSE.txt",
+    "static/js/2.3c86fdd6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3c86fdd6.chunk.js.LICENSE.txt",
     "static/media/aa-homepage.png": "/portfolio/static/media/aa-homepage.6fc53e2d.png",
     "static/media/aa-map.png": "/portfolio/static/media/aa-map.e43f6f5c.png",
     "static/media/aa-pictures.png": "/portfolio/static/media/aa-pictures.eaa4e331.png",
@@ -30,7 +30,6 @@
     "static/media/github-brands.svg": "/portfolio/static/media/github-brands.06b7e22f.svg",
     "static/media/github.svg": "/portfolio/static/media/github.fb2f075a.svg",
     "static/media/instagram.svg": "/portfolio/static/media/instagram.978764d4.svg",
-    "static/media/leaf-branch.png": "/portfolio/static/media/leaf-branch.f171ad15.png",
     "static/media/link.svg": "/portfolio/static/media/link.81198e0a.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.42beca2c.svg",
     "static/media/lovesFood.jpeg": "/portfolio/static/media/lovesFood.1f06d7c5.jpeg",
@@ -39,6 +38,9 @@
     "static/media/qrzn-archive.png": "/portfolio/static/media/qrzn-archive.ac2f3ee6.png",
     "static/media/qrzn-cover.png": "/portfolio/static/media/qrzn-cover.7702c73f.png",
     "static/media/qzrn-awesome-graphic.png": "/portfolio/static/media/qzrn-awesome-graphic.9df31546.png",
+    "static/media/snowflake_1.png": "/portfolio/static/media/snowflake_1.2e1bdc33.png",
+    "static/media/snowflake_2.png": "/portfolio/static/media/snowflake_2.c0a2d824.png",
+    "static/media/snowflake_3.png": "/portfolio/static/media/snowflake_3.e98e01c9.png",
     "static/media/tennising.jpeg": "/portfolio/static/media/tennising.5bbc85a6.jpeg",
     "static/media/travel.jpeg": "/portfolio/static/media/travel.47a3dee9.jpeg",
     "static/media/trivia-add.png": "/portfolio/static/media/trivia-add.77ed4e92.png",
@@ -48,8 +50,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.9f41baeb.chunk.js",
+    "static/js/2.3c86fdd6.chunk.js",
     "static/css/main.85dbe747.chunk.css",
-    "static/js/main.0f057359.chunk.js"
+    "static/js/main.c78e109c.chunk.js"
   ]
 }

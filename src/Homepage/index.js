@@ -14,6 +14,7 @@ import {
   NameContainer,
   P,
 } from "./styled";
+import Winter from "./Winter";
 
 const letters = [130, 118, 271, 220, 185, 253, 236];
 
@@ -43,6 +44,7 @@ const Homepage = () => {
 
   return (
     <HomepageContainer>
+      <Winter />
       <Navbar pageColor={"#bb9495"} currentPage={"home"} />
       <TopBranch
         src={leaf_branch}

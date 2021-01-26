@@ -28,8 +28,6 @@ const Navbar = ({ pageColor, currentPage }) => {
     }
   }
 
-  console.log(checkPage("home"));
-
   return (
     <div>
       <Nav>

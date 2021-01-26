@@ -93,7 +93,7 @@ const InfoGlassMorph = () => {
         <Button
           onClick={redirectToAbout}
           paddings={"1rem 2rem"}
-          hoverColor={"#bb9495"}
+          hoverColor={"#a2bab9"}
           border={"2px solid white"}
         >
           <ButtonP>About Me</ButtonP>

@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 export const HomepageContainer = styled.div`
-  background-color: #d0aaaa;
+  background-color: #a2bab9;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -39,107 +39,12 @@ export const ButtonP = styled.p`
   font-weight: bold;
 `;
 
-export const IntroContainter = styled.div`
-  margin: 50% 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 35%;
-  font-size: 20px;
-  margin: auto;
-  margin-top: 7%;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  padding: 1rem 4rem;
-
-  @media screen and (max-width: 800px) {
-    margin: 30% 20%;
-  }
-
-  @media screen and (max-width: 425px) {
-    margin: 20% 10% 10% 10%;
-    padding: 1.5rem 5rem;
-  }
-
-  @media screen and (max-width: 320px) {
-    margin: 2% 5%;
-    padding: 1.5rem 5rem;
-  }
-`;
-
 export const P = styled.p`
   font-size: 20px;
   font-weight: bold;
 
   @media screen and (max-width: 425px) {
     font-size: 16px;
-  }
-`;
-
-const plantShakeTop = keyframes`
-  from {
-    transform: rotateZ(225deg);
-  }
-  to {
-    transform:rotateZ(215deg);
-  }
-`;
-
-export const TopBranch = styled.img`
-  position: absolute;
-  top: -15%;
-  left: 0%;
-  transform: rotate(215deg);
-  opacity: 0.5;
-  width: 470px;
-  animation: ${plantShakeTop} 5s infinite ease alternate-reverse 2s;
-
-  @media screen and (max-width: 1200px) {
-    width: 300px;
-    top: -8%;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 400px;
-    top: -8%;
-  }
-
-  @media screen and (max-width: 425px) {
-    display: none;
-  }
-`;
-
-const plantShakeRight = keyframes`
-from {
-  transform: rotateZ(7deg);
-}
-to {
-  transform: rotateZ(0deg);
-}
-`;
-
-export const RightBranch = styled.img`
-  position: absolute;
-  top: 36%;
-  right: 0%;
-  opacity: 0.5;
-  width: 470px;
-  animation: ${plantShakeRight} 5s infinite ease alternate-reverse 2s;
-  pointer-events: none;
-
-  @media screen and (max-width: 775px) {
-    width: 400px;
-    top: 60%;
-  }
-
-  @media screen and (max-width: 750px) {
-    width: 400px;
-    top: 80%;
-  }
-
-  @media screen and (max-width: 425px) {
-    display: none;
   }
 `;
 
@@ -235,4 +140,5 @@ export const SnowflakeImg = styled.img`
   animation-delay: ${(props) => props.delay};
   filter: blur(${(props) => props.blur});
   transform: ${(props) => props.rotate};
+  user-select: none;
 `;

@@ -10,7 +10,7 @@ const Homepage = () => {
   return (
     <HomepageContainer>
       <Winter />
-      <Navbar pageColor={"#bb9495"} currentPage={"home"} />
+      <Navbar pageColor={"#a2bab9"} currentPage={"home"} />
       <InfoGlassMorph />
       <Footer />
     </HomepageContainer>

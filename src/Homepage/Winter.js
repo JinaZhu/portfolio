@@ -9,9 +9,6 @@ import {
 import snowflake1 from "../images/Seasons/snowflake_1.png";
 import snowflake2 from "../images/Seasons/snowflake_2.png";
 import snowflake3 from "../images/Seasons/snowflake_3.png";
-// import snowflake2 from "../images/seasons/snowflake_2.png";
-
-// import snowflake3 from "../images/seasons/snowflake_3.png";
 
 const lefts = [
   "0%",

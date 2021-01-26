@@ -14,6 +14,7 @@ export const NavList = styled.ul`
   justify-content: space-between;
   width: 30%;
   padding: 0;
+  z-index: 10;
   @media screen and (max-width: 1000px) {
     width: 40%;
   }

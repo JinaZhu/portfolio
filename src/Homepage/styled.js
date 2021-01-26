@@ -4,9 +4,39 @@ export const HomepageContainer = styled.div`
   background-color: #d0aaaa;
   padding: 0;
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;
   max-width: 100vw;
   overflow: hidden;
+  position: relative;
+`;
+
+export const GlassContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  z-index: 1;
+`;
+
+export const Glass = styled.div`
+  position: relative;
+  max-width: 600px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  margin: 0 25px;
+`;
+
+export const ButtonP = styled.p`
+  margin: 0;
+  font-weight: bold;
 `;
 
 export const IntroContainter = styled.div`
@@ -40,6 +70,7 @@ export const IntroContainter = styled.div`
 
 export const P = styled.p`
   font-size: 20px;
+  font-weight: bold;
 
   @media screen and (max-width: 425px) {
     font-size: 16px;
@@ -176,11 +207,11 @@ const fall = keyframes`
 `;
 
 export const WinterContainer = styled.div`
-  background: #a2bab9;
+  // background: #a2bab9;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  position: relative;
+  position: absolute;
 `;
 
 export const SnowflakeForward = styled.div`

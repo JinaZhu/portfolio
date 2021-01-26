@@ -111,6 +111,18 @@ const fall = keyframes`
     }
 `;
 
+const backFall = keyframes`
+    0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(-20px) rotate(0deg);
+    }
+    100% {
+        top: 110%; 
+        transform: translateX(-20px) rotate(225deg);
+    }
+`;
+
 export const WinterContainer = styled.div`
   // background: #a2bab9;
   height: 100vh;
@@ -136,7 +148,8 @@ export const SnowflakeBackward = styled.div`
 export const SnowflakeImg = styled.img`
   position: absolute;
   left: ${(props) => props.left};
-  animation: ${fall} ${(props) => props.duration} linear infinite;
+  animation: ${(props) => (props.fall ? backFall : fall)}
+    ${(props) => props.duration} linear infinite;
   animation-delay: ${(props) => props.delay};
   filter: blur(${(props) => props.blur});
   transform: ${(props) => props.rotate};

@@ -54,6 +54,11 @@ export const AlignFooter = styled.div`
   justify-content: space-between;
   height: 7vh;
   width: 100vw;
+
+  @media screen and (max-width: 425px) {
+    flex-direction: column-reverse;
+    height: 8vh;
+  }
 `;
 
 export const Credit = styled.a`
@@ -83,12 +88,20 @@ export const SeasonSelectionContainer = styled.div`
   font-weight: bold;
   margin: 0 5px;
   color: #fff;
+
+  @media screen and (max-width: 425px) {
+    margin: 0;
+  }
 `;
 
 export const Seasons = styled.div`
   display: flex;
   align-items: flex-start;
   height: 10vh;
+
+  @media screen and (max-width: 425px) {
+    height: 100%;
+  }
 `;
 
 export const FooterP = styled.p`

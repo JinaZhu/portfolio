@@ -15,7 +15,7 @@ export const GlassContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 90vh;
+  height: 75vh;
   z-index: 1;
 `;
 
@@ -51,32 +51,81 @@ export const P = styled.p`
 export const AlignFooter = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 70px 0 0 0;
-
-  @media screen and (max-width: 1200px) {
-    padding: 300px 0 0 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  justify-content: space-between;
+  height: 15vh;
+  width: 100vw;
 `;
 
 export const Credit = styled.a`
   text-decoration: none;
   color: white;
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
+  margin: 0;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 
   &:hover {
-    color: #786b6e;
-    border-bottom: 1px solid #786b6e;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff,
+      0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
   }
+`;
 
-  @media screen and (max-width: 768px) {
-    display: none;
+export const SeasonSelectionContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 5px;
+  color: #fff;
+`;
+
+export const Seasons = styled.div`
+  display: flex;
+  align-items: flex-start;
+  height: 10vh;
+`;
+
+export const FooterP = styled.p`
+  margin: 0 0 10px 0;
+  z-index: 10px;
+`;
+
+const blink = keyframes`
+  100% {
+    box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #a2bab9,
+      0 0 70px #a2bab9, 0 0 80px #a2bab9;
   }
+`;
+
+export const InnerBorder = styled.div`
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+`;
+
+export const SeasonSelection = styled.button`
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  z-index: 10;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #a2bab9, 0 0 30px #a2bab9,
+    0 0 40px #a2bab9, 0 0 50px #a2bab9;
+  -webkit-animation: ${blink} 0.7s infinite alternate;
+  animation: ${blink} 0.7s infinite alternate;
 `;
 
 export const NameContainer = styled.div`

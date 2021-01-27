@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 export const HomepageContainer = styled.div`
-  background-color: #a2bab9;
+  background-color: ${(props) => props.color};
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -15,7 +15,7 @@ export const GlassContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 75vh;
+  height: 83vh;
   z-index: 1;
 `;
 
@@ -52,7 +52,7 @@ export const AlignFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 15vh;
+  height: 7vh;
   width: 100vw;
 `;
 
@@ -69,8 +69,8 @@ export const Credit = styled.a`
   font-weight: bold;
 
   &:hover {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff,
-      0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+      0 0 25px #fff, 0 0 30px #fff, 0 0 45px #fff;
   }
 `;
 
@@ -96,13 +96,6 @@ export const FooterP = styled.p`
   z-index: 10px;
 `;
 
-const blink = keyframes`
-  100% {
-    box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #a2bab9,
-      0 0 70px #a2bab9, 0 0 80px #a2bab9;
-  }
-`;
-
 export const InnerBorder = styled.div`
   border: 1px solid #fff;
   display: flex;
@@ -111,8 +104,9 @@ export const InnerBorder = styled.div`
   padding: 3px;
 `;
 
-export const SeasonSelection = styled.button`
-  border: 1px solid #fff;
+export const SeasonSelectionButton = styled.button`
+  outline: none;
+  border: none;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -122,10 +116,15 @@ export const SeasonSelection = styled.button`
   justify-content: center;
   margin: 0 5px;
   z-index: 10;
-  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #a2bab9, 0 0 30px #a2bab9,
-    0 0 40px #a2bab9, 0 0 50px #a2bab9;
-  -webkit-animation: ${blink} 0.7s infinite alternate;
-  animation: ${blink} 0.7s infinite alternate;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+      0 0 5px #fff, 0 0 5px #fff;
+  }
 `;
 
 export const NameContainer = styled.div`
@@ -173,7 +172,6 @@ const backFall = keyframes`
 `;
 
 export const WinterContainer = styled.div`
-  // background: #a2bab9;
   height: 100vh;
   width: 100vw;
   overflow: hidden;

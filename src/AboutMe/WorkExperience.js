@@ -40,7 +40,7 @@ const bloomingdales = {
 
 const jobs = [qrzn, theRealReal, bloomingdales];
 
-const WorkExperience = () => {
+const WorkExperience = ({ season }) => {
   const [currentJob, setCurrentJob] = useState(qrzn);
 
   function checkActive(job) {
@@ -61,6 +61,7 @@ const WorkExperience = () => {
               key={job.company}
               isActive={checkActive(job)}
               onClick={() => setCurrentJob(job)}
+              color={season.color}
             >
               {job.company}
             </CompanyNameButton>

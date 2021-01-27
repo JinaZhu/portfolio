@@ -5,13 +5,16 @@ import Footer from "./Footer";
 import { HomepageContainer } from "./styled";
 import Winter from "./Winter";
 import InfoGlassMorph from "./InfoGlassMorph";
+import { useSeason } from "../Providers/Season";
 
 const Homepage = () => {
+  const { season } = useSeason();
+
   return (
-    <HomepageContainer>
+    <HomepageContainer color={season.color}>
       <Winter />
       <Navbar pageColor={"#a2bab9"} currentPage={"home"} />
-      <InfoGlassMorph />
+      <InfoGlassMorph season={season} />
       <Footer />
     </HomepageContainer>
   );

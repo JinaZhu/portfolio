@@ -5,18 +5,20 @@ import { AboutMePage, PageTitle, TitleContainer } from "./styled";
 import PersonalInfo from "./PersonalInfo";
 import TechStack from "./TechStack";
 import WorkExperience from "./WorkExperience";
+import { useSeason } from "../Providers/Season";
 
 const AboutMe = () => {
+  const { season } = useSeason();
   return (
-    <AboutMePage>
-      <Navbar pageColor={"#a2bab9"} currentPage={"about"} />
+    <AboutMePage color={season.color}>
+      <Navbar currentPage={"about"} />
       <TitleContainer>
         <PageTitle>About</PageTitle>
         <PageTitle>Me</PageTitle>
       </TitleContainer>
       <PersonalInfo />
-      <TechStack />
-      <WorkExperience />
+      <TechStack season={season} />
+      <WorkExperience season={season} />
     </AboutMePage>
   );
 };

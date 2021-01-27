@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const AboutMePage = styled.div`
-  background-color: #a2bab9;
+  background-color: ${(props) => props.color};
   min-width: 100vw;
   padding-bottom: 20px;
 `;
@@ -110,7 +110,7 @@ export const Cover = styled.div`
 `;
 
 export const CoverText = styled.p`
-  color: #a2bab9;
+  color: ${(props) => props.color};
   font-size: 30px;
   font-family: Oswald;
 
@@ -190,7 +190,7 @@ export const StackNameTag = styled.div`
 `;
 export const StackName = styled.p`
   font-size: 20px;
-  color: #a2bab9;
+  color: ${(props) => props.color};
   margin: 0;
   letter-spacing: 2px;
   white-space: nowrap;
@@ -246,7 +246,7 @@ export const CompanyNameButton = styled.button`
 
   &:hover {
     background-color: white;
-    color: #a2bab9;
+    color: ${(props) => props.color};
   }
 
   ${(props) => {
@@ -254,7 +254,7 @@ export const CompanyNameButton = styled.button`
       props.isActive &&
       css`
         background-color: white;
-        color: #a2bab9;
+        color: ${(props) => props.color};
       `
     );
   }}

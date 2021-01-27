@@ -7,7 +7,7 @@ import { Button } from "../globalStyles";
 
 const letters = [130, 118, 271, 220, 185, 253, 236];
 
-const InfoGlassMorph = () => {
+const InfoGlassMorph = ({ season }) => {
   const [s1, s2, s3, s4, s5, s6, s7] = useSprings(
     letters.length,
     letters.map((length) => {
@@ -93,7 +93,7 @@ const InfoGlassMorph = () => {
         <Button
           onClick={redirectToAbout}
           paddings={"1rem 2rem"}
-          hoverColor={"#a2bab9"}
+          hoverColor={season.color}
           border={"2px solid white"}
         >
           <ButtonP>About Me</ButtonP>

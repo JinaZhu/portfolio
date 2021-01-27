@@ -3,10 +3,13 @@ import { gsap } from "gsap";
 
 import { Nav, NavList, NavLi, NavLink, ContactButton, NavP } from "./styled";
 import Contact from "./Contact";
+import { useSeason } from "../Providers/Season";
 
-const Navbar = ({ pageColor, currentPage }) => {
+const Navbar = ({ currentPage }) => {
   const [isActive, setIsActive] = useState(false);
   const [buttonText, setButtonText] = useState("Contact");
+  const { season } = useSeason();
+
   const contactToggle = (e) => {
     e.preventDefault();
     if (isActive === false) {
@@ -50,7 +53,7 @@ const Navbar = ({ pageColor, currentPage }) => {
           <ContactButton
             isActive={isActive}
             onClick={contactToggle}
-            color={pageColor}
+            color={season.color}
           >
             {buttonText}
           </ContactButton>

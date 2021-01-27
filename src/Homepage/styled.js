@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 export const HomepageContainer = styled.div`
-  background-color: #a2bab9;
+  background-color: ${(props) => props.color};
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -15,7 +15,7 @@ export const GlassContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 90vh;
+  height: 83vh;
   z-index: 1;
 `;
 
@@ -51,31 +51,92 @@ export const P = styled.p`
 export const AlignFooter = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 70px 0 0 0;
+  justify-content: space-between;
+  height: 7vh;
+  width: 100vw;
 
-  @media screen and (max-width: 1200px) {
-    padding: 300px 0 0 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media screen and (max-width: 425px) {
+    flex-direction: column-reverse;
+    height: 8vh;
   }
 `;
 
 export const Credit = styled.a`
   text-decoration: none;
   color: white;
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
+  margin: 0;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 
   &:hover {
-    color: #786b6e;
-    border-bottom: 1px solid #786b6e;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+      0 0 25px #fff, 0 0 30px #fff, 0 0 45px #fff;
   }
+`;
 
-  @media screen and (max-width: 768px) {
-    display: none;
+export const SeasonSelectionContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 5px;
+  color: #fff;
+
+  @media screen and (max-width: 425px) {
+    margin: 0;
+  }
+`;
+
+export const Seasons = styled.div`
+  display: flex;
+  align-items: flex-start;
+  height: 10vh;
+
+  @media screen and (max-width: 425px) {
+    height: 100%;
+  }
+`;
+
+export const FooterP = styled.p`
+  margin: 0 0 10px 0;
+  z-index: 10px;
+`;
+
+export const InnerBorder = styled.div`
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+`;
+
+export const SeasonSelectionButton = styled.button`
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  z-index: 10;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+      0 0 5px #fff, 0 0 5px #fff;
   }
 `;
 
@@ -124,7 +185,6 @@ const backFall = keyframes`
 `;
 
 export const WinterContainer = styled.div`
-  // background: #a2bab9;
   height: 100vh;
   width: 100vw;
   overflow: hidden;

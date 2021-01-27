@@ -15,6 +15,7 @@ export const NavList = styled.ul`
   width: 30%;
   padding: 0;
   z-index: 10;
+  margin: 0;
   @media screen and (max-width: 1000px) {
     width: 40%;
   }
@@ -28,6 +29,7 @@ export const NavList = styled.ul`
 
 export const NavLi = styled.li`
   list-style: none;
+  font-weight: bold;
 `;
 
 export const NavP = styled.p`
@@ -66,7 +68,8 @@ export const NavLink = styled(Link)`
 
 export const ContactButton = styled.button`
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
+  font-weight: bold;
   color: white;
   outline: none;
   padding: 7px 10px;

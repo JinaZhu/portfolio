@@ -30,32 +30,32 @@ const softwares = [
   "Figma",
 ];
 
-const TechStack = () => {
+const TechStack = ({ season }) => {
   const displayLanguages = languages.map((language, index) => {
     return (
       <StackNameTag key={index}>
-        <StackName>{language}</StackName>
+        <StackName color={season.color}>{language}</StackName>
       </StackNameTag>
     );
   });
   const displayFramework = frameworks.map((framework, index) => {
     return (
       <StackNameTag key={index}>
-        <StackName>{framework}</StackName>
+        <StackName color={season.color}>{framework}</StackName>
       </StackNameTag>
     );
   });
   const displayDatabase = databases.map((database, index) => {
     return (
       <StackNameTag key={index}>
-        <StackName>{database}</StackName>
+        <StackName color={season.color}>{database}</StackName>
       </StackNameTag>
     );
   });
   const displaySoftwares = softwares.map((software, index) => {
     return (
       <StackNameTag key={index}>
-        <StackName>{software}</StackName>
+        <StackName color={season.color}>{software}</StackName>
       </StackNameTag>
     );
   });

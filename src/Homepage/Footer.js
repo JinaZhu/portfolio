@@ -31,7 +31,7 @@ const Footer = () => {
             return (
               <SeasonSelectionButton
                 onClick={() => setSeason(season)}
-                key={season.season}
+                key={season.name}
               >
                 <InnerBorder>
                   <img src={season.icon} alt="winter" width="20" />

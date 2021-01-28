@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import Footer from "./Footer";
 import { HomepageContainer } from "./styled";
-import Winter from "./Winter";
+import CurrentSeason from "./CurrentSeason";
 import InfoGlassMorph from "./InfoGlassMorph";
 import { useSeason } from "../Providers/Season";
 
@@ -12,7 +12,7 @@ const Homepage = () => {
 
   return (
     <HomepageContainer color={season.color}>
-      <Winter />
+      <CurrentSeason season={season} />
       <Navbar pageColor={"#a2bab9"} currentPage={"home"} />
       <InfoGlassMorph season={season} />
       <Footer />

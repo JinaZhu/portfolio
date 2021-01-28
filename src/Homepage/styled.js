@@ -16,7 +16,7 @@ export const GlassContainer = styled.div`
   align-items: center;
   width: 100vw;
   height: 83vh;
-  z-index: 1;
+  z-index: 2;
 `;
 
 export const Glass = styled.div`
@@ -67,7 +67,7 @@ export const Credit = styled.a`
   margin: 0;
   font-size: 12px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +106,7 @@ export const Seasons = styled.div`
 
 export const FooterP = styled.p`
   margin: 0 0 10px 0;
-  z-index: 10px;
+  z-index: 2px;
 `;
 
 export const InnerBorder = styled.div`
@@ -128,7 +128,7 @@ export const SeasonSelectionButton = styled.button`
   align-items: center;
   justify-content: center;
   margin: 0 5px;
-  z-index: 10;
+  z-index: 2;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -230,30 +230,24 @@ const petalFall = keyframes`
     }
     20% {
         transform: translateX(100px) rotate(45deg);
-        // filter: blur(0.2px);
     }
     40% {
         transform: translateX(300px) rotate(90deg);
-        // filter: blur(0.5px);
     }
     60% {
         transform: translateX(700px) rotate(135deg);
-        // filter: blur(0.7px);
     }
     70% {
         top: 110%;
         transform: translateX(1000px) rotate(180deg);
-        // filter: blur(1px);
     }
     80% {
         top: 100%;
         transform: translateX(1100px) rotate(180deg);
-        // filter: blur(0.7px);
     }
     100% {
         top: 70%; 
         transform: translateX(1700px) rotate(225deg);
-        // filter: blur(0.5px);
     }
 `;
 

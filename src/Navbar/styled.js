@@ -1,6 +1,11 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
+const textGlow = css`
+  text-shadow: 0 0 5px #f2f2f2, 0 0 10px #f2f2f2, 0 0 15px #f2f2f2,
+    0 0 20px #f2f2f2, 0 0 25px #f2f2f2, 0 0 30px #f2f2f2, 0 0 35px #f2f2f2;
+`;
+
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
@@ -8,13 +13,12 @@ export const Nav = styled.nav`
   margin: 0 1rem;
 `;
 
-export const NavList = styled.ul`
+export const NavList = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 30%;
   padding: 0;
-  z-index: 10;
   margin: 0;
   @media screen and (max-width: 1000px) {
     width: 40%;
@@ -27,23 +31,16 @@ export const NavList = styled.ul`
   }
 `;
 
-export const NavLi = styled.li`
-  list-style: none;
-  font-weight: bold;
-`;
-
 export const NavP = styled.p`
   &:hover {
-    text-shadow: 0 0 10px #f2f2f2, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2,
-      0 0 40px #f2f2f2, 0 0 50px #f2f2f2, 0 0 60px #f2f2f2, 0 0 70px #f2f2f2;
+    ${textGlow}
   }
 
   ${(props) => {
     return (
       props.isActive &&
       css`
-        text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #f2f2f2,
-          0 0 30px #f2f2f2, 0 0 40px #f2f2f2, 0 0 50px #f2f2f2;
+        ${textGlow}
       `
     );
   }}
@@ -54,7 +51,22 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   font-size: 20px;
   padding: 3px;
-  z-index: 10;
+  z-index: 1;
+  display: inline-block;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    transiton: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
 
   @media screen and (max-width: 1100px) {
     font-size: 16px;
@@ -67,19 +79,41 @@ export const NavLink = styled(Link)`
 //contact page
 
 export const ContactButton = styled.button`
-  background-color: transparent;
-  border: 2px solid white;
+  border: none;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
   font-weight: bold;
   color: white;
   outline: none;
   padding: 7px 10px;
   font-size: 20px;
-  z-index: 2;
+  z-index: 5;
   cursor: pointer;
+  overflow: hidden;
+
   &:hover {
-    background-color: white;
-    color: ${(props) => props.color};
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+      0 0 5px #fff, 0 0 5px #fff;
   }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: 0.5s;
+  }
+  &:hover::before {
+    left: 100%;
+  }
+
   @media screen and (max-width: 1100px) {
     font-size: 16px;
   }
@@ -93,12 +127,12 @@ export const ContactButton = styled.button`
     return (
       props.isActive &&
       css`
+        position: relative;
         background-color: white;
-        color: #ebc1a7;
-        border: 1px solid #ebc1a7;
-        z-index: 2;
+        color: ${(props) => props.color};
+        z-index: 5;
         &:hover {
-          background-color: #ebc1a7;
+          background-color: ${(props) => props.color};
           color: white;
         }
       `
@@ -116,9 +150,9 @@ export const ContactPage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
   opacity: 1;
-  color: #ebc1a7;
+  color: ${(props) => props.color};
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
 `;
@@ -129,8 +163,12 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #ebc1a7;
   padding: 2rem;
+  background-color: ${(props) => props.color};
+  color: white;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 
   @media screen and (max-width: 425px) {
     font-size: 16px;
@@ -146,27 +184,25 @@ export const ContactContainer = styled.div`
 export const EmailButton = styled.button`
   padding: 1rem 0;
   background-color: white;
-  color: white;
-  border: 1px solid #ebc1a7;
   font-size: 20px;
   margin: 2rem;
   cursor: pointer;
   outline: none;
+  border: none;
 
   &:hover {
-    background-color: #ebc1a7;
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+      0 0 5px #fff, 0 0 5px #fff;
+    color: ${(props) => props.color};
   }
 `;
 
 export const EmailLink = styled.a`
   text-decoration: none;
-  color: #ebc1a7;
+  color: ${(props) => props.color};
   padding: 3rem;
   white-space: nowrap;
-
-  &:hover {
-    color: white;
-  }
+  font-weight: bold;
 
   @media screen and (max-width: 425px) {
     font-size: 16px;
@@ -181,5 +217,4 @@ export const ContactTitle = styled.h1`
   @media screen and (max-width: 425px) {
     font-size: 25px;
   }
-
 `;

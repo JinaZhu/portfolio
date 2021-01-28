@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { gsap } from "gsap";
 
-import { Nav, NavList, NavLi, NavLink, ContactButton, NavP } from "./styled";
+import { Nav, NavList, NavLink, ContactButton, NavP } from "./styled";
 import Contact from "./Contact";
 import { useSeason } from "../Providers/Season";
 
@@ -35,21 +35,15 @@ const Navbar = ({ currentPage }) => {
     <div>
       <Nav>
         <NavList>
-          <NavLi>
-            <NavP isActive={checkPage("home")}>
-              <NavLink to="/">Home</NavLink>
-            </NavP>
-          </NavLi>
-          <NavLi>
-            <NavP isActive={checkPage("project")}>
-              <NavLink to="/project">Projects</NavLink>
-            </NavP>
-          </NavLi>
-          <NavLi>
-            <NavP isActive={checkPage("about")}>
-              <NavLink to="/about">About Me</NavLink>
-            </NavP>
-          </NavLi>
+          <NavP isActive={checkPage("home")}>
+            <NavLink to="/">Home</NavLink>
+          </NavP>
+          <NavP isActive={checkPage("project")}>
+            <NavLink to="/project">Projects</NavLink>
+          </NavP>
+          <NavP isActive={checkPage("about")}>
+            <NavLink to="/about">About Me</NavLink>
+          </NavP>
           <ContactButton
             isActive={isActive}
             onClick={contactToggle}
@@ -59,7 +53,7 @@ const Navbar = ({ currentPage }) => {
           </ContactButton>
         </NavList>
       </Nav>
-      <Contact />
+      <Contact season={season} />
     </div>
   );
 };

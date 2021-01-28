@@ -236,35 +236,17 @@ export const SnowflakeImg = styled.img`
 
 //spring
 
-const petalFall = keyframes`
+const petalFall = (topEnd) => keyframes`
     0% {
         opacity: 0;
-        top: -10%;
+        top: -15%;
         transform:rotate(0deg);
     }
     10% {
         opacity: 1; 
-        transform: translateX(30px) rotate(25deg);
-    }
-    20% {
-        transform: translateX(100px) rotate(45deg);
-    }
-    40% {
-        transform: translateX(300px) rotate(90deg);
-    }
-    60% {
-        transform: translateX(700px) rotate(135deg);
-    }
-    70% {
-        top: 110%;
-        transform: translateX(1000px) rotate(180deg);
-    }
-    80% {
-        top: 100%;
-        transform: translateX(1100px) rotate(180deg);
     }
     100% {
-        top: 70%; 
+        top: ${topEnd}%; 
         transform: translateX(1700px) rotate(225deg);
     }
 `;
@@ -285,7 +267,8 @@ export const FlowerContainer = styled.div`
 export const FlowerImg = styled.img`
   position: absolute;
   left: ${(props) => props.left};
-  animation: ${petalFall} ${(props) => props.duration} linear infinite;
+  animation: ${(props) => petalFall(props.topEnd)} ${(props) => props.duration}
+    linear infinite;
   animation-delay: ${(props) => props.delay};
   opacity: 0.5;
   filter: grayscale(40%) opacity(90%) saturate(120%);

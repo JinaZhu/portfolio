@@ -9,6 +9,8 @@ import flower5 from "../images/Seasons/flower_5.png";
 import flower6 from "../images/Seasons/flower_6.png";
 
 const lefts = [
+  "-25",
+  "-23",
   "-21%",
   "-18%",
   "-15%",
@@ -27,7 +29,19 @@ const lefts = [
   "25%",
 ];
 const durations = ["10s", "11s", "12s", "13s", "14s", "15s", "16s", "17s"];
-const delays = ["-10s", "-8s", "-6s", "-4s", "-2s", "0", "0", "0"];
+const delays = [
+  "-11s",
+  "-13s",
+  "-15s",
+  "-10s",
+  "-8s",
+  "-6s",
+  "-4s",
+  "-2s",
+  "0",
+  "0",
+  "0",
+];
 const flowerTypes = [
   [flower3, "25"],
   [flower4, "25"],
@@ -41,17 +55,32 @@ const flowerTypes = [
   [flower6, "25"],
 ];
 
+const topEnd = [
+  "125",
+  "120",
+  "115",
+  "110",
+  "105",
+  "100",
+  "95",
+  "90",
+  "85",
+  "80",
+];
+
 const Spring = () => {
   return (
     <SpringContainer>
       <FlowerContainer>
-        {Array(...Array(50)).map((_, i) => {
+        {Array(...Array(60)).map((_, i) => {
           const randomLeft = lefts[Math.floor(Math.random() * lefts.length)];
           const randomDuration =
             durations[Math.floor(Math.random() * durations.length)];
           const randomDelay = delays[Math.floor(Math.random() * delays.length)];
           const randomFlowerType =
             flowerTypes[Math.floor(Math.random() * flowerTypes.length)];
+          const randomtopEnd =
+            topEnd[Math.floor(Math.random() * topEnd.length)];
           return (
             <FlowerImg
               key={i}
@@ -61,6 +90,7 @@ const Spring = () => {
               delay={randomDelay}
               alt="flower"
               width={randomFlowerType[1]}
+              topEnd={randomtopEnd}
             />
           );
         })}

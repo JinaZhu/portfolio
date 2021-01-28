@@ -54,6 +54,7 @@ const Spring = () => {
             flowerTypes[Math.floor(Math.random() * flowerTypes.length)];
           return (
             <FlowerImg
+              key={i}
               src={randomFlowerType[0]}
               left={randomLeft}
               duration={randomDuration}

@@ -22,7 +22,7 @@ const seasonDetail = {
   winter: { name: "winter", color: "#a2bab9", icon: snowflake },
   spring: { name: "spring", color: "#e5b9b6", icon: flower },
   summer: { name: "summer", color: "#c6902b", icon: sun },
-  autumn: { name: "autumn", color: "#b77457", icon: leaf },
+  autumn: { name: "autumn", color: "#a53d23", icon: leaf },
 };
 
 function checkSeason(month) {

@@ -166,7 +166,7 @@ const fall = keyframes`
     0% {
         opacity: 0;
         top: -10%;
-        transform: translateX(-20px) rotate(0deg);
+        transform: translateX(20px) rotate(0deg);
     }
     10% {
         opacity: 1; 

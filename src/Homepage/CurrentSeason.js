@@ -1,17 +1,22 @@
 import React from "react";
 
-import Winter from "./Winter";
+import WinterAutumn from "./WinterAutumn";
 import Spring from "./Spring";
 
 const CurrentSeason = ({ season }) => {
   if (season.name === "winter") {
-    return <Winter />;
+    return <WinterAutumn season={season} />;
   }
   if (season.name === "spring") {
     return <Spring />;
   }
-  if (season.name === "summer" || season.name === "autumn") {
-    return <Winter />;
+
+  if (season.name === "autumn") {
+    return <WinterAutumn season={season} />;
+  }
+
+  if (season.name === "summer") {
+    return <WinterAutumn season={season} />;
   }
 };
 

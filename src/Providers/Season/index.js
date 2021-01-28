@@ -19,17 +19,11 @@ const seasonMonths = {
 };
 
 const seasonDetail = {
-  winter: { season: "winter", color: "#a2bab9", icon: snowflake },
-  spring: { season: "spring", color: "#d0aaaa", icon: flower },
-  summer: { season: "summer", color: "#edcc8b", icon: sun },
-  autumn: { season: "autumn", color: "#c98a6d", icon: leaf },
+  winter: { name: "winter", color: "#a2bab9", icon: snowflake },
+  spring: { name: "spring", color: "#e5b9b6", icon: flower },
+  summer: { name: "summer", color: "#c6902b", icon: sun },
+  autumn: { name: "autumn", color: "#b77457", icon: leaf },
 };
-
-//#d76b8b
-//#f5c6ab
-//f7a920
-//#c86d5f
-//e5b9b6
 
 function checkSeason(month) {
   for (let season in seasonMonths) {

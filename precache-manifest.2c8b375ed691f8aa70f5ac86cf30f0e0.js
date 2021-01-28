@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "101e61d3957c281be0105fe281bce64a",
+    "revision": "0aeb9a31d194f76c3ee1d38c88f75b92",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "0c8be12dc1c744c93e6b",
+    "revision": "b93a793fa0403ecc7f51",
     "url": "/portfolio/static/css/main.85dbe747.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.3c9c8433.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0c8be12dc1c744c93e6b",
-    "url": "/portfolio/static/js/main.f72d1f3d.chunk.js"
+    "revision": "b93a793fa0403ecc7f51",
+    "url": "/portfolio/static/js/main.cb28b424.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -92,12 +92,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/github-brands.06b7e22f.svg"
   },
   {
-    "revision": "fb2f075ab73736c6bffd46c723610408",
-    "url": "/portfolio/static/media/github.fb2f075a.svg"
+    "revision": "2ef81c65794c3f5b134b39f30d15a8fc",
+    "url": "/portfolio/static/media/github.2ef81c65.svg"
   },
   {
-    "revision": "978764d43583bf01c76273fc4ba1ba27",
-    "url": "/portfolio/static/media/instagram.978764d4.svg"
+    "revision": "7cbcd31df6a60a8b5cb41c8a55060973",
+    "url": "/portfolio/static/media/instagram.7cbcd31d.svg"
   },
   {
     "revision": "1ddbf24f9701e1a06c00627d4bf544e5",
@@ -108,8 +108,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/link.81198e0a.svg"
   },
   {
-    "revision": "42beca2ce0cf117f22aad49c16adf9df",
-    "url": "/portfolio/static/media/linkedin.42beca2c.svg"
+    "revision": "c733b26a2c8178914e17cf7d94ee81a6",
+    "url": "/portfolio/static/media/linkedin.c733b26a.svg"
   },
   {
     "revision": "1f06d7c5dc0be7932f0923a2376becde",

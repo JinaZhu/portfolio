@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.85dbe747.chunk.css",
-    "main.js": "/portfolio/static/js/main.f72d1f3d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f72d1f3d.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.cb28b424.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.cb28b424.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.3c9c8433.chunk.js": "/portfolio/static/js/2.3c9c8433.chunk.js",
     "static/js/2.3c9c8433.chunk.js.map": "/portfolio/static/js/2.3c9c8433.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.90e658320cddc82dc857850a28cf703a.js": "/portfolio/precache-manifest.90e658320cddc82dc857850a28cf703a.js",
+    "precache-manifest.2c8b375ed691f8aa70f5ac86cf30f0e0.js": "/portfolio/precache-manifest.2c8b375ed691f8aa70f5ac86cf30f0e0.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.85dbe747.chunk.css.map": "/portfolio/static/css/main.85dbe747.chunk.css.map",
     "static/js/2.3c9c8433.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3c9c8433.chunk.js.LICENSE.txt",
@@ -29,11 +29,11 @@
     "static/media/copyright.svg": "/portfolio/static/media/copyright.3d0f7c37.svg",
     "static/media/food.JPG": "/portfolio/static/media/food.48ed5582.JPG",
     "static/media/github-brands.svg": "/portfolio/static/media/github-brands.06b7e22f.svg",
-    "static/media/github.svg": "/portfolio/static/media/github.fb2f075a.svg",
-    "static/media/instagram.svg": "/portfolio/static/media/instagram.978764d4.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.2ef81c65.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.7cbcd31d.svg",
     "static/media/leaf.svg": "/portfolio/static/media/leaf.1ddbf24f.svg",
     "static/media/link.svg": "/portfolio/static/media/link.81198e0a.svg",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.42beca2c.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.c733b26a.svg",
     "static/media/lovesFood.jpeg": "/portfolio/static/media/lovesFood.1f06d7c5.jpeg",
     "static/media/photographer.jpeg": "/portfolio/static/media/photographer.f3f5b1cb.jpeg",
     "static/media/plantMom.jpeg": "/portfolio/static/media/plantMom.1f7b4c47.jpeg",
@@ -54,6 +54,6 @@
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.3c9c8433.chunk.js",
     "static/css/main.85dbe747.chunk.css",
-    "static/js/main.f72d1f3d.chunk.js"
+    "static/js/main.cb28b424.chunk.js"
   ]
 }

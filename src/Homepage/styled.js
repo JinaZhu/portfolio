@@ -133,10 +133,27 @@ export const SeasonSelectionButton = styled.button`
   background: rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
       0 0 5px #fff, 0 0 5px #fff;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: 0.5s;
+  }
+  &:hover::before {
+    left: 100%;
   }
 `;
 

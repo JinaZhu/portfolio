@@ -10,9 +10,26 @@ export const Button = styled.button`
   cursor: pointer;
   outline: none;
   white-space: nowrap;
+  position: relative;
+  overflow: hidden;
   &:hover {
-    background-color: ${(props) => props.hoverBackgroundColor || "white"};
-    color: ${(props) => props.hoverColor || "white"};
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+      0 0 5px #fff, 0 0 5px #fff;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: 0.5s;
+  }
+  &:hover::before {
+    left: 100%;
   }
 
   @media screen and (max-width: 425px) {

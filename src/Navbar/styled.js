@@ -32,6 +32,7 @@ export const NavList = styled.div`
 `;
 
 export const NavP = styled.p`
+  z-index: 3;
   &:hover {
     ${textGlow}
   }

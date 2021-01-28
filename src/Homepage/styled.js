@@ -106,7 +106,7 @@ export const Seasons = styled.div`
 
 export const FooterP = styled.p`
   margin: 0 0 10px 0;
-  z-index: 2px;
+  z-index: 2;
 `;
 
 export const InnerBorder = styled.div`
@@ -189,6 +189,7 @@ export const WinterContainer = styled.div`
   width: 100vw;
   overflow: hidden;
   position: absolute;
+  user-select: none;
 `;
 
 export const SnowflakeForward = styled.div`

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.85dbe747.chunk.css",
-    "main.js": "/portfolio/static/js/main.cb28b424.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.cb28b424.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.b4ddfb34.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b4ddfb34.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.3c9c8433.chunk.js": "/portfolio/static/js/2.3c9c8433.chunk.js",
-    "static/js/2.3c9c8433.chunk.js.map": "/portfolio/static/js/2.3c9c8433.chunk.js.map",
+    "static/js/2.e3c8b690.chunk.js": "/portfolio/static/js/2.e3c8b690.chunk.js",
+    "static/js/2.e3c8b690.chunk.js.map": "/portfolio/static/js/2.e3c8b690.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.2c8b375ed691f8aa70f5ac86cf30f0e0.js": "/portfolio/precache-manifest.2c8b375ed691f8aa70f5ac86cf30f0e0.js",
+    "precache-manifest.62a3a3ccd9a0cc99fa866883c10d9db1.js": "/portfolio/precache-manifest.62a3a3ccd9a0cc99fa866883c10d9db1.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.85dbe747.chunk.css.map": "/portfolio/static/css/main.85dbe747.chunk.css.map",
-    "static/js/2.3c9c8433.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3c9c8433.chunk.js.LICENSE.txt",
+    "static/js/2.e3c8b690.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e3c8b690.chunk.js.LICENSE.txt",
     "static/media/aa-homepage.png": "/portfolio/static/media/aa-homepage.6fc53e2d.png",
     "static/media/aa-map.png": "/portfolio/static/media/aa-map.e43f6f5c.png",
     "static/media/aa-pictures.png": "/portfolio/static/media/aa-pictures.eaa4e331.png",
@@ -32,6 +32,9 @@
     "static/media/github.svg": "/portfolio/static/media/github.2ef81c65.svg",
     "static/media/instagram.svg": "/portfolio/static/media/instagram.7cbcd31d.svg",
     "static/media/leaf.svg": "/portfolio/static/media/leaf.1ddbf24f.svg",
+    "static/media/leaf_1.png": "/portfolio/static/media/leaf_1.912884fe.png",
+    "static/media/leaf_2.png": "/portfolio/static/media/leaf_2.fcce8a31.png",
+    "static/media/leaf_3.png": "/portfolio/static/media/leaf_3.7dcb5616.png",
     "static/media/link.svg": "/portfolio/static/media/link.81198e0a.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.c733b26a.svg",
     "static/media/lovesFood.jpeg": "/portfolio/static/media/lovesFood.1f06d7c5.jpeg",
@@ -52,8 +55,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.3c9c8433.chunk.js",
+    "static/js/2.e3c8b690.chunk.js",
     "static/css/main.85dbe747.chunk.css",
-    "static/js/main.cb28b424.chunk.js"
+    "static/js/main.b4ddfb34.chunk.js"
   ]
 }

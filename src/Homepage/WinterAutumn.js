@@ -10,6 +10,9 @@ import snowflake1 from "../images/Seasons/snowflake_1.png";
 import snowflake2 from "../images/Seasons/snowflake_2.png";
 import snowflake3 from "../images/Seasons/snowflake_3.png";
 import snowflake4 from "../images/Seasons/snowflake_4.png";
+import leaf1 from "../images/Seasons/leaf_1.png";
+import leaf2 from "../images/Seasons/leaf_2.png";
+import leaf3 from "../images/Seasons/leaf_3.png";
 
 const lefts = [
   "0%",
@@ -22,47 +25,56 @@ const lefts = [
   "70%",
   "80%",
   "90%",
-  "100%",
+  "98%",
 ];
 
 const durations = ["10s", "11s", "12s", "13s", "14s", "15s", "16s", "17s"];
-const delays = ["-10s", "-8s", "-6s", "-4s", "-2s", "0", "0", "0"];
+const delays = ["-12s", "-10s", "-8s", "-6s", "-4s", "-2s", "0", "0", "0"];
 const snowflakes = [snowflake1, snowflake2, snowflake3, snowflake4];
-const sizes = [
+const leaves = [leaf1, leaf2, leaf3];
+const snowflakeSizes = [
   ["35", "0px"],
   ["50", "1px"],
+];
+const leafSizes = [
+  ["80", "0px"],
+  ["100", "0px"],
 ];
 
 function getRandomizedStyle(styleType) {
   return styleType[Math.floor(Math.random() * styleType.length)];
 }
 
-function randomizeStyles() {
+function randomizeStyles(season) {
   const randomLeft = getRandomizedStyle(lefts);
   const randomDuration = getRandomizedStyle(durations);
   const randomDelay = getRandomizedStyle(delays);
-  const randomSnowflake = getRandomizedStyle(snowflakes);
-  const randomSize = getRandomizedStyle(sizes);
+  const randomImg = getRandomizedStyle(
+    season === "winter" ? snowflakes : leaves
+  );
+  const randomSize = getRandomizedStyle(
+    season === "winter" ? snowflakeSizes : leafSizes
+  );
 
   return {
     randomLeft,
     randomDuration,
     randomDelay,
-    randomSnowflake,
+    randomImg,
     randomSize,
   };
 }
 
-const Winter = () => {
+const WinterAutumn = ({ season }) => {
   return (
     <WinterContainer>
       <SnowflakeForward>
-        {Array(...Array(35)).map((_, i) => {
-          const styles = randomizeStyles();
+        {Array(...Array(season === "winter" ? 35 : 22)).map((_, i) => {
+          const styles = randomizeStyles(season.name);
           return (
             <SnowflakeImg
               key={i}
-              src={styles.randomSnowflake}
+              src={styles.randomImg}
               left={styles.randomLeft}
               duration={styles.randomDuration}
               delay={styles.randomDelay}
@@ -75,18 +87,18 @@ const Winter = () => {
         })}
       </SnowflakeForward>
       <SnowflakeBackward>
-        {Array(...Array(20)).map((_, i) => {
-          const styles = randomizeStyles();
+        {Array(...Array(season === "winter" ? 20 : 15)).map((_, i) => {
+          const styles = randomizeStyles(season.name);
           return (
             <SnowflakeImg
               key={i}
-              src={styles.randomSnowflake}
+              src={styles.randomImg}
               left={styles.randomLeft}
               duration={styles.randomDuration}
               delay={styles.randomDelay}
               blur={"3px"}
               alt="snowflake"
-              width="25"
+              width={season === "winter" ? "25" : "60"}
               fall={true}
             />
           );
@@ -96,4 +108,4 @@ const Winter = () => {
   );
 };
 
-export default Winter;
+export default WinterAutumn;

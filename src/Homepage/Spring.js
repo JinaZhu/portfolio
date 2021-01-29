@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SpringContainer, FlowerContainer, FlowerImg } from "./styled";
+import { SeasonContainer, FlowerContainer, FlowerImg } from "./styled";
 import flower1 from "../images/Seasons/flower_2.png";
 import flower2 from "../images/Seasons/flower_2.png";
 import flower3 from "../images/Seasons/flower_3.png";
@@ -70,7 +70,7 @@ const topEnd = [
 
 const Spring = () => {
   return (
-    <SpringContainer>
+    <SeasonContainer>
       <FlowerContainer>
         {Array(...Array(60)).map((_, i) => {
           const randomLeft = lefts[Math.floor(Math.random() * lefts.length)];
@@ -95,7 +95,7 @@ const Spring = () => {
           );
         })}
       </FlowerContainer>
-    </SpringContainer>
+    </SeasonContainer>
   );
 };
 

@@ -37,8 +37,8 @@ const snowflakeSizes = [
   ["50", "1px"],
 ];
 const leafSizes = [
-  ["80", "0px"],
-  ["100", "0px"],
+  ["70", "0px"],
+  ["85", "0px"],
 ];
 
 function getRandomizedStyle(styleType) {
@@ -69,7 +69,7 @@ const WinterAutumn = ({ season }) => {
   return (
     <WinterContainer>
       <SnowflakeForward>
-        {Array(...Array(season === "winter" ? 35 : 22)).map((_, i) => {
+        {Array(...Array(season === "winter" ? 35 : 25)).map((_, i) => {
           const styles = randomizeStyles(season.name);
           return (
             <SnowflakeImg
@@ -98,7 +98,7 @@ const WinterAutumn = ({ season }) => {
               delay={styles.randomDelay}
               blur={"3px"}
               alt="snowflake"
-              width={season === "winter" ? "25" : "60"}
+              width={season.name === "winter" ? "25" : "60"}
               fall={true}
             />
           );

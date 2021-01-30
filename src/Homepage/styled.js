@@ -276,12 +276,12 @@ export const FlowerImg = styled.img`
 
 //summer
 
-const bounce = keyframes`
+const bounce = (height) => keyframes`
     from {
       transform: translateY(0px) rotate(0deg);
     } 
     to {
-      transform: translateY(-50vw) rotate(359deg);
+      transform: translateY(${height}) rotate(359deg);
     }
 `;
 
@@ -294,6 +294,10 @@ export const BallContainer = styled.div`
 export const BallImg = styled.img`
   position: absolute;
   bottom: -25%;
-  left: ${(props) => props.left};
-  animation: ${bounce} 3s infinite alternate ease-out;
+  left: ${(props) => props.left}%;
+  animation: ${(props) => bounce(props.height)} ${(props) => props.duration}
+    infinite alternate ease-out;
+  animation-delay: ${(props) => props.delay};
+  opacity: 0.8;
+  filter: saturate(150%);
 `;

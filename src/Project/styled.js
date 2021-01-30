@@ -20,7 +20,8 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: Oswald;
+  font-family: "Russo One", sans-serif;
+  font-weight: bold;
   margin: 0;
   font-size: 50px;
   text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2,
@@ -119,7 +120,8 @@ export const StackName = styled.p`
 export const ProjectTitle = styled.h2`
   transform: rotate(90deg);
   font-size: 30px;
-  font-family: Oswald;
+  font-family: "Russo One", sans-serif;
+  font-weight: bold;
   letter-spacing: 7px;
   margin: 0;
   white-space: nowrap;

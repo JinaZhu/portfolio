@@ -100,7 +100,7 @@ const Project = () => {
     <ProjectPage color={season.color}>
       <Navbar pageColor={"#748173"} currentPage={"project"} />
       <TitleContainer>
-        <Title>Things</Title>
+        <Title>Things Jina Zhu</Title>
         <Title>I've Built</Title>
         <SubTitle>featured project</SubTitle>
       </TitleContainer>

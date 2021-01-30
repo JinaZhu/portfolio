@@ -7,27 +7,8 @@ import flower3 from "../images/Seasons/flower_3.png";
 import flower4 from "../images/Seasons/flower_4.png";
 import flower5 from "../images/Seasons/flower_5.png";
 import flower6 from "../images/Seasons/flower_6.png";
+import { lefts, getRandomizedStyle } from "./utility";
 
-const lefts = [
-  "-25",
-  "-23",
-  "-21%",
-  "-18%",
-  "-15%",
-  "-12%",
-  "-9%",
-  "-6%",
-  "-3%",
-  "0%",
-  "3%",
-  "6%",
-  "9%",
-  "12%",
-  "15%",
-  "18%",
-  "21%",
-  "25%",
-];
 const durations = ["10s", "11s", "12s", "13s", "14s", "15s", "16s", "17s"];
 const delays = [
   "-11s",
@@ -73,14 +54,11 @@ const Spring = () => {
     <SeasonContainer>
       <FlowerContainer>
         {Array(...Array(60)).map((_, i) => {
-          const randomLeft = lefts[Math.floor(Math.random() * lefts.length)];
-          const randomDuration =
-            durations[Math.floor(Math.random() * durations.length)];
-          const randomDelay = delays[Math.floor(Math.random() * delays.length)];
-          const randomFlowerType =
-            flowerTypes[Math.floor(Math.random() * flowerTypes.length)];
-          const randomtopEnd =
-            topEnd[Math.floor(Math.random() * topEnd.length)];
+          const randomLeft = getRandomizedStyle(lefts);
+          const randomDuration = getRandomizedStyle(durations);
+          const randomDelay = getRandomizedStyle(delays);
+          const randomFlowerType = getRandomizedStyle(flowerTypes);
+          const randomtopEnd = getRandomizedStyle(topEnd);
           return (
             <FlowerImg
               key={i}

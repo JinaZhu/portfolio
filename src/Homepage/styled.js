@@ -251,7 +251,7 @@ const petalFall = (topEnd) => keyframes`
     }
 `;
 
-export const SpringContainer = styled.div`
+export const SeasonContainer = styled.div`
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -267,9 +267,40 @@ export const FlowerContainer = styled.div`
 export const FlowerImg = styled.img`
   position: absolute;
   left: ${(props) => props.left};
-  animation: ${(props) => petalFall(props.topEnd)} ${(props) => props.duration}
-    linear infinite;
+  animation: ${(props) => (props.fall ? backFall : fall)}
+    ${(props) => props.duration} linear infinite;
+  // animation: ${(props) => petalFall(props.topEnd)} ${(props) =>
+    props.duration}
+  //   linear infinite;
   animation-delay: ${(props) => props.delay};
   opacity: 0.5;
   filter: grayscale(40%) opacity(90%) saturate(120%);
+`;
+
+//summer
+
+const bounce = (height) => keyframes`
+    from {
+      transform: translateY(0px) rotate(0deg);
+    } 
+    to {
+      transform: translateY(${height}) rotate(359deg);
+    }
+`;
+
+export const BallContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+`;
+
+export const BallImg = styled.img`
+  position: absolute;
+  bottom: -25%;
+  left: ${(props) => props.left}%;
+  animation: ${(props) => bounce(props.height)} ${(props) => props.duration}
+    infinite alternate ease-out;
+  animation-delay: ${(props) => props.delay};
+  opacity: 0.8;
+  filter: saturate(150%);
 `;

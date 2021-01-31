@@ -36,65 +36,27 @@ export const SubTitle = styled.p`
 export const ProjectContainer = styled.div`
   display: flex;
   border-bottom: 1px solid white;
-  margin: 0 5rem;
-  position: relative;
+  margin: 5rem;
   height: 100%;
+  border: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 
-  ${(props) => {
-    return (
-      props.border === "left" &&
-      css`
-        border-left: 1px solid white;
-      `
-    );
-  }}
-  ${(props) => {
-    return (
-      props.border === "right" &&
-      css`
-        border-right: 1px solid white;
-      `
-    );
-  }}
   @media screen and (max-width: 800px) {
     margin: 0 1rem;
   }
 `;
 
-export const ProjectDescription = styled.div`
+export const DescriptionContainer = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 5rem;
-  margin-right: 2rem;
-
-  @media screen and (max-width: 425px) {
-    font-size: 16px;
-    margin-left: 3rem;
-
-    ${(props) => {
-      return (
-        props.align === "right" &&
-        css`
-          margin-left: 1rem;
-        `
-      );
-    }}
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 12px;
-
-    ${(props) => {
-      return (
-        props.align === "right" &&
-        css`
-          margin-left: 0rem;
-        `
-      );
-    }}
-  }
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 5rem;
 `;
 
 export const StackContainer = styled.div`
@@ -106,8 +68,20 @@ export const ProjectTitleContainer = styled.div`
   height: 100%;
 `;
 
+export const Divider = styled.div`
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  margin: 2rem 0;
+`;
+
+export const P = styled.p`
+  margin: 0;
+  text-align: left;
+`;
+
 export const StackName = styled.p`
-  margin-right: 1rem;
+  margin: 0 1rem 0 0;
 
   @media screen and (max-width: 425px) {
     font-size: 16px;
@@ -118,96 +92,74 @@ export const StackName = styled.p`
 `;
 
 export const ProjectTitle = styled.h2`
-  transform: rotate(90deg);
-  font-size: 30px;
+  font-size: 50px;
   font-family: "Russo One", sans-serif;
   font-weight: bold;
   letter-spacing: 7px;
-  margin: 0;
+  margin: 1rem;
   white-space: nowrap;
-  position: absolute;
-  left: 4%;
-  bottom: 75%;
-  transform-origin: top left;
-
-  ${(props) => {
-    return (
-      props.border === "right" &&
-      css`
-        left: initial;
-        right: 0%;
-        top: 50%;
-        transform-origin: top right;
-
-        @media screen and (max-width: 775px) {
-          top: 100%;
-        }
-
-        @media screen and (max-width: 425px) {
-          top: 75%;
-        }
-      `
-    );
-  }}
-
-  @media screen and (max-width: 800px) {
-    left: 8%;
-    bottom: 80%;
-  }
-
-  @media screen and (max-width: 425px) {
-    left: 13%;
-    bottom: 80%;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 25px;
-  }
 `;
 
 export const Links = styled.a`
   margin-right: 1rem;
+  border: 2px solid white;
+  padding: 5px 5px 3px 5px;
 `;
 
 export const ProjectImage = styled.img`
-  margin: 0rem 2rem 1rem 0rem;
-  filter: grayscale(1);
+  margin: 2px;
   object-fit: cover;
-  width: 250px;
-  height: 250px;
-  white-space: nowrap;
+  width: ${(props) => props.size || "50"}px;
+  height: ${(props) => props.size || "50"}px;
+  opacity: 0.6;
+  cursor: ${(props) => props.cursor};
+  border: 2px solid white;
 
+  ${(props) => {
+    return (
+      props.isActive &&
+      css`
+        opacity: 1;
+      `
+    );
+  }}
   &:hover {
-    filter: grayscale(0);
-    transition: filter 1s;
+    opacity: 1;
   }
 
-  @media screen and (max-width: 1100px) {
-    width: 100px,
-    height: 100px
-  }
-  @media screen and (max-width: 320px) {
-    width: 50px,
-    height: 50px
-  }
+  // @media screen and (max-width: 1100px) {
+  //   width: 100px,
+  //   height: 100px
+  // }
+
+  // @media screen and (max-width: 320px) {
+  //   width: 50px,
+  //   height: 50px
+  // }
+`;
+
+export const ImageSelectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ImageContainer = styled.div`
-  margin: 1rem 0;
-  @media screen and (max-width: 425px) {
-    height: auto;
-    width: 250px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    user-select: none;
-    cursor: pointer;
-    will-change: transform;
-    position: relative;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    -webkit-overflow-scrolling: touch;
-  }
+  display: flex;
+`;
+
+export const DetailContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 0 0 5rem;
+  min-height: 350px;
+`;
+
+export const LinkContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 `;
 
 export const Scroll = styled.p`

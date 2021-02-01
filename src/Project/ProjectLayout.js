@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import githubLogo from "../images/Icons/github-brands.svg";
 import linkLogo from "../images/Icons/link.svg";
+import SeasonProvider from "../Providers/Season";
 import {
   ProjectContainer,
   StackContainer,
@@ -15,6 +16,7 @@ import {
   DescriptionContainer,
   Divider,
   LinkContainer,
+  About,
   P,
 } from "./styled";
 
@@ -26,11 +28,11 @@ const ProjectLayout = ({
   deployed,
   images,
   border,
+  season,
 }) => {
   const [mainImage, setMainImage] = useState(0);
   return (
-    <ProjectContainer border={border}>
-      <ProjectTitle>{name}</ProjectTitle>
+    <ProjectContainer>
       <DescriptionContainer>
         <ImageContainer>
           <ImageSelectionContainer>
@@ -50,20 +52,15 @@ const ProjectLayout = ({
           <ProjectImage
             src={require(`../images/projectScreenshots/${images[mainImage]}`)}
             alt="project preview"
-            size={"350"}
+            size={"250"}
             isActive={true}
           />
         </ImageContainer>
         <DetailContainer>
-          <div>
+          <ProjectTitle color={season.color}>{name}</ProjectTitle>
+          <About>
             <P>{description}</P>
-            <Divider />
-            <StackContainer>
-              {stack.map((tech, index) => {
-                return <StackName key={index}>{tech}</StackName>;
-              })}
-            </StackContainer>
-          </div>
+          </About>
           <LinkContainer>
             {github.map((link, index) => {
               return (

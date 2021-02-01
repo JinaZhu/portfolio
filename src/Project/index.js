@@ -1,6 +1,13 @@
 import React from "react";
 
-import { SubTitle, ProjectPage, TitleContainer, Title } from "./styled";
+import {
+  SubTitle,
+  ProjectPage,
+  TitleContainer,
+  Title,
+  AllProjects,
+  ProjectBody,
+} from "./styled";
 import Navbar from "../Navbar";
 import ProjectLayout from "./ProjectLayout";
 import { useSeason } from "../Providers/Season";
@@ -92,6 +99,7 @@ const Project = () => {
         deployed={application.deployed}
         images={application.images}
         border={borderDisplay}
+        season={season}
       />
     );
   });
@@ -99,12 +107,14 @@ const Project = () => {
   return (
     <ProjectPage color={season.color}>
       <Navbar pageColor={"#748173"} currentPage={"project"} />
-      <TitleContainer>
-        <Title>Things Jina Zhu</Title>
-        <Title>I've Built</Title>
-        <SubTitle>featured project</SubTitle>
-      </TitleContainer>
-      {displayProjectPage}
+      <ProjectBody>
+        <TitleContainer>
+          <Title>Things</Title>
+          <Title>I've Built</Title>
+          <SubTitle>featured project</SubTitle>
+        </TitleContainer>
+        <AllProjects>{displayProjectPage}</AllProjects>
+      </ProjectBody>
     </ProjectPage>
   );
 };

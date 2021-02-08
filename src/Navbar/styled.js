@@ -212,8 +212,8 @@ export const EmailLink = styled.a`
 `;
 
 export const ContactTitle = styled.h1`
-  font-size: 30px
-  font-family: Oswald; 
+  font-size: 30px;
+  font-family: "Russo One", sans-serif;
 
   @media screen and (max-width: 425px) {
     font-size: 25px;

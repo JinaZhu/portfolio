@@ -41,7 +41,6 @@ export const ButtonP = styled.p`
 
 export const P = styled.p`
   font-size: 20px;
-  font-weight: bold;
 
   @media screen and (max-width: 425px) {
     font-size: 16px;

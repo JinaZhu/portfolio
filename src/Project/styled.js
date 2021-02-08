@@ -8,10 +8,10 @@ export const ProjectPage = styled.div`
 `;
 
 export const ProjectBody = styled.div`
+  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 5vw;
+  justify-content: space-between;
+  height: 90vh;
 `;
 
 export const TitleContainer = styled.div`
@@ -19,7 +19,7 @@ export const TitleContainer = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin: 1rem 5rem;
+  margin-left: 3rem;
 
   @media screen and (max-width: 800px) {
     margin: 1rem;
@@ -41,63 +41,51 @@ export const SubTitle = styled.p`
 `;
 
 export const About = styled.div`
-  overflow-y: scroll;
-  will-change: transform;
-  height: 200px;
+  font-size: 17px;
 `;
 
 export const ProjectContainer = styled.div`
   display: flex;
   border: none;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 375px;
-  height: 650px;
-  margin: 0 1vw;
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  // flex-direction: column;
+  height: 375px;
+  width: 650px;
+  margin: 0 2vw;
+  // box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
+  user-select: none;
 
   // @media screen and (max-width: 800px) {
   //   margin: 0 1rem;
   // }
 `;
 
+export const Border = styled.div`
+  border: 2px solid white;
+  width: 355px;
+  height: 630px;
+`;
+
 export const DescriptionContainer = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  // flex-direction: column;
   margin: 2rem 5rem;
-`;
-
-export const StackContainer = styled.div`
-  display: flex;
+  border: 2px solid white;
+  height: 355px;
+  width: 630px;
 `;
 
 export const ProjectTitleContainer = styled.div`
   width: 100%;
   height: 100%;
-`;
-
-export const Divider = styled.div`
-  background-color: white;
-  height: 2px;
-  width: 100%;
-  margin: 2rem 0;
-`;
-
-export const StackName = styled.p`
-  margin: 0 1rem 0 0;
-
-  @media screen and (max-width: 425px) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 12px;
-  }
+  margin: 0;
 `;
 
 export const ProjectTitle = styled.h2`
@@ -139,15 +127,19 @@ export const Links = styled.a`
   }
 `;
 
+export const ImageBorder = styled.div`
+  border: 2px solid white;
+  padding: 5px 5px 0px 5px;
+`;
+
 export const ProjectImage = styled.img`
-  margin: 2px;
   object-fit: cover;
   width: ${(props) => props.size || "50"}px;
   height: ${(props) => props.size || "50"}px;
   // opacity: 0.6;
   cursor: ${(props) => props.cursor};
-  border: 2px solid white;
   filter: grayscale(1);
+  margin: ${(props) => props.margin};
 
   ${(props) => {
     return (
@@ -176,25 +168,24 @@ export const ProjectImage = styled.img`
 
 export const ImageSelectionContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 5px;
 `;
 
 export const ImageContainer = styled.div`
   display: flex;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
   width: 315px;
+  flex-direction: column-reverse;
+  align-items: center;
 `;
 
 export const DetailContainer = styled.div`
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: column;
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
   width: 315px;
+  height: 350px;
 `;
 
 export const P = styled.p`
@@ -225,7 +216,8 @@ export const AllProjects = styled.div`
   overflow-x: scroll;
   will-change: transform;
   display: flex;
-  width: 90vw;
-  height: 100vh;
-  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 75vw;
+  height: 95vh;
 `;

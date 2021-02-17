@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "398a3a24b4da23ad8e5c0feb5d2a4496",
+    "revision": "75497cf973fc28a5b899e095329a420d",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "b0c0c2597c12fe560bf8",
-    "url": "/portfolio/static/css/main.85dbe747.chunk.css"
+    "revision": "c6c6db0c74177fcbb177",
+    "url": "/portfolio/static/css/2.1bf07f14.chunk.css"
   },
   {
-    "revision": "37cbf150fedb5c9df483",
-    "url": "/portfolio/static/js/2.c4eee50b.chunk.js"
+    "revision": "86ec215092c686631b40",
+    "url": "/portfolio/static/css/main.6d1ce935.chunk.css"
+  },
+  {
+    "revision": "c6c6db0c74177fcbb177",
+    "url": "/portfolio/static/js/2.8bd406ac.chunk.js"
   },
   {
     "revision": "f5327a3e8204f21ff1b2e5af38bc59ba",
-    "url": "/portfolio/static/js/2.c4eee50b.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.8bd406ac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b0c0c2597c12fe560bf8",
-    "url": "/portfolio/static/js/main.36d591c3.chunk.js"
+    "revision": "86ec215092c686631b40",
+    "url": "/portfolio/static/js/main.6533d75a.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -50,14 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2c945a9b92807aab45ce2fa171941fad",
     "url": "/portfolio/static/media/beach_ball.2c945a9b.png"
-  },
-  {
-    "revision": "8e270c31d4559a13ca57e0ed4a1347de",
-    "url": "/portfolio/static/media/bunny-played.8e270c31.png"
-  },
-  {
-    "revision": "4693e2b33d6cf5ccc92b174ce059eb55",
-    "url": "/portfolio/static/media/bunny-unplayed.4693e2b3.png"
   },
   {
     "revision": "4bfa290750a69d941d5da12693c1c1cc",
@@ -120,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/leaf_3.7dcb5616.png"
   },
   {
-    "revision": "81198e0a77d2c9a0cd2564d6588ed98a",
-    "url": "/portfolio/static/media/link.81198e0a.svg"
+    "revision": "7614ef800ffc82532c85c19a83d215ca",
+    "url": "/portfolio/static/media/link.7614ef80.svg"
   },
   {
     "revision": "c733b26a2c8178914e17cf7d94ee81a6",
@@ -130,6 +126,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1f06d7c5dc0be7932f0923a2376becde",
     "url": "/portfolio/static/media/lovesFood.1f06d7c5.jpeg"
+  },
+  {
+    "revision": "64545fe7923b5bf4ee2ef5dfb931c601",
+    "url": "/portfolio/static/media/mnf-house.64545fe7.png"
+  },
+  {
+    "revision": "c462a874b28a451d3f60d5b2b08efa78",
+    "url": "/portfolio/static/media/mnf-login.c462a874.png"
+  },
+  {
+    "revision": "03b805d14ed09823a89f3c9e47615cbb",
+    "url": "/portfolio/static/media/mnf-search.03b805d1.png"
+  },
+  {
+    "revision": "11c4930ffd81bbcb095b8ffe4d7eba98",
+    "url": "/portfolio/static/media/mnf-stack.11c4930f.png"
   },
   {
     "revision": "f3f5b1cbf49b274df17982a0516dafc1",
@@ -166,6 +178,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5bbc85a63256cc98eb5a7676ed018487",
     "url": "/portfolio/static/media/tennising.5bbc85a6.jpeg"
+  },
+  {
+    "revision": "23f52dea36bc12498407ebb6a6515868",
+    "url": "/portfolio/static/media/tini-convert.23f52dea.png"
+  },
+  {
+    "revision": "719aa54dddfe74b8aadfc85a6ebcc6a9",
+    "url": "/portfolio/static/media/tini-data.719aa54d.png"
+  },
+  {
+    "revision": "e0e85918a9372733f7fd8eada23e8110",
+    "url": "/portfolio/static/media/tini-home.e0e85918.png"
   },
   {
     "revision": "47a3dee91f9c1e23d102dd7938f31146",

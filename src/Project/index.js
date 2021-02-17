@@ -21,7 +21,6 @@ const Project = () => {
   const [scrollLeft, setScrollLeft] = useState(undefined);
 
   function mouseDown(e) {
-    console.log("e.target.scrollLeft", e.target.scrollLeft);
     setIsDown(true);
     setStartX(e.pageX - e.target.offsetLeft);
     setScrollLeft(e.target.scrollLeft);
@@ -43,8 +42,6 @@ const Project = () => {
     e.target.scrollLeft = scrollLeft - walk;
   }
 
-  console.log(scrollLeft);
-
   return (
     <ProjectPage color={season.color}>
       <Navbar pageColor={"#748173"} currentPage={"project"} />
@@ -53,6 +50,9 @@ const Project = () => {
           <Title>Things </Title>
           <Title>I've Built</Title>
           <SubTitle>featured project</SubTitle>
+          <SubTitle size={"12px"}>
+            **Scroll or click and drag to view more**
+          </SubTitle>
         </TitleContainer>
         <AllProjects
           onMouseDown={mouseDown}

@@ -51,7 +51,7 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.p`
-  font-size: 20px;
+  font-size: ${(props) => props.size || "20px"};
   margin-top: 0.5rem;
   margin-left: 3rem;
   margin-bottom: 0;
@@ -77,7 +77,7 @@ export const ProjectContainer = styled.div`
 
   @media screen and (max-width: 425px) {
     flex-direction: column;
-    height: 650px;
+    height: auto;
     width: 375px;
     box-shadow: none;
     margin: 2vw 0;
@@ -101,7 +101,7 @@ export const DescriptionContainer = styled.div`
   width: 630px;
 
   @media screen and (max-width: 425px) {
-    height: 630px;
+    height: auto;
     width: 355px;
     flex-direction: column;
     margin: 1rem;

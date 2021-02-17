@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Swiper from "react-id-swiper";
 
 import "swiper/css/swiper.css";
 import githubLogo from "../images/Icons/github-brands.svg";
@@ -15,9 +14,7 @@ import {
   DetailContainer,
   DescriptionContainer,
   LinkContainer,
-  About,
   P,
-  AllProjects,
   ImageBorder,
 } from "./styled";
 
@@ -48,14 +45,13 @@ const ProjectLayout = ({ season, application }) => {
               alt="project preview"
               size={"250"}
               isActive={true}
+              shadow={"none"}
             />
           </ImageBorder>
         </ImageContainer>
         <DetailContainer>
           <ProjectTitle color={season.color}>{application.name}</ProjectTitle>
-          <About>
-            <P>{application.description}</P>
-          </About>
+          <P>{application.description}</P>
           <LinkContainer>
             {application.github.map((link, index) => {
               return (

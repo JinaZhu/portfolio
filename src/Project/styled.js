@@ -4,7 +4,10 @@ export const ProjectPage = styled.div`
   background-color: ${(props) => props.color};
   min-height: 100vh;
   width: 100vw;
-  // padding-bottom: 25px;
+
+  @media screen and (max-width: 425px) {
+    height: 100%;
+  }
 `;
 
 export const ProjectBody = styled.div`
@@ -16,6 +19,10 @@ export const ProjectBody = styled.div`
   flex-direction: column;
   padding: 0;
   margin: 0;
+
+  @media screen and (max-width: 425px) {
+    height: 100%;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -27,6 +34,8 @@ export const TitleContainer = styled.div`
 
   @media screen and (max-width: 425px) {
     margin: 1rem;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -36,6 +45,9 @@ export const Title = styled.h1`
   margin: 0;
   font-size: 50px;
   margin-left: 3rem;
+  @media screen and (max-width: 425px) {
+    margin-left: 0;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -43,10 +55,9 @@ export const SubTitle = styled.p`
   margin-top: 0.5rem;
   margin-left: 3rem;
   margin-bottom: 0;
-`;
-
-export const About = styled.div`
-  font-size: 17px;
+  @media screen and (max-width: 425px) {
+    margin-left: 0;
+  }
 `;
 
 export const ProjectContainer = styled.div`
@@ -90,16 +101,11 @@ export const DescriptionContainer = styled.div`
   width: 630px;
 
   @media screen and (max-width: 425px) {
-    height: 650px;
-    width: 375px;
+    height: 630px;
+    width: 355px;
     flex-direction: column;
+    margin: 1rem;
   }
-`;
-
-export const ProjectTitleContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  margin: 0;
 `;
 
 export const ProjectTitle = styled.h2`
@@ -111,6 +117,8 @@ export const ProjectTitle = styled.h2`
   background-color: white;
   color: ${(props) => props.color};
   padding: 5px;
+  width: 275px;
+  text-align: left;
 `;
 
 export const Links = styled.a`
@@ -119,6 +127,7 @@ export const Links = styled.a`
   padding: 5px 5px 3px 5px;
   position: relative;
   overflow: hidden;
+  pointer-events: auto;
 
   &:hover {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
@@ -150,35 +159,25 @@ export const ProjectImage = styled.img`
   object-fit: cover;
   width: ${(props) => props.size || "50"}px;
   height: ${(props) => props.size || "50"}px;
-  // opacity: 0.6;
   cursor: ${(props) => props.cursor};
   filter: grayscale(1);
   margin: ${(props) => props.margin};
   pointer-events: auto;
 
+  &:hover {
+    box-shadow: ${(props) =>
+      props.shadow ||
+      "0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff"};
+  }
+
   ${(props) => {
     return (
       props.isActive &&
       css`
-        // opacity: 1;
         filter: grayscale(0);
       `
     );
   }}
-  &:hover {
-    // opacity: 1;
-    filter: grayscale(0);
-  }
-
-  // @media screen and (max-width: 1100px) {
-  //   width: 100px,
-  //   height: 100px
-  // }
-
-  // @media screen and (max-width: 320px) {
-  //   width: 50px,
-  //   height: 50px
-  // }
 `;
 
 export const ImageSelectionContainer = styled.div`
@@ -192,6 +191,10 @@ export const ImageContainer = styled.div`
   width: 315px;
   flex-direction: column-reverse;
   align-items: center;
+
+  @media screen and (max-width: 425px) {
+    margin: 10px;
+  }
 `;
 
 export const DetailContainer = styled.div`
@@ -201,12 +204,21 @@ export const DetailContainer = styled.div`
   flex-direction: column;
   width: 315px;
   height: 350px;
+
+  @media screen and (max-width: 425px) {
+    height: 330px;
+  }
 `;
 
 export const P = styled.p`
   margin: 10px;
   text-align: left;
   font-weight: bold;
+  font-size: 17px;
+
+  @media screen and (max-width: 425px) {
+    margin: 5px;
+  }
 `;
 
 export const LinkContainer = styled.div`
@@ -251,5 +263,8 @@ export const AllProjects = styled.div`
 
   @media screen and (max-width: 425px) {
     flex-direction: column;
+    overflow-x: visible;
+    height: 100%;
+    width: 100vw;
   }
 `;

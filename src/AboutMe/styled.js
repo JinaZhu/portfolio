@@ -2,12 +2,15 @@ import styled, { css } from "styled-components";
 
 export const AboutMePage = styled.div`
   background-color: ${(props) => props.color};
-  min-width: 100vw;
-  padding-bottom: 20px;
+  width: 100vw;
 `;
 
 export const TitleContainer = styled.div`
-  margin: 1rem 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   @media screen and (max-width: 425px) {
     margin: 1rem;
@@ -15,28 +18,23 @@ export const TitleContainer = styled.div`
 `;
 
 export const PageTitle = styled.h1`
-  font-family: Oswald;
+  font-family: "Russo One", sans-serif;
   font-size: 50px;
   margin: 0;
-  text-align: left;
-  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #f2f2f2, 0 0 30px #f2f2f2,
-    0 0 40px #f2f2f2, 0 0 50px #f2f2f2;
 `;
 
 export const InfoContainer = styled.div`
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
-  margin: 1rem 5rem 0rem 5rem;
-
-  @media screen and (max-width: 425px) {
-    margin: 1rem 1rem 0rem 1rem;
-  }
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const InfoP = styled.p`
-  margin-left: 5rem;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
+  width: 70%;
 
   @media screen and (max-width: 425px) {
     margin-left: 3rem;
@@ -60,11 +58,15 @@ export const Card = styled.div`
   transition: transform 1s ease-in-out;
   transform-style: preserve-3d;
   cursor: pointer;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 `;
 
 export const CardContainer = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 225px;
+  height: 225px;
   margin: 1rem;
 
   &:hover ${Card} {
@@ -101,7 +103,7 @@ export const Photo = styled.img`
 `;
 
 export const Cover = styled.div`
-  background-color: white;
+  // background-color: white;
   width: 100%;
   height: 100%;
   display: flex;
@@ -110,9 +112,9 @@ export const Cover = styled.div`
 `;
 
 export const CoverText = styled.p`
-  color: ${(props) => props.color};
+  color: white;
   font-size: 30px;
-  font-family: Oswald;
+  font-family: "Russo One", sans-serif;
 
   @media screen and (max-width: 425px) {
     font-size: 25px;
@@ -336,4 +338,12 @@ export const ExperienceTitle = styled.h2`
     left: 15%;
     bottom: 70%;
   }
+`;
+
+export const AboutBody = styled.div`
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;

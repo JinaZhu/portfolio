@@ -5,12 +5,16 @@ import {
   CompanyContainer,
   CompanyNameButton,
   ExperienceTitle,
+  ExperienceTitleContainer,
+  ExperienceDetailContainer,
+  ExperienceBorder,
 } from "./styled";
 import JobDescription from "./JobDescription";
 
 const qrzn = {
   company: "Qrzn",
   title: "Freelance Front-End Engineer",
+  year: "Mar 2020 - Oct 2020",
   descriptions: [
     "Frontend developer for a multimedia web magazine",
     "Built a fully responsive web application using React and Gatsby and deployed on Netlify",
@@ -21,6 +25,7 @@ const qrzn = {
 const theRealReal = {
   company: "The RealReal",
   title: "Copywriter",
+  year: "Dec 2017 - Dec 2019",
   descriptions: [
     "Created and edited titles and descriptions to accurately communicate product information.",
     "Researched brands and products to forecast seasonal trends increasing optimal search results.",
@@ -31,6 +36,7 @@ const theRealReal = {
 const bloomingdales = {
   company: "Bloomingdale",
   title: "Department Lead",
+  year: "Feb 2017 - Dec 2017",
   descriptions: [
     "Analyzed and reviewed the business performance of daily, weekly, monthly, seasonal, and annual sales results.",
     "Partnered with vendors and buyers regarding inventory needs and customer preferences.",
@@ -53,22 +59,28 @@ const WorkExperience = ({ season }) => {
 
   return (
     <ExperienceContainer>
-      <ExperienceTitle>Where I've Worked</ExperienceTitle>
-      <CompanyContainer>
-        {jobs.map((job) => {
-          return (
-            <CompanyNameButton
-              key={job.company}
-              isActive={checkActive(job)}
-              onClick={() => setCurrentJob(job)}
-              color={season.color}
-            >
-              {job.company}
-            </CompanyNameButton>
-          );
-        })}
-      </CompanyContainer>
-      <JobDescription company={currentJob} />
+      <ExperienceBorder>
+        <ExperienceTitleContainer>
+          <ExperienceTitle>Where I've Worked</ExperienceTitle>
+        </ExperienceTitleContainer>
+        {/* <ExperienceDetailContainer> */}
+        <CompanyContainer>
+          {jobs.map((job) => {
+            return (
+              <CompanyNameButton
+                key={job.company}
+                isActive={checkActive(job)}
+                onClick={() => setCurrentJob(job)}
+                color={season.color}
+              >
+                {job.company}
+              </CompanyNameButton>
+            );
+          })}
+        </CompanyContainer>
+        <JobDescription company={currentJob} />
+        {/* </ExperienceDetailContainer> */}
+      </ExperienceBorder>
     </ExperienceContainer>
   );
 };

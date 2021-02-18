@@ -32,6 +32,7 @@ export const Glass = styled.div`
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   margin: 0 25px;
+  border-radius: 5px;
 `;
 
 export const ButtonP = styled.p`
@@ -114,6 +115,7 @@ export const InnerBorder = styled.div`
   align-items: center;
   justify-content: center;
   padding: 3px;
+  border-radius: 3px;
 `;
 
 export const SeasonSelectionButton = styled.button`
@@ -134,6 +136,7 @@ export const SeasonSelectionButton = styled.button`
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 
   &:hover {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,

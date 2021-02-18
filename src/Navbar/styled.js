@@ -94,6 +94,7 @@ export const ContactButton = styled.button`
   z-index: 5;
   cursor: pointer;
   overflow: hidden;
+  border-radius: 5px;
 
   &:hover {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,

@@ -9,7 +9,6 @@ const interests = [
   { name: "A Plant Mom", image: "plantMom.jpeg" },
   { name: "An Amateur Photographer", image: "photographer.jpeg" },
   { name: "A Rising Tennis Star", image: "tennising.jpeg" },
-  { name: "A Fashionista", image: "closet.jpeg" },
 ];
 
 const PersonalInfo = () => {
@@ -26,8 +25,8 @@ const PersonalInfo = () => {
   return (
     <InfoContainer>
       <InfoP>
-        Hello! I'm Jina, a software engineer based in San Francisco, CA. I'm
-        full stack but I love getting in the nitty gritty of the Frontend.
+        Hello there! I'm Jina, a software engineer based in San Francisco, CA.
+        I'm full stack but I love getting in the nitty gritty of the Frontend.
         Designing beautiful layout and animations are my current coding
         obsession. Offscreen, I am...
       </InfoP>

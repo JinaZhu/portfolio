@@ -1,7 +1,7 @@
 import React from "react";
 
 import Navbar from "../Navbar";
-import { AboutMePage, PageTitle, TitleContainer } from "./styled";
+import { AboutMePage, PageTitle, TitleContainer, AboutBody } from "./styled";
 import PersonalInfo from "./PersonalInfo";
 import TechStack from "./TechStack";
 import WorkExperience from "./WorkExperience";
@@ -13,12 +13,13 @@ const AboutMe = () => {
     <AboutMePage color={season.color}>
       <Navbar currentPage={"about"} />
       <TitleContainer>
-        <PageTitle>About</PageTitle>
-        <PageTitle>Me</PageTitle>
+        <PageTitle>About Me</PageTitle>
       </TitleContainer>
-      <PersonalInfo />
-      <TechStack season={season} />
-      <WorkExperience season={season} />
+      <AboutBody>
+        <PersonalInfo />
+        {/* <TechStack season={season} />
+        <WorkExperience season={season} /> */}
+      </AboutBody>
     </AboutMePage>
   );
 };

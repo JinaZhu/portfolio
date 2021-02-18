@@ -51,7 +51,7 @@ const Project = () => {
           <Title>I've Built</Title>
           <SubTitle>featured project</SubTitle>
           <SubTitle size={"12px"}>
-            **Scroll or click and drag to view more**
+            ** Scroll or click and drag to view more **
           </SubTitle>
         </TitleContainer>
         <AllProjects

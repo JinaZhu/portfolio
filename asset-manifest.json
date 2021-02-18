@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6d1ce935.chunk.css",
-    "main.js": "/portfolio/static/js/main.6533d75a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6533d75a.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a68fd0c2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a68fd0c2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.1bf07f14.chunk.css": "/portfolio/static/css/2.1bf07f14.chunk.css",
     "static/js/2.8bd406ac.chunk.js": "/portfolio/static/js/2.8bd406ac.chunk.js",
     "static/js/2.8bd406ac.chunk.js.map": "/portfolio/static/js/2.8bd406ac.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ca7d72a7c64793e2035a03872c99692c.js": "/portfolio/precache-manifest.ca7d72a7c64793e2035a03872c99692c.js",
+    "precache-manifest.d0402b55fc9d3393316d170b8dde5c83.js": "/portfolio/precache-manifest.d0402b55fc9d3393316d170b8dde5c83.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.1bf07f14.chunk.css.map": "/portfolio/static/css/2.1bf07f14.chunk.css.map",
     "static/css/main.6d1ce935.chunk.css.map": "/portfolio/static/css/main.6d1ce935.chunk.css.map",
@@ -28,7 +28,7 @@
     "static/media/cocktail-search.png": "/portfolio/static/media/cocktail-search.e1dde8dd.png",
     "static/media/cocktails.png": "/portfolio/static/media/cocktails.d99fe442.png",
     "static/media/copyright.svg": "/portfolio/static/media/copyright.3d0f7c37.svg",
-    "static/media/food.JPG": "/portfolio/static/media/food.48ed5582.JPG",
+    "static/media/food.JPG": "/portfolio/static/media/food.c08578fb.JPG",
     "static/media/github-brands.svg": "/portfolio/static/media/github-brands.06b7e22f.svg",
     "static/media/github.svg": "/portfolio/static/media/github.2ef81c65.svg",
     "static/media/instagram.svg": "/portfolio/static/media/instagram.7cbcd31d.svg",
@@ -38,7 +38,6 @@
     "static/media/leaf_3.png": "/portfolio/static/media/leaf_3.7dcb5616.png",
     "static/media/link.svg": "/portfolio/static/media/link.7614ef80.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.c733b26a.svg",
-    "static/media/lovesFood.jpeg": "/portfolio/static/media/lovesFood.1f06d7c5.jpeg",
     "static/media/mnf-house.png": "/portfolio/static/media/mnf-house.64545fe7.png",
     "static/media/mnf-login.png": "/portfolio/static/media/mnf-login.c462a874.png",
     "static/media/mnf-search.png": "/portfolio/static/media/mnf-search.03b805d1.png",
@@ -51,7 +50,7 @@
     "static/media/snowflake_1.png": "/portfolio/static/media/snowflake_1.dd422e14.png",
     "static/media/snowflake_3.png": "/portfolio/static/media/snowflake_3.4c060cbe.png",
     "static/media/snowflake_4.png": "/portfolio/static/media/snowflake_4.32b5e756.png",
-    "static/media/tennising.jpeg": "/portfolio/static/media/tennising.5bbc85a6.jpeg",
+    "static/media/tennising.jpeg": "/portfolio/static/media/tennising.8eb72513.jpeg",
     "static/media/tini-convert.png": "/portfolio/static/media/tini-convert.23f52dea.png",
     "static/media/tini-data.png": "/portfolio/static/media/tini-data.719aa54d.png",
     "static/media/tini-home.png": "/portfolio/static/media/tini-home.e0e85918.png",
@@ -66,6 +65,6 @@
     "static/css/2.1bf07f14.chunk.css",
     "static/js/2.8bd406ac.chunk.js",
     "static/css/main.6d1ce935.chunk.css",
-    "static/js/main.6533d75a.chunk.js"
+    "static/js/main.a68fd0c2.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75497cf973fc28a5b899e095329a420d",
+    "revision": "b846cc32fc05c68a7b9f1c0fd0d21b58",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/2.1bf07f14.chunk.css"
   },
   {
-    "revision": "86ec215092c686631b40",
+    "revision": "65eb7f44acc7e9c586c6",
     "url": "/portfolio/static/css/main.6d1ce935.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.8bd406ac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86ec215092c686631b40",
-    "url": "/portfolio/static/js/main.6533d75a.chunk.js"
+    "revision": "65eb7f44acc7e9c586c6",
+    "url": "/portfolio/static/js/main.a68fd0c2.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -84,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/copyright.3d0f7c37.svg"
   },
   {
-    "revision": "48ed5582511880ba6daf78f6a57690fe",
-    "url": "/portfolio/static/media/food.48ed5582.JPG"
+    "revision": "c08578fb61791cf47ed639f7a7d6d00b",
+    "url": "/portfolio/static/media/food.c08578fb.JPG"
   },
   {
     "revision": "06b7e22f6b4e888c0b24667ee3c244ff",
@@ -122,10 +122,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c733b26a2c8178914e17cf7d94ee81a6",
     "url": "/portfolio/static/media/linkedin.c733b26a.svg"
-  },
-  {
-    "revision": "1f06d7c5dc0be7932f0923a2376becde",
-    "url": "/portfolio/static/media/lovesFood.1f06d7c5.jpeg"
   },
   {
     "revision": "64545fe7923b5bf4ee2ef5dfb931c601",
@@ -176,8 +172,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/snowflake_4.32b5e756.png"
   },
   {
-    "revision": "5bbc85a63256cc98eb5a7676ed018487",
-    "url": "/portfolio/static/media/tennising.5bbc85a6.jpeg"
+    "revision": "8eb725136bc282e055ff870df98bbfdb",
+    "url": "/portfolio/static/media/tennising.8eb72513.jpeg"
   },
   {
     "revision": "23f52dea36bc12498407ebb6a6515868",

@@ -99,7 +99,7 @@ export const DescriptionContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 2rem 5rem;
-  border: 2px solid white;
+  border: 1px solid white;
   height: 355px;
   width: 630px;
   border-radius: 5px;
@@ -128,7 +128,7 @@ export const ProjectTitle = styled.h2`
 
 export const Links = styled.a`
   margin-right: 1rem;
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 5px 5px 3px 5px;
   position: relative;
   overflow: hidden;
@@ -157,7 +157,7 @@ export const Links = styled.a`
 `;
 
 export const ImageBorder = styled.div`
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 5px 5px 0px 5px;
   border-radius: 5px;
 `;

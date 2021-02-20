@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6d1ce935.chunk.css",
-    "main.js": "/portfolio/static/js/main.a68fd0c2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a68fd0c2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.6b064529.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6b064529.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.1bf07f14.chunk.css": "/portfolio/static/css/2.1bf07f14.chunk.css",
-    "static/js/2.8bd406ac.chunk.js": "/portfolio/static/js/2.8bd406ac.chunk.js",
-    "static/js/2.8bd406ac.chunk.js.map": "/portfolio/static/js/2.8bd406ac.chunk.js.map",
+    "static/js/2.115c663d.chunk.js": "/portfolio/static/js/2.115c663d.chunk.js",
+    "static/js/2.115c663d.chunk.js.map": "/portfolio/static/js/2.115c663d.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.d0402b55fc9d3393316d170b8dde5c83.js": "/portfolio/precache-manifest.d0402b55fc9d3393316d170b8dde5c83.js",
+    "precache-manifest.5dcbbbaf59f4bb73b34351ba77265bfa.js": "/portfolio/precache-manifest.5dcbbbaf59f4bb73b34351ba77265bfa.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.1bf07f14.chunk.css.map": "/portfolio/static/css/2.1bf07f14.chunk.css.map",
     "static/css/main.6d1ce935.chunk.css.map": "/portfolio/static/css/main.6d1ce935.chunk.css.map",
-    "static/js/2.8bd406ac.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8bd406ac.chunk.js.LICENSE.txt",
+    "static/js/2.115c663d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.115c663d.chunk.js.LICENSE.txt",
     "static/media/aa-homepage.png": "/portfolio/static/media/aa-homepage.6fc53e2d.png",
     "static/media/aa-map.png": "/portfolio/static/media/aa-map.e43f6f5c.png",
     "static/media/aa-pictures.png": "/portfolio/static/media/aa-pictures.eaa4e331.png",
     "static/media/aa-places-been.png": "/portfolio/static/media/aa-places-been.001dd7a0.png",
     "static/media/aa-travel-info.png": "/portfolio/static/media/aa-travel-info.ad04f7b0.png",
     "static/media/animal.JPG": "/portfolio/static/media/animal.b0ae0636.JPG",
+    "static/media/arrow.svg": "/portfolio/static/media/arrow.3d7652c6.svg",
     "static/media/beach_ball.png": "/portfolio/static/media/beach_ball.2c945a9b.png",
     "static/media/cake-played.png": "/portfolio/static/media/cake-played.4bfa2907.png",
     "static/media/cake-unplayed.png": "/portfolio/static/media/cake-unplayed.8da14c6c.png",
@@ -63,8 +64,8 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.1bf07f14.chunk.css",
-    "static/js/2.8bd406ac.chunk.js",
+    "static/js/2.115c663d.chunk.js",
     "static/css/main.6d1ce935.chunk.css",
-    "static/js/main.a68fd0c2.chunk.js"
+    "static/js/main.6b064529.chunk.js"
   ]
 }

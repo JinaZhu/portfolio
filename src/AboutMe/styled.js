@@ -23,7 +23,7 @@ export const TitleContainer = styled.div`
   margin-top: 5rem;
 
   @media screen and (max-width: 425px) {
-    margin: 1rem;
+    margin: 0;
   }
 `;
 
@@ -47,8 +47,8 @@ export const InfoP = styled.p`
   width: 70%;
 
   @media screen and (max-width: 425px) {
-    margin-left: 3rem;
     font-size: 16px;
+    width: 85vw;
   }
 `;
 
@@ -235,7 +235,8 @@ export const ExperienceContainer = styled.div`
   ${glassmorphism}
 
   @media screen and (max-width: 425px) {
-    margin: 0 1rem;
+    margin: 1.5rem 0;
+    width: 85vw;
   }
 `;
 
@@ -246,11 +247,15 @@ export const ExperienceBorder = styled.div`
   flex-direction: column;
   border: 1px solid white;
   border-radius: 5px;
+
+  @media screen and (max-width: 425px) {
+    width: 85vw;
+  }
 `;
 
 export const CompanyContainer = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   margin: 1rem 0;
 `;
@@ -268,6 +273,7 @@ export const CompanyNameButton = styled.button`
   cursor: pointer;
   border-bottom: 5px solid #e4e4e4;
   width: 20vw;
+  word-wrap: break-word;
 
   &:hover {
     border-bottom: 5px solid white;
@@ -282,14 +288,15 @@ export const CompanyNameButton = styled.button`
     );
   }}
   @media screen and (max-width: 425px) {
-    margin: 5px;
+    margin: 0px;
     font-size: 16px;
     padding: 7px;
+    width: 27vw;
   }
   @media screen and (max-width: 320px) {
     left: 15%;
     bottom: 70%;
-    margin: 2px;
+    margin: 0px;
     font-size: 12px;
     padding: 9px;
   }
@@ -338,24 +345,10 @@ export const ExperienceTitle = styled.h2`
   font-family: "Russo One", sans-serif;
   letter-spacing: 7px;
   margin: 0.5rem 1rem;
-  white-space: nowrap;
-  left: 4%;
-  bottom: 80%;
   transform-origin: top left;
 
-  @media screen and (max-width: 800px) {
-    left: 8%;
-    bottom: 80%;
-  }
-
   @media screen and (max-width: 425px) {
-    left: 12%;
-    bottom: 70%;
-  }
-
-  @media screen and (max-width: 320px) {
-    left: 15%;
-    bottom: 70%;
+    font-size: 25px;
   }
 `;
 

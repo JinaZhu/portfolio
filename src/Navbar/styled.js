@@ -94,6 +94,7 @@ export const ContactButton = styled.button`
   z-index: 5;
   cursor: pointer;
   overflow: hidden;
+  border-radius: 5px;
 
   &:hover {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
@@ -170,6 +171,7 @@ export const ContactContainer = styled.div`
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
 
   @media screen and (max-width: 425px) {
     font-size: 16px;
@@ -184,23 +186,43 @@ export const ContactContainer = styled.div`
 
 export const EmailButton = styled.button`
   padding: 1rem 0;
-  background-color: white;
+  background-color: transparent;
   font-size: 20px;
   margin: 2rem;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
 
   &:hover {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
       0 0 5px #fff, 0 0 5px #fff;
-    color: ${(props) => props.color};
+    // color: ${(props) => props.color};
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: 0.5s;
+  }
+  &:hover::before {
+    left: 100%;
   }
 `;
 
 export const EmailLink = styled.a`
   text-decoration: none;
-  color: ${(props) => props.color};
+  color: white;
   padding: 3rem;
   white-space: nowrap;
   font-weight: bold;

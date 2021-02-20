@@ -17,8 +17,8 @@ const AboutMe = () => {
       </TitleContainer>
       <AboutBody>
         <PersonalInfo />
-        {/* <TechStack season={season} />
-        <WorkExperience season={season} /> */}
+        {/* <TechStack season={season} /> */}
+        <WorkExperience season={season} />
       </AboutBody>
     </AboutMePage>
   );

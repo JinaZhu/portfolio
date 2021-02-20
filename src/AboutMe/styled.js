@@ -1,5 +1,14 @@
 import styled, { css } from "styled-components";
 
+import arrowImgPath from "../images/Icons/arrow.svg";
+
+const glassmorphism = css`
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+`;
+
 export const AboutMePage = styled.div`
   background-color: ${(props) => props.color};
   width: 100vw;
@@ -11,6 +20,7 @@ export const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 5rem;
 
   @media screen and (max-width: 425px) {
     margin: 1rem;
@@ -58,10 +68,6 @@ export const Card = styled.div`
   transition: transform 1s ease-in-out;
   transform-style: preserve-3d;
   cursor: pointer;
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
 `;
 
 export const CardContainer = styled.div`
@@ -89,12 +95,14 @@ const Figures = css`
 export const Front = styled.figure`
   ${Figures};
   ${BackFace};
+  ${glassmorphism}
 `;
 
 export const Back = styled.figure`
   ${Figures};
   ${RotateOnHover};
   ${BackFace};
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
 `;
 export const Photo = styled.img`
   width: 100%;
@@ -215,22 +223,36 @@ export const TechP = styled.p`
 export const ExperienceContainer = styled.div`
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
   margin: 0rem 5rem;
   border-left: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid white;
   position: relative;
   padding: 10px;
+  margin: 3rem 0;
+  width: 70vw;
+  border-radius: 5px;
+  ${glassmorphism}
 
   @media screen and (max-width: 425px) {
     margin: 0 1rem;
   }
 `;
 
-export const CompanyContainer = styled.div`
+export const ExperienceBorder = styled.div`
+  width: 70vw;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 5px;
+`;
+
+export const CompanyContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
+  margin: 1rem 0;
 `;
 
 export const CompanyNameButton = styled.button`
@@ -240,23 +262,22 @@ export const CompanyNameButton = styled.button`
   outline: none;
   background-color: transparent;
   font-size: 20px;
-  margin: 1rem;
+  font-weight: bold;
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
-  border: 1px solid white;
+  border-bottom: 5px solid #e4e4e4;
+  width: 20vw;
 
   &:hover {
-    background-color: white;
-    color: ${(props) => props.color};
+    border-bottom: 5px solid white;
   }
 
   ${(props) => {
     return (
       props.isActive &&
       css`
-        background-color: white;
-        color: ${(props) => props.color};
+        border-bottom: 5px solid white;
       `
     );
   }}
@@ -286,9 +307,6 @@ export const JobContainer = styled.div`
 `;
 
 export const DescriptionContainer = styled.div`
-  border: 1px solid white;
-  padding: 1rem;
-  margin-bottom: 2rem;
   width: 85%;
 
   @media screen and (max-width: 425px) {
@@ -297,9 +315,12 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const DescriptionLi = styled.li`
-  list-style-type: "-     ";
+  list-style-type: none;
   text-align: left;
-  margin: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: flex-start;
+  width: 60vw;
 `;
 
 export const JobTitle = styled.p`
@@ -313,13 +334,11 @@ export const JobTitle = styled.p`
 `;
 
 export const ExperienceTitle = styled.h2`
-  transform: rotate(90deg);
   font-size: 30px;
-  font-family: Oswald;
+  font-family: "Russo One", sans-serif;
   letter-spacing: 7px;
-  margin: 0;
+  margin: 0.5rem 1rem;
   white-space: nowrap;
-  position: absolute;
   left: 4%;
   bottom: 80%;
   transform-origin: top left;
@@ -346,4 +365,36 @@ export const AboutBody = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0;
+`;
+
+export const ExperienceTitleContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;
+
+export const ExperienceDetailContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;
+
+export const Year = styled.p`
+  font-size: 16px;
+  margin: 0;
+`;
+
+export const ArrowImg = styled.img.attrs({
+  src: `${arrowImgPath}`,
+  alt: "arrow",
+})`
+  margin-right: 1rem;
+  width: 10px;
+`;
+
+export const Ul = styled.ul`
+  margin: 0;
+  padding: 0;
 `;

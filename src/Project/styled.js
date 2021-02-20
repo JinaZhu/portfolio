@@ -45,6 +45,7 @@ export const Title = styled.h1`
   margin: 0;
   font-size: 50px;
   margin-left: 3rem;
+
   @media screen and (max-width: 425px) {
     margin-left: 0;
   }
@@ -74,6 +75,7 @@ export const ProjectContainer = styled.div`
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   user-select: none;
   pointer-events: none;
+  border-radius: 5px;
 
   @media screen and (max-width: 425px) {
     flex-direction: column;
@@ -88,6 +90,7 @@ export const Border = styled.div`
   border: 2px solid white;
   width: 355px;
   height: 630px;
+  border-radius: 5px;
 `;
 
 export const DescriptionContainer = styled.div`
@@ -96,9 +99,10 @@ export const DescriptionContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 2rem 5rem;
-  border: 2px solid white;
+  border: 1px solid white;
   height: 355px;
   width: 630px;
+  border-radius: 5px;
 
   @media screen and (max-width: 425px) {
     height: auto;
@@ -119,15 +123,17 @@ export const ProjectTitle = styled.h2`
   padding: 5px;
   width: 275px;
   text-align: left;
+  border-radius: 5px;
 `;
 
 export const Links = styled.a`
   margin-right: 1rem;
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 5px 5px 3px 5px;
   position: relative;
   overflow: hidden;
   pointer-events: auto;
+  border-radius: 5px;
 
   &:hover {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
@@ -151,8 +157,9 @@ export const Links = styled.a`
 `;
 
 export const ImageBorder = styled.div`
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 5px 5px 0px 5px;
+  border-radius: 5px;
 `;
 
 export const ProjectImage = styled.img`
@@ -163,6 +170,7 @@ export const ProjectImage = styled.img`
   filter: grayscale(1);
   margin: ${(props) => props.margin};
   pointer-events: auto;
+  border-radius: 5px;
 
   &:hover {
     box-shadow: ${(props) =>

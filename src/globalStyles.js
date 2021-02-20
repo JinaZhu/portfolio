@@ -12,6 +12,8 @@ export const Button = styled.button`
   white-space: nowrap;
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
+
   &:hover {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
       0 0 5px #fff, 0 0 5px #fff;

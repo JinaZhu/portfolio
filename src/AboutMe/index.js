@@ -1,7 +1,14 @@
 import React from "react";
 
 import Navbar from "../Navbar";
-import { AboutMePage, PageTitle, TitleContainer, AboutBody } from "./styled";
+import {
+  AboutMePage,
+  PageTitle,
+  TitleContainer,
+  AboutBody,
+  ExperienceTitle,
+  ExperienceTitleContainer,
+} from "./styled";
 import PersonalInfo from "./PersonalInfo";
 import TechStack from "./TechStack";
 import WorkExperience from "./WorkExperience";
@@ -17,7 +24,10 @@ const AboutMe = () => {
       </TitleContainer>
       <AboutBody>
         <PersonalInfo />
-        {/* <TechStack season={season} /> */}
+        <TechStack season={season} />
+        <ExperienceTitleContainer>
+          <ExperienceTitle>Where I've Worked</ExperienceTitle>
+        </ExperienceTitleContainer>
         <WorkExperience season={season} />
       </AboutBody>
     </AboutMePage>

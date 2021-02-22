@@ -31,7 +31,6 @@ const InfoGlassMorph = ({ season }) => {
     history.push("/about");
   };
 
-  console.log(animated.svg);
   return (
     <GlassContainer>
       <Glass>

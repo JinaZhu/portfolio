@@ -4,9 +4,6 @@ import {
   ExperienceContainer,
   CompanyContainer,
   CompanyNameButton,
-  ExperienceTitle,
-  ExperienceTitleContainer,
-  ExperienceDetailContainer,
   ExperienceBorder,
 } from "./styled";
 import JobDescription from "./JobDescription";

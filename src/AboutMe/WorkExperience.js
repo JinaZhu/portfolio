@@ -60,10 +60,6 @@ const WorkExperience = ({ season }) => {
   return (
     <ExperienceContainer>
       <ExperienceBorder>
-        <ExperienceTitleContainer>
-          <ExperienceTitle>Where I've Worked</ExperienceTitle>
-        </ExperienceTitleContainer>
-        {/* <ExperienceDetailContainer> */}
         <CompanyContainer>
           {jobs.map((job) => {
             return (
@@ -79,7 +75,6 @@ const WorkExperience = ({ season }) => {
           })}
         </CompanyContainer>
         <JobDescription company={currentJob} />
-        {/* </ExperienceDetailContainer> */}
       </ExperienceBorder>
     </ExperienceContainer>
   );

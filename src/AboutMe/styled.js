@@ -20,7 +20,7 @@ export const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 3rem;
 
   @media screen and (max-width: 425px) {
     margin: 0;
@@ -137,7 +137,7 @@ export const InterestCardContainer = styled.div`
   margin: 0 5rem;
 
   @media screen and (max-width: 800px) {
-    margin: 0 3rem;
+    margin: 0;
   }
 `;
 
@@ -147,30 +147,27 @@ export const TechStackContainer = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin: 0rem 5rem;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  position: relative;
+  margin-top: 0rem;
+  padding: 0rem;
 
   @media screen and (max-width: 425px) {
-    margin: 0 1rem;
+    margin: 0;
+    padding: 0;
   }
 `;
 
 export const TechTitle = styled.h2`
-  transform: rotate(90deg);
   font-size: 30px;
-  font-family: Oswald;
+  font-family: "Russo One", sans-serif;
   letter-spacing: 7px;
-  margin: 0;
+  margin: 1rem 0 0 10rem;
+  margin-top: 1rem;
   white-space: nowrap;
-  position: absolute;
-  right: 0%;
-  top: 50%;
   transform-origin: top right;
 
   @media screen and (max-width: 800px) {
     top: 60%;
+    margin-left: 1rem;
   }
 `;
 
@@ -183,13 +180,41 @@ export const SectionTitle = styled.p`
   }
 `;
 
-export const NameTagContainer = styled.div`
+export const TechContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 1rem;
 
   @media screen and (max-width: 425px) {
-    margin-right: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
   }
+`;
+
+export const TechSectionContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  align-items: center;
+  justify-content: flex-start;
+  ${glassmorphism}
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 1rem;
+
+  @media screen and (max-width: 425px) {
+    margin: 1rem 0;
+  }
+`;
+
+export const TechNameContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const StackNameTag = styled.div`
@@ -212,9 +237,11 @@ export const StackName = styled.p`
 
 export const TechP = styled.p`
   text-align: left;
+  margin: 1rem 0 0 10rem;
 
   @media screen and (max-width: 425px) {
     font-size: 16px;
+    margin: 1rem;
   }
 `;
 
@@ -229,7 +256,7 @@ export const ExperienceContainer = styled.div`
   border-top: 1px solid white;
   position: relative;
   padding: 10px;
-  margin: 3rem 0;
+  margin: 1rem 0 3rem 0;
   width: 70vw;
   border-radius: 5px;
   ${glassmorphism}
@@ -344,11 +371,12 @@ export const ExperienceTitle = styled.h2`
   font-size: 30px;
   font-family: "Russo One", sans-serif;
   letter-spacing: 7px;
-  margin: 0.5rem 1rem;
+  margin: 3rem 0 0 10rem;
   transform-origin: top left;
 
   @media screen and (max-width: 425px) {
-    font-size: 25px;
+    font-size: 30px;
+    margin-left: 0em;
   }
 `;
 

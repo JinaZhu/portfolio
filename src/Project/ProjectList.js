@@ -2,7 +2,7 @@ export const applications = [
   {
     name: "Movie Night Fight",
     description:
-      "Movie Night Fight is a mobile-first app for groups of movie lovers who can never figure out which movie to watch when it's their turn to choose. It keeps track of whose turn it is to choose the evening's entertainment, and allows each person to keep a curated list of movies to choose from when it's their turn.",
+      "A mobile-first app for groups of movie lovers who can never figure out which movie to watch when it's their turn to choose. It keeps track of whose turn it is to choose the evening's entertainment, and allows each person to keep a curated list of movies to choose from when it's their turn.",
     stack: ["React", "Flask", "PostgreSQL", "Flask Migrate", "React-Spring"],
     github: ["https://github.com/seanyboy49/movie-night-fight"],
     deployed: ["https://movienightfight.herokuapp.com/public/home"],
@@ -16,7 +16,7 @@ export const applications = [
   {
     name: "TiniURL",
     description:
-      "Tini is a full-stack web application that provide short aliases redirecting to long URLs. Users convert long URLs into shorter links that redirect to the original URL.",
+      "TiniURL is a full-stack web application that provide short aliases redirecting to long URLs. Users convert long URLs into shorter links that redirect to the original URL.",
     stack: ["React", "Flask", "PostgreSQL", "Styled-Components"],
     github: ["https://github.com/JinaZhu/tiny_url"],
     deployed: ["https://tiniurl.herokuapp.com/"],
@@ -25,7 +25,7 @@ export const applications = [
   {
     name: "Qrzn",
     description:
-      "qrzn.org is the brainchild of JG Debray, a designer based in New York. JG came up with the idea of an online magazine for him and other designers/artists/writers to provide commentary on the ongoing pandemic through different forms of media.",
+      "Qrzn is the brainchild of JG Debray, a designer based in New York. JG came up with the idea of an online magazine for him and other designers/artists/writers to provide commentary on the ongoing pandemic through different forms of media.",
     stack: ["React", "Gatsby", "GraphQL", "Netlify"],
     github: ["https://github.com/seanyboy49/quaranzine"],
     deployed: "https://qrzn.org/",

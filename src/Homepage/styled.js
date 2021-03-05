@@ -238,21 +238,6 @@ export const SnowflakeImg = styled.img`
 
 //spring
 
-const petalFall = (topEnd) => keyframes`
-    0% {
-        opacity: 0;
-        top: -15%;
-        transform:rotate(0deg);
-    }
-    10% {
-        opacity: 1; 
-    }
-    100% {
-        top: ${topEnd}%; 
-        transform: translateX(1700px) rotate(225deg);
-    }
-`;
-
 export const SeasonContainer = styled.div`
   height: 100vh;
   width: 100vw;
@@ -271,12 +256,9 @@ export const FlowerImg = styled.img`
   left: ${(props) => props.left};
   animation: ${(props) => (props.fall ? backFall : fall)}
     ${(props) => props.duration} linear infinite;
-  // animation: ${(props) => petalFall(props.topEnd)} ${(props) =>
-    props.duration}
-  //   linear infinite;
   animation-delay: ${(props) => props.delay};
   opacity: 0.5;
-  filter: grayscale(40%) opacity(90%) saturate(120%);
+  filter: grayscale(25%) saturate(115%);
 `;
 
 //summer

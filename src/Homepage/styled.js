@@ -238,21 +238,6 @@ export const SnowflakeImg = styled.img`
 
 //spring
 
-const petalFall = (topEnd) => keyframes`
-    0% {
-        opacity: 0;
-        top: -15%;
-        transform:rotate(0deg);
-    }
-    10% {
-        opacity: 1; 
-    }
-    100% {
-        top: ${topEnd}%; 
-        transform: translateX(1700px) rotate(225deg);
-    }
-`;
-
 export const SeasonContainer = styled.div`
   height: 100vh;
   width: 100vw;

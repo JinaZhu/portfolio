@@ -5,7 +5,7 @@ import beachBall from "../images/Seasons/beach_ball.png";
 import { getRandomizedStyle } from "./utility";
 
 let lefts = [];
-const delays = ["0s", "1s", "2s", "3s", "4s", "5s"];
+const delays = ["0s", "1s", "2s", "3s"];
 const durations = ["3s", "3.5s", "4s", "2.5s"];
 const heights = ["-100vh", "-95vh", "-90vh", "-85vh", "-80vh", "75vh"];
 

@@ -271,12 +271,9 @@ export const FlowerImg = styled.img`
   left: ${(props) => props.left};
   animation: ${(props) => (props.fall ? backFall : fall)}
     ${(props) => props.duration} linear infinite;
-  // animation: ${(props) => petalFall(props.topEnd)} ${(props) =>
-    props.duration}
-  //   linear infinite;
   animation-delay: ${(props) => props.delay};
   opacity: 0.5;
-  filter: grayscale(40%) opacity(90%) saturate(120%);
+  filter: grayscale(25%) saturate(115%);
 `;
 
 //summer

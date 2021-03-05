@@ -20,10 +20,11 @@ const seasonMonths = {
 
 const seasonDetail = {
   winter: { name: "winter", color: "#a2bab9", icon: snowflake },
-  spring: { name: "spring", color: "#e5b9b6", icon: flower },
+  spring: { name: "spring", color: "#e3a6ae", icon: flower },
   summer: { name: "summer", color: "#f7af25", icon: sun },
   autumn: { name: "autumn", color: "#e28935", icon: leaf },
 };
+//e5b9b6
 
 function checkSeason(month) {
   for (let season in seasonMonths) {

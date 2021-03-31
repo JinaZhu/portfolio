@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
 export const HomepageContainer = styled.div`
   background-color: ${(props) => props.color};
@@ -157,6 +157,16 @@ export const SeasonSelectionButton = styled.button`
   &:hover::before {
     left: 100%;
   }
+
+  ${(props) => {
+    return (
+      props.isActive &&
+      css`
+        box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+          0 0 5px #fff, 0 0 5px #fff;
+      `
+    );
+  }}
 `;
 
 export const NameContainer = styled.div`

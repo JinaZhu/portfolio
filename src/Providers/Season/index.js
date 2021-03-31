@@ -63,7 +63,7 @@ function checkSeason(month, day) {
 function settingSeason() {
   let today = new Date();
   const mm = String(today.getMonth() + 1).padStart(2, "0");
-  const dd = today.getDay();
+  const dd = today.getDate();
 
   const currentSeason = checkSeason(mm, dd);
   return currentSeason;

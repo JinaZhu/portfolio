@@ -13,7 +13,8 @@ import copyrightImg from "../images/Icons/copyright.svg";
 import { useSeason } from "../Providers/Season";
 
 const Footer = () => {
-  const { setSeason, seasonDetail } = useSeason();
+  const { setSeason, seasonDetail, season } = useSeason();
+  console.log(season);
 
   return (
     <AlignFooter>
@@ -27,14 +28,15 @@ const Footer = () => {
       <SeasonSelectionContainer>
         <FooterP>What's your favorite season?</FooterP>
         <Seasons>
-          {Object.values(seasonDetail).map((season) => {
+          {Object.values(seasonDetail).map((seasonBtn) => {
             return (
               <SeasonSelectionButton
-                onClick={() => setSeason(season)}
-                key={season.name}
+                onClick={() => setSeason(seasonBtn)}
+                key={seasonBtn.name}
+                isActive={season.name === seasonBtn.name ? true : false}
               >
                 <InnerBorder>
-                  <img src={season.icon} alt="winter" width="20" />
+                  <img src={seasonBtn.icon} alt="season button" width="20" />
                 </InnerBorder>
               </SeasonSelectionButton>
             );
